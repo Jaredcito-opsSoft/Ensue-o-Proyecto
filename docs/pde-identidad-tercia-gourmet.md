@@ -4,112 +4,105 @@ Referencia fuente: https://tercia-gourmet.vercel.app/
 
 ## Lectura De La Referencia
 
-Tercia Gourmet comunica una experiencia boutique: fondo oscuro editorial, papel cálido, dorado como acento ceremonial, fotografía protagonista, tipografía serif de alto contraste y una narrativa de servicio cuidado. La sensación principal no es "restaurante", sino "marca local premium con oficio".
+Tercia Gourmet comunica una experiencia boutique: tinta profunda, papel calido, acento dorado, fotografia protagonista, tipografia editorial y una narrativa de servicio cuidado. La sensacion principal no es solo "restaurante", sino "marca local premium con oficio".
 
-Para Presencia Digital Express conviene tomar esa energía, pero moverla hacia una promesa más útil y digital: una presencia compartible, clara, cercana y lista para vender por WhatsApp.
+Para Presencia Digital Express conviene tomar esa energia, pero moverla hacia una promesa mas util y digital: una presencia compartible, clara, cercana y lista para vender por WhatsApp.
 
-## Qué Tomamos
+## Giro Aprobado: Retro Film 90s
 
-- Contraste fuerte entre tinta profunda y superficies cálidas.
-- Acentos metálicos usados con escasez, no como decoración constante.
-- Composición editorial: titulares grandes, secciones con pausa, imágenes con intención.
-- Detalles de marca pequeños: rombos, líneas finas, etiquetas y microcopy cuidado.
-- Sensación de servicio personalizado: "te lo dejamos listo", no "software complejo".
+La referencia nueva viene de una imagen de salon en blanco y negro con una barra de acciones crema. La lectura visual es mas interesante que usar verde tipo WhatsApp:
 
-## Qué No Copiamos
+- Parece fotograma de pelicula.
+- La foto en blanco y negro hace que el negocio se vea mas editorial.
+- Los acentos de color pueden comportarse como poster noventero.
+- WhatsApp sigue siendo una accion, pero deja de dominar la identidad.
 
-- No replicar la paleta exacta de Tercia.
-- No usar una vibra demasiado formal o nocturna para todo el sitio.
-- No abusar de mayúsculas espaciadas; en Presencia Digital deben sentirse como etiquetas, no como voz principal.
-- No convertir el sitio en una página de lujo gastronómico. El producto sigue siendo una herramienta para negocios locales.
+## Identidad Recomendada: Estudio Local Premium Retro
 
-## Identidad Recomendada: Estudio Local Premium
+Una identidad para negocios que quieren verse bien sin sentirse inaccesibles. El tono debe decir: "tu negocio puede verse asi de cuidado en un link", con una vibra llamativa, editorial y un poco cinematica.
 
-Una identidad para negocios que quieren verse bien sin sentirse inaccesibles. El tono debe decir: "tu negocio puede verse así de cuidado en un link".
+## Paleta Recomendada
 
-### Paleta Recomendada
-
-- Paper: `#F5F0E8`
-- Warm Surface: `#FFF9EF`
-- Ink: `#0C0A09`
-- Soft Ink: `#3A352E`
-- Muted: `#6B6158`
-- Line: `#E8DECE`
-- Primary: `#123D32`
-- Brass: `#C6A15B`
-- Clay: `#8A5A44`
-- Link Blue: `#1E3A5F`
+- Paper: `#F3EAD8`
+- Warm Surface: `#FFF8E9`
+- Ink: `#15100E`
+- Muted: `#62574F`
+- Line: `#D8C4A4`
+- Poster Red: `#C73E1D`
+- Deep Teal: `#0F5F78`
+- Brass: `#D99B2B`
+- Clay: `#8A4F2F`
+- Plum: `#3D2B5F`
 
 Uso:
 
-- Paper y Warm Surface sostienen la mayoría del sitio.
-- Ink se reserva para titulares, navegación y bandas de alto impacto.
-- Primary es la acción principal: WhatsApp, solicitar página, ver demo.
-- Brass reemplaza al dorado de Tercia, más sobrio y menos restaurante de lujo.
-- Clay sirve para calidez local: paquetes, notas, detalles editoriales.
-- Link Blue queda como acento funcional para enlaces secundarios y señales digitales.
+- Paper y Warm Surface sostienen la mayoria del sitio.
+- Ink se reserva para titulares, navegacion y bandas de alto impacto.
+- Poster Red es la accion principal de marca.
+- Deep Teal puede usarse para acciones de contacto como WhatsApp sin usar color WhatsApp.
+- Brass funciona como acento retro/premium en etiquetas, separadores y chips.
+- Clay sirve para calidez local: paquetes, notas y detalles editoriales.
+- Plum queda como acento de QR, compartir y senales digitales.
 
-## Tipografía
+## Que Tomamos De Tercia
 
-Base actual: Geist.
+- Contraste fuerte entre tinta profunda y superficies calidas.
+- Acentos metalicos usados con escasez.
+- Composicion editorial: titulares grandes, secciones con pausa, imagenes con intencion.
+- Detalles de marca pequenos: rombos, lineas finas, etiquetas y microcopy cuidado.
+- Sensacion de servicio personalizado: "te lo dejamos listo", no "software complejo".
 
-Dirección:
+## Que No Copiamos
 
-- Mantener Geist para legibilidad, UI, botones y formularios.
-- Agregar una serif editorial solo para momentos de marca si el equipo aprueba una dependencia tipográfica.
-- Opciones candidatas:
-  - `Cormorant Garamond`: más cercana a Tercia, elegante y gastronómica.
-  - `Fraunces`: más cálida, artesanal y digital-friendly.
-  - `Instrument Serif`: editorial, limpia y menos dramática.
-
-Recomendación: `Instrument Serif` para titulares selectos, combinada con Geist. Da carácter sin convertir Presencia Digital en restaurante.
+- No replicar la paleta exacta de Tercia.
+- No usar una vibra demasiado formal o nocturna para todo el sitio.
+- No abusar de mayusculas espaciadas; deben sentirse como etiquetas, no como voz principal.
+- No convertir el sitio en una pagina de lujo gastronomico.
+- No usar verde institucional o verde WhatsApp como identidad.
 
 ## Motivo Visual
 
-El motivo propio de Presencia Digital debe ser la "tarjeta viva": una mini página que se siente como tarjeta premium, menú, catálogo y contacto en un solo objeto.
+El motivo propio de Presencia Digital debe ser la "tarjeta viva": una mini pagina que se siente como tarjeta premium, menu, catalogo y contacto en un solo objeto.
+
+Visualmente puede parecer un fotograma o poster pequeno: foto blanco y negro, marco crema, chips de color y acciones muy claras.
 
 Elementos:
 
-- Rombos pequeños como separadores, heredando la vibra boutique sin copiarla.
+- Rombos pequenos como separadores, heredando la vibra boutique sin copiarla.
 - Marcos finos alrededor de previews, como tarjeta impresa.
-- Códigos QR tratados como sello de entrega.
-- Fotografías de negocios locales con recortes editoriales.
-- Mini etiquetas tipo "WhatsApp directo", "QR listo", "Ubicación", "Catálogo".
+- Codigos QR tratados como sello de entrega.
+- Fotografias de negocios locales con recortes editoriales, preferentemente en blanco y negro o alto contraste para demos.
+- Mini etiquetas tipo "WhatsApp directo", "QR listo", "Ubicacion", "Catalogo".
+
+## Tipografia
+
+Base actual: Geist.
+
+Direccion:
+
+- Mantener Geist para legibilidad, UI, botones y formularios.
+- Agregar una serif editorial solo para momentos de marca si el equipo aprueba una dependencia tipografica.
+- Opciones candidatas:
+  - `Instrument Serif`: editorial, limpia y menos dramatica.
+  - `Fraunces`: calida, artesanal y digital-friendly.
+  - `Cormorant Garamond`: elegante, pero mas cercana a Tercia.
+
+Recomendacion: `Instrument Serif` para titulares selectos, combinada con Geist.
 
 ## Motion
 
-Inspiración: la ceremonia de Tercia y la precisión de Motion.dev.
+Inspiracion: la ceremonia de Tercia, la precision de Motion.dev y el ritmo de un trailer corto.
 
-Aplicación:
+Aplicacion:
 
-- Entrada sobria del hero: texto primero, tarjeta después, QR al final.
-- Hover de tarjetas: elevación corta, sin brillo.
-- Carruseles o rails: movimiento lento solo si comunica catálogo o variedad.
+- Entrada sobria del hero: texto primero, tarjeta despues, QR al final.
+- Hover de tarjetas: elevacion corta, sin brillo.
+- Fotos blanco y negro pueden recuperar color en hover solo en desktop.
 - Reduced motion obligatorio.
 
-## Variantes Para Decidir
+## Decision
 
-### A. Boutique Editorial
+Usar: Estudio Local Premium Retro.
 
-Más cercana a Tercia. Usa más Ink, Brass y serif. Ideal si queremos que la landing se sienta aspiracional y muy premium.
-
-Riesgo: puede verse demasiado elegante para negocios pequeños.
-
-### B. Estudio Local Premium
-
-La recomendada. Mantiene calidez, brass sobrio y editorialidad, pero prioriza claridad, WhatsApp, QR y ejemplos locales.
-
-Riesgo: requiere buen equilibrio para no perder carácter.
-
-### C. Operativo Elegante
-
-Más parecido a una herramienta SaaS sobria. Menos serif, más Geist, más Primary, menos Brass.
-
-Riesgo: puede sentirse menos memorable.
-
-## Decisión Propuesta
-
-Usar B: Estudio Local Premium.
-
-La marca se sostiene con superficies cálidas, tinta profunda, acento brass escaso, primary verde para acciones, fotografía editorial de negocios y una tarjeta viva como firma visual.
+La marca se sostiene con superficies calidas, tinta profunda, acentos retro escasos, fotografia editorial en blanco y negro, acciones claras y una tarjeta viva como firma visual.
 

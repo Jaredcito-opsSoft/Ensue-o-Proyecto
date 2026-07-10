@@ -2,30 +2,32 @@
 
 ## Direction
 
-Local premium, direct and operational. The public pages sell trust and clarity for local businesses; the admin panel stays quiet and practical.
+Local premium, direct and operational, with a retro 90s film accent. The public pages sell trust and clarity for local businesses; the admin panel stays quiet and practical.
 
-The public experience should feel more like a polished digital business card studio than a generic SaaS landing. The first impression must be tactile, editorial, and easy to trust: a business owner should understand the offer in seconds and want their own page to look that composed.
+The public experience should feel more like a polished digital business card studio than a generic SaaS landing. The first impression must be tactile, editorial, cinematic, and easy to trust: a business owner should understand the offer in seconds and want their own page to look that composed.
 
 ## Visual Rules
 
 - No gradients: no `linear-gradient`, `radial-gradient` or `conic-gradient`.
 - Use solid warm paper surfaces, strong typography, real photography, subtle borders and soft shadows.
-- Accent is scarce: deep green for primary actions, earth/blue only as supporting identity colors.
+- Accent is scarce: use retro film colors instead of WhatsApp green. The WhatsApp feature can exist without using WhatsApp as the brand palette.
 - Motion is GSAP-based, short and purposeful. Public pages can have reveals; the panel stays restrained.
 
 ## Tokens
 
-- Paper: `#F5F0E8`
-- Paper strong: `#EFE8DD`
-- Surface: `#FFF9EF`
-- Ink: `#0C0A09`
-- Soft ink: `#3A352E`
-- Muted: `#6B6158`
-- Border: `#E8DECE`
-- Accent: `#123D32`
-- Brass: `#C6A15B`
-- Earth: `#8A5A44`
-- Blue: `#1E3A5F`
+- Paper: `#F3EAD8`
+- Paper strong: `#E7D8BD`
+- Surface: `#FFF8E9`
+- Surface strong: `#EAD7B6`
+- Ink: `#15100E`
+- Muted: `#62574F`
+- Border: `#D8C4A4`
+- Accent: `#C73E1D`
+- Accent strong: `#94290F`
+- Earth: `#8A4F2F`
+- Blue: `#0F5F78`
+- Brass: `#D99B2B`
+- Plum: `#3D2B5F`
 
 ## Visual Direction Board
 
@@ -115,11 +117,11 @@ Avoid:
 
 ## Component Patterns
 
-- Buttons: 44px minimum height, rounded-full, 14px/600, primary deep green.
+- Buttons: 44px minimum height, rounded-full, 14px/600, primary poster red or deep teal depending on action.
 - Cards: 22px radius, warm surface, subtle border, soft shadow.
 - Admin inputs: inset warm paper fill, 12px radius, visible label above control.
 - Public mini page: large image + compact action block, WhatsApp as primary action.
-- Public landing signature: editorial hero with a business card/mockup, proof chips, QR cue, and sparse deep-green action.
+- Public landing signature: editorial hero with a business card/mockup, proof chips, QR cue, and sparse retro film accents.
 - Mobile business page: fixed bottom action bar with WhatsApp and Ubicacion, only on small screens.
 - Demo cards: strong photo crop, category label, benefit note, and hover lift on desktop.
 - QA rule: public hero motion must reveal copy and CTAs quickly on mobile; avoid long stagger chains that delay reading.

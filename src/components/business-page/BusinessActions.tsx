@@ -9,7 +9,7 @@ export function BusinessActions({ business }: { business: Business }) {
 
   return (
     <div className="flex flex-col gap-3 sm:flex-row">
-      <ButtonLink href={createWhatsAppLink(business.whatsapp, message)}>
+      <ButtonLink href={createWhatsAppLink(business.whatsapp, message)} className="bg-[var(--pde-blue)] hover:bg-[var(--pde-plum)]">
         <MessageCircle size={18} /> Escribir por WhatsApp
       </ButtonLink>
       <ButtonLink href={getMapsHref(business.address, business.mapsUrl)} variant="secondary">

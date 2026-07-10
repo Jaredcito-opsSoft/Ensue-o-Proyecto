@@ -24,7 +24,8 @@ The owner should think: "Si, quiero que mi negocio se vea asi."
 - No glow-heavy effects.
 - No decorative blobs.
 - No generic SaaS hero.
-- Use warm paper surfaces, strong type, real photography, subtle borders, and scarce deep-green accent.
+- Use warm paper surfaces, strong type, real photography, subtle borders, and scarce retro film accents.
+- Avoid WhatsApp-green branding. The feature can say WhatsApp, but the palette should feel cinematic: poster red, deep teal, brass, plum, cream, and ink.
 - Use motion to make the page feel alive, not to distract.
 
 ## Photography

@@ -27,8 +27,8 @@ html {
 }
 
 ::selection {
-  background: var(--pde-accent);
-  color: white;
+  background: var(--pde-brass);
+  color: var(--pde-ink);
 }
 
 img {

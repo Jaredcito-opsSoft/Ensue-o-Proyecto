@@ -21,12 +21,13 @@ The product should feel like a polished digital business card studio for local b
 
 Target reaction: "Si, quiero que mi negocio se vea asi."
 
-The visual language is local premium: warm, direct, tactile, editorial, trustworthy, and mobile-first.
+The visual language is local premium: warm, direct, tactile, editorial, trustworthy, mobile-first, and lightly cinematic with a retro 90s film accent.
 
 ## Non-Negotiables
 
 - No gradients: no `linear-gradient`, `radial-gradient`, `conic-gradient`, or decorative gradient backgrounds.
 - No glow-heavy effects, decorative blobs, glassmorphism, or generic SaaS hero patterns.
+- No WhatsApp-green branding. WhatsApp is a feature and CTA label, not the color identity.
 - No excessive motion. Motion supports clarity and perceived quality.
 - Public pages must be understandable with motion disabled.
 - Mobile comes first.
@@ -44,25 +45,29 @@ Do not copy brand colors, layouts, slogans, or signature animations from these r
 
 ## Palette
 
-- Paper: `#F5F0E8`
-- Paper strong: `#EFE8DD`
-- Surface: `#FFF9EF`
-- Ink: `#0C0A09`
-- Soft ink: `#3A352E`
-- Muted: `#6B6158`
-- Border: `#E8DECE`
-- Accent: `#123D32`
-- Brass: `#C6A15B`
-- Earth: `#8A5A44`
-- Blue: `#1E3A5F`
+- Paper: `#F3EAD8`
+- Paper strong: `#E7D8BD`
+- Surface: `#FFF8E9`
+- Surface strong: `#EAD7B6`
+- Ink: `#15100E`
+- Muted: `#62574F`
+- Border: `#D8C4A4`
+- Accent: `#C73E1D`
+- Accent strong: `#94290F`
+- Earth: `#8A4F2F`
+- Blue: `#0F5F78`
+- Brass: `#D99B2B`
+- Plum: `#3D2B5F`
 
-Accent is scarce. Deep green is for primary actions and key proof. Brass is a micro-accent for premium cues, never the dominant color.
+Accent is scarce. Use red, blue, brass, and plum like a restrained 90s poster palette. Brass is a micro-accent for premium cues, never the dominant color.
 
 ## Identity Position
 
-Recommended direction: Estudio Local Premium.
+Recommended direction: Estudio Local Premium with Retro Film color.
 
 PDE should feel like a boutique studio that packages a local business into a polished, shareable page. Use the "living business card" as the signature object: mini page, catalog, WhatsApp, map, and QR in one composed artifact.
+
+Images can use black-and-white or high-contrast editorial treatment, especially in demos, to create a cinematic "film still" feeling.
 
 ## Typography
 

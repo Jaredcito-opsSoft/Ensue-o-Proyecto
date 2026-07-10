@@ -5,8 +5,8 @@ export async function createQrSvg(value: string) {
     type: "svg",
     margin: 1,
     color: {
-      dark: "#171717",
-      light: "#F7F3EC",
+      dark: "#15100E",
+      light: "#F3EAD8",
     },
   });
 }
