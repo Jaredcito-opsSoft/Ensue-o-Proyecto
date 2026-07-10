@@ -9,12 +9,21 @@ export function LandingAnimations({ children }: { children: ReactNode }) {
 
   useGSAP(
     () => {
-      gsap.from("[data-hero-line]", {
-        y: 28,
+      gsap.from("[data-hero-word]", {
+        y: 18,
         opacity: 0,
-        duration: 0.8,
+        duration: 0.48,
         ease: "power3.out",
-        stagger: 0.08,
+        stagger: 0.025,
+      });
+
+      gsap.from("[data-hero-line]", {
+        y: 16,
+        opacity: 0,
+        duration: 0.42,
+        delay: 0.12,
+        ease: "power3.out",
+        stagger: 0.045,
       });
     },
     { scope }

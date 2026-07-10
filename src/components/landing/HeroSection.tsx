@@ -1,4 +1,5 @@
 import { ArrowRight, CheckCircle2, MapPin, MessageCircle, QrCode, Smartphone } from "lucide-react";
+import Image from "next/image";
 import { ButtonLink } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { LandingAnimations } from "@/components/motion/LandingAnimations";
@@ -14,22 +15,22 @@ export function HeroSection() {
 
   return (
     <LandingAnimations>
-      <section className="relative overflow-hidden px-5 py-8 sm:px-8 lg:px-12">
+      <section className="relative overflow-hidden px-5 py-6 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-7xl gap-10 lg:min-h-[calc(100svh-72px)] lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
-          <div className="py-8 lg:py-16">
+          <div className="py-6 lg:py-16">
             <Badge data-hero-line>Presencia digital para negocios locales</Badge>
-            <h1 className="mt-7 max-w-4xl text-balance text-5xl font-semibold leading-[0.92] tracking-[-0.035em] text-[var(--pde-ink)] sm:text-7xl lg:text-[6.7rem]">
+            <h1 className="mt-6 max-w-4xl text-balance text-[3.35rem] font-semibold leading-[0.94] tracking-[-0.035em] text-[var(--pde-ink)] sm:text-7xl lg:text-[6.7rem]">
               <StaggerText text="Tu negocio listo para compartir." />
             </h1>
             <p
               data-hero-line
-              className="mt-7 max-w-2xl text-pretty text-lg leading-8 text-[var(--pde-muted)] sm:text-xl"
+              className="mt-5 max-w-2xl text-pretty text-lg leading-8 text-[var(--pde-muted)] sm:text-xl"
             >
               Creamos una mini pagina profesional con tus servicios, horarios,
               ubicacion, WhatsApp y QR para que tus clientes encuentren todo en
               un solo link.
             </p>
-            <div data-hero-line className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <div data-hero-line className="mt-6 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href={whatsappHref}>
                 Solicitar por WhatsApp <ArrowRight size={18} />
               </ButtonLink>
@@ -37,7 +38,7 @@ export function HeroSection() {
                 Ver demos
               </ButtonLink>
             </div>
-            <div data-hero-line className="mt-9 grid gap-3 text-sm font-medium text-[var(--pde-muted)] sm:grid-cols-3">
+            <div data-hero-line className="mt-6 grid gap-3 text-sm font-medium text-[var(--pde-muted)] sm:grid-cols-3">
               {["Sin aprender tecnologia", "Listo para QR", "Pensado para celular"].map((item) => (
                 <div className="flex items-center gap-2" key={item}>
                   <CheckCircle2 size={17} className="text-[var(--pde-accent)]" />
@@ -56,9 +57,13 @@ export function HeroSection() {
             </div>
             <div className="rounded-[38px] border border-[var(--pde-border)] bg-[var(--pde-surface)] p-3 shadow-[var(--shadow-card)] sm:p-4">
               <div className="overflow-hidden rounded-[30px] border border-[var(--pde-border)] bg-[var(--pde-paper)]">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=1300&q=80"
                   alt="Duena de negocio local atendiendo desde celular"
+                  width={1300}
+                  height={900}
+                  priority
+                  sizes="(min-width: 1024px) 42vw, 100vw"
                   className="h-64 w-full object-cover sm:h-[27rem]"
                 />
                 <div className="grid gap-4 p-5 sm:p-6">

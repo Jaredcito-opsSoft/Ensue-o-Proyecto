@@ -12,7 +12,7 @@ import { MobileActionBar } from "./MobileActionBar";
 
 export function BusinessPage({ business }: { business: Business }) {
   return (
-    <main>
+    <main className="pb-24 md:pb-0">
       <BusinessHero business={business} />
       <BusinessInfo business={business} />
       <BusinessItems business={business} />

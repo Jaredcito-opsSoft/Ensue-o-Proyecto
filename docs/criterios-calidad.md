@@ -40,6 +40,8 @@ No iniciar piloto con negocios reales hasta que el flujo funcione de extremo a e
 - Imagenes optimizadas.
 - Sin desbordes horizontales.
 - Compatible con navegadores internos de WhatsApp y Facebook.
+- El hero publico debe mostrar propuesta, subtexto y CTA sin esperar animaciones largas.
+- La barra movil fija de mini pagina no debe tapar contenido final.
 
 ## Rendimiento inicial
 
@@ -47,6 +49,8 @@ No iniciar piloto con negocios reales hasta que el flujo funcione de extremo a e
 - Imagenes con tamanos razonables.
 - Evitar animaciones pesadas.
 - Evitar dependencias innecesarias.
+- Usar `next/image` en imagenes publicas cuando sea seguro mantener el diseno.
+- Los warnings pendientes de imagenes deben quedar limitados a vistas internas o documentados.
 
 ## Seguridad basica
 

@@ -32,3 +32,5 @@ Local premium, direct and operational. The public pages sell trust and clarity f
 - Public landing signature: editorial hero with a business card/mockup, proof chips, QR cue, and sparse deep-green action.
 - Mobile business page: fixed bottom action bar with WhatsApp and Ubicacion, only on small screens.
 - Demo cards: strong photo crop, category label, benefit note, and hover lift on desktop.
+- QA rule: public hero motion must reveal copy and CTAs quickly on mobile; avoid long stagger chains that delay reading.
+- Image rule: public photographic assets use `next/image` with explicit sizes; remaining `<img>` usage should be limited to internal/admin utility views unless deliberately documented.

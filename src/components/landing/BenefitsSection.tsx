@@ -1,4 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 
 const benefits = [
@@ -14,9 +15,12 @@ export function BenefitsSection() {
     <Reveal>
       <section className="px-5 py-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1300&q=80"
             alt="Equipo revisando informacion de negocio local"
+            width={1300}
+            height={920}
+            sizes="(min-width: 1024px) 50vw, 100vw"
             className="h-[520px] w-full rounded-[30px] border border-[var(--pde-border)] object-cover shadow-[var(--shadow-card)]"
           />
           <div>
