@@ -1,4 +1,5 @@
 import type { Business } from "@/types";
+import Image from "next/image";
 import { Badge } from "@/components/ui/Badge";
 import { BusinessActions } from "./BusinessActions";
 import { PageIntro } from "@/components/motion/PageIntro";
@@ -32,9 +33,13 @@ export function BusinessHero({ business }: { business: Business }) {
             </div>
           </div>
           <div className="relative min-h-[420px] overflow-hidden rounded-[34px] border border-[var(--pde-border)] shadow-[var(--shadow-card)]">
-            <img
+            <Image
               src={business.coverImageUrl}
               alt={business.name}
+              width={1300}
+              height={980}
+              priority
+              sizes="(min-width: 1024px) 55vw, 100vw"
               className="h-full min-h-[420px] w-full object-cover"
             />
             <div className="absolute bottom-4 left-4 right-4 grid gap-2 rounded-[24px] border border-white/30 bg-[var(--pde-surface)]/95 p-4 shadow-[var(--shadow-soft)] sm:grid-cols-3">

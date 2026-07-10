@@ -1,4 +1,5 @@
 import type { Business } from "@/types";
+import Image from "next/image";
 import { Reveal } from "@/components/motion/Reveal";
 import { AnimatedCards } from "@/components/motion/AnimatedCards";
 
@@ -19,11 +20,14 @@ export function BusinessGallery({ business }: { business: Business }) {
           ) : null}
           <AnimatedCards className="mt-8 grid gap-4 sm:grid-cols-3">
             {business.images.map((image, index) => (
-              <img
+              <Image
                 data-card
                 key={image.id}
                 src={image.imageUrl}
                 alt={image.altText}
+                width={900}
+                height={650}
+                sizes={index === 0 ? "(min-width: 640px) 66vw, 100vw" : "(min-width: 640px) 33vw, 100vw"}
                 className={`h-72 w-full rounded-[24px] border border-[var(--pde-border)] object-cover shadow-[var(--shadow-card)] ${
                   index === 0 ? "sm:col-span-2" : ""
                 }`}

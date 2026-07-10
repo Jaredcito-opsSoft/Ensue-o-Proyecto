@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { demoBusinesses } from "@/lib/demo-data";
 import { Reveal } from "@/components/motion/Reveal";
@@ -43,9 +44,12 @@ export function DemoPreviewSection() {
                 className="group overflow-hidden rounded-[30px] border border-[var(--pde-border)] bg-[var(--pde-surface)] shadow-[var(--shadow-card)] transition-transform duration-300 hover:-translate-y-1"
               >
                 <div className="relative">
-                  <img
+                  <Image
                     src={business.coverImageUrl}
                     alt={business.name}
+                    width={900}
+                    height={620}
+                    sizes="(min-width: 1024px) 33vw, 100vw"
                     className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                   />
                   <span className="absolute left-4 top-4 rounded-full bg-[var(--pde-surface)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em]">

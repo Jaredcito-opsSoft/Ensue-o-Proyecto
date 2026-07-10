@@ -4,7 +4,7 @@ export function StaggerText({ text, className = "" }: { text: string; className?
   return (
     <span className={className}>
       {text.split(" ").map((word) => (
-        <span className="inline-block" data-hero-line key={word}>
+        <span className="inline-block" data-hero-word key={word}>
           {word}&nbsp;
         </span>
       ))}
