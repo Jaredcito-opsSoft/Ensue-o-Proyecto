@@ -2,32 +2,32 @@
 
 ## Direction
 
-Local premium, direct and operational, with a retro 90s film accent. The public pages sell trust and clarity for local businesses; the admin panel stays quiet and practical.
+Clean SaaS, direct and operational. The public pages sell trust and clarity for local businesses; the admin panel stays quiet and practical.
 
-The public experience should feel more like a polished digital business card studio than a generic SaaS landing. The first impression must be tactile, editorial, cinematic, and easy to trust: a business owner should understand the offer in seconds and want their own page to look that composed.
+The public experience should feel like a modern SaaS product adapted to local businesses: simple navigation, strong type, clear modules, and a product preview that makes the offer obvious in seconds.
 
 ## Visual Rules
 
 - No gradients: no `linear-gradient`, `radial-gradient` or `conic-gradient`.
 - Use solid warm paper surfaces, strong typography, real photography, subtle borders and soft shadows.
-- Accent is scarce: use retro film colors instead of WhatsApp green. The WhatsApp feature can exist without using WhatsApp as the brand palette.
+- Accent is scarce: use SaaS yellow instead of WhatsApp green. The WhatsApp feature can exist without using WhatsApp as the brand palette.
 - Motion is GSAP-based, short and purposeful. Public pages can have reveals; the panel stays restrained.
 
 ## Tokens
 
-- Paper: `#F3EAD8`
-- Paper strong: `#E7D8BD`
-- Surface: `#FFF8E9`
-- Surface strong: `#EAD7B6`
-- Ink: `#15100E`
-- Muted: `#62574F`
-- Border: `#D8C4A4`
-- Accent: `#C73E1D`
-- Accent strong: `#94290F`
-- Earth: `#8A4F2F`
-- Blue: `#0F5F78`
-- Brass: `#D99B2B`
-- Plum: `#3D2B5F`
+- Paper: `#FFFFFF`
+- Paper strong: `#F1F1F1`
+- Surface: `#FFFFFF`
+- Surface strong: `#F1F1F1`
+- Ink: `#000000`
+- Muted: `#5F6368`
+- Soft: `#8A8F98`
+- Border: `#DBE0EC`
+- Accent: `#FFF546`
+- Accent strong: `#E5DB24`
+- Earth: `#66640F`
+- Blue/primary dark: `#000000`
+- Plum/soft blue: `#DBE0EC`
 
 ## Visual Direction Board
 
@@ -40,7 +40,7 @@ Borrow the feeling of a boutique local brand, not the restaurant identity itself
 Useful cues:
 
 - Warm paper surfaces paired with deep ink.
-- Brass/gold used as a restrained micro-accent.
+- Yellow used as a restrained product micro-accent.
 - Editorial photography and large confident headings.
 - Small ceremonial details such as diamonds, fine rules, labels, and composed section breaks.
 - Service language that feels personal and complete.
@@ -121,11 +121,11 @@ Avoid:
 
 ## Component Patterns
 
-- Buttons: 44px minimum height, rounded-full, 14px/600, primary poster red or deep teal depending on action.
+- Buttons: 44px minimum height, rounded-full, 14px/600, primary SaaS yellow with black text or black with white text for contact actions.
 - Cards: 22px radius, warm surface, subtle border, soft shadow.
 - Admin inputs: inset warm paper fill, 12px radius, visible label above control.
 - Public mini page: large image + compact action block, WhatsApp as primary action.
-- Public landing signature: editorial hero with a business card/mockup, proof chips, QR cue, and sparse retro film accents.
+- Public landing signature: clean SaaS hero with simple nav, direct headline, product preview, proof chips, QR cue, and sparse yellow accents.
 - Mobile business page: fixed bottom action bar with WhatsApp and Ubicacion, only on small screens.
 - Demo cards: strong photo crop, category label, benefit note, and hover lift on desktop.
 - QA rule: public hero motion must reveal copy and CTAs quickly on mobile; avoid long stagger chains that delay reading.

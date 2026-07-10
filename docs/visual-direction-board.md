@@ -25,8 +25,8 @@ The owner should think: "Si, quiero que mi negocio se vea asi."
 - No glow-heavy effects.
 - No decorative blobs.
 - No generic SaaS hero.
-- Use warm paper surfaces, strong type, real photography, subtle borders, and scarce retro film accents.
-- Avoid WhatsApp-green branding. The feature can say WhatsApp, but the palette should feel cinematic: poster red, deep teal, brass, plum, cream, and ink.
+- Use white surfaces, strong type, real photography, subtle borders, pale blue-gray separators, and scarce SaaS yellow accents.
+- Avoid WhatsApp-green branding. The feature can say WhatsApp, but the palette should feel like a clean SaaS product: black, white, light gray, pale blue-gray, and yellow.
 - Use the Modern Clean SaaS reference for structure: simple top nav, one decisive hero sentence, clear CTA pair, product preview, and rows/sections that explain problem and solution without visual clutter.
 - Use motion to make the page feel alive, not to distract.
 

@@ -16,8 +16,8 @@ export const demoBusinesses: Business[] = [
     instagramUrl: "https://instagram.com/",
     coverImageUrl:
       "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1400&q=80",
-    primaryColor: "#0F5F78",
-    accentColor: "#D99B2B",
+    primaryColor: "#000000",
+    accentColor: "#FFF546",
     status: "published",
     serviceStatus: "delivered",
     hours: [
@@ -53,8 +53,8 @@ export const demoBusinesses: Business[] = [
     facebookUrl: "https://facebook.com/",
     coverImageUrl:
       "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80",
-    primaryColor: "#C73E1D",
-    accentColor: "#D99B2B",
+    primaryColor: "#000000",
+    accentColor: "#FFF546",
     status: "published",
     serviceStatus: "delivered",
     hours: [
@@ -89,8 +89,8 @@ export const demoBusinesses: Business[] = [
     websiteUrl: "https://example.com",
     coverImageUrl:
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80",
-    primaryColor: "#15100E",
-    accentColor: "#3D2B5F",
+    primaryColor: "#000000",
+    accentColor: "#DBE0EC",
     status: "published",
     serviceStatus: "delivered",
     hours: [

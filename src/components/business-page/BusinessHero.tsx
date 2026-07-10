@@ -43,7 +43,7 @@ export function BusinessHero({ business }: { business: Business }) {
               sizes="(min-width: 1024px) 55vw, 100vw"
               className="h-full min-h-[420px] w-full object-cover grayscale contrast-125 saturate-0"
             />
-            <div className="absolute left-4 top-4 z-20 rounded-full border border-[var(--pde-ink)] bg-[var(--pde-brass)] px-3 py-1 text-xs font-black uppercase tracking-[0.16em] text-[var(--pde-ink)]">
+            <div className="absolute left-4 top-4 z-20 rounded-full border border-[var(--pde-border)] bg-[var(--pde-accent)] px-3 py-1 text-xs font-black uppercase tracking-[0.16em] text-[var(--pde-ink)]">
               Online / local
             </div>
             <div className="absolute bottom-4 left-4 right-4 z-20 grid gap-2 rounded-[24px] border border-[var(--pde-ink)] bg-[var(--pde-surface)]/95 p-4 shadow-[var(--shadow-soft)] sm:grid-cols-3">
@@ -56,7 +56,7 @@ export function BusinessHero({ business }: { business: Business }) {
                 <span className="text-sm font-semibold">Como llegar</span>
               </div>
               <div className="flex items-center gap-2">
-                <QrCode size={18} className="text-[var(--pde-plum)]" />
+                <QrCode size={18} className="text-[var(--pde-muted)]" />
                 <span className="text-sm font-semibold">Compartir</span>
               </div>
             </div>

@@ -72,7 +72,7 @@ export function HeroSection() {
 
             <div data-hero-card className="relative">
               <div data-hero-chip className="absolute -left-2 top-14 z-10 hidden w-36 rounded-[24px] border border-[var(--pde-ink)] bg-[var(--pde-surface)] p-4 shadow-[var(--shadow-card)] lg:block">
-              <QrCode className="text-[var(--pde-plum)]" size={28} />
+              <QrCode className="text-[var(--pde-ink)]" size={28} />
               <p className="mt-5 font-mono text-3xl font-semibold">QR</p>
               <p className="mt-1 text-xs font-medium uppercase tracking-[0.12em] text-[var(--pde-muted)]">
                 listo para mostrador
@@ -110,7 +110,7 @@ export function HeroSection() {
                       <MapPin size={20} />
                       <p className="mt-3 text-sm font-semibold">Ubicacion</p>
                     </div>
-                    <div className="rounded-2xl bg-[var(--pde-blue)] p-4 text-white">
+                    <div className="rounded-2xl bg-[var(--pde-ink)] p-4 text-white">
                       <Smartphone size={20} />
                       <p className="mt-3 text-sm font-semibold">Link unico</p>
                     </div>

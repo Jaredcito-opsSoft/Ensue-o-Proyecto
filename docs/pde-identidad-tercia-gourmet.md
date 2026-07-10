@@ -8,41 +8,36 @@ Tercia Gourmet comunica una experiencia boutique: tinta profunda, papel calido, 
 
 Para Presencia Digital Express conviene tomar esa energia, pero moverla hacia una promesa mas util y digital: una presencia compartible, clara, cercana y lista para vender por WhatsApp.
 
-## Giro Aprobado: Retro Film 90s
+## Giro Actual: Clean SaaS
 
-La referencia nueva viene de una imagen de salon en blanco y negro con una barra de acciones crema. La lectura visual es mas interesante que usar verde tipo WhatsApp:
+La direccion actual toma la estructura y colores de una referencia SaaS limpia. La lectura visual debe ser mas moderna y producto que retro:
 
-- Parece fotograma de pelicula.
-- La foto en blanco y negro hace que el negocio se vea mas editorial.
-- Los acentos de color pueden comportarse como poster noventero.
+- Blanco y negro como base.
+- Gris claro y azul grisaceo para estructura.
+- Amarillo como acento puntual de producto.
 - WhatsApp sigue siendo una accion, pero deja de dominar la identidad.
 
-## Identidad Recomendada: Estudio Local Premium Retro
+## Identidad Recomendada: Clean SaaS Local
 
-Una identidad para negocios que quieren verse bien sin sentirse inaccesibles. El tono debe decir: "tu negocio puede verse asi de cuidado en un link", con una vibra llamativa, editorial y un poco cinematica.
+Una identidad para negocios que quieren verse bien sin sentirse inaccesibles. El tono debe decir: "tu negocio puede verse asi de claro en un link", con una vibra limpia, moderna y mobile-first.
 
 ## Paleta Recomendada
 
-- Paper: `#F3EAD8`
-- Warm Surface: `#FFF8E9`
-- Ink: `#15100E`
-- Muted: `#62574F`
-- Line: `#D8C4A4`
-- Poster Red: `#C73E1D`
-- Deep Teal: `#0F5F78`
-- Brass: `#D99B2B`
-- Clay: `#8A4F2F`
-- Plum: `#3D2B5F`
+- Paper: `#FFFFFF`
+- Soft Surface: `#F1F1F1`
+- Ink: `#000000`
+- Muted: `#5F6368`
+- Line: `#DBE0EC`
+- Accent Yellow: `#FFF546`
+- Accent Yellow Strong: `#E5DB24`
+- Olive Text: `#66640F`
 
 Uso:
 
-- Paper y Warm Surface sostienen la mayoria del sitio.
-- Ink se reserva para titulares, navegacion y bandas de alto impacto.
-- Poster Red es la accion principal de marca.
-- Deep Teal puede usarse para acciones de contacto como WhatsApp sin usar color WhatsApp.
-- Brass funciona como acento retro/premium en etiquetas, separadores y chips.
-- Clay sirve para calidez local: paquetes, notas y detalles editoriales.
-- Plum queda como acento de QR, compartir y senales digitales.
+- Paper y Soft Surface sostienen la mayoria del sitio.
+- Ink se reserva para titulares, navegacion, bandas de alto impacto y acciones de contacto.
+- Accent Yellow funciona como acento de producto: CTA, chips, puntos y estados destacados.
+- Line separa modulos con estructura SaaS sin hacer ruido.
 
 ## Que Tomamos De Tercia
 
@@ -59,12 +54,13 @@ Uso:
 - No abusar de mayusculas espaciadas; deben sentirse como etiquetas, no como voz principal.
 - No convertir el sitio en una pagina de lujo gastronomico.
 - No usar verde institucional o verde WhatsApp como identidad.
+- No regresar a rojo poster, azul petroleo o ciruela salvo que se apruebe un frente retro.
 
 ## Motivo Visual
 
 El motivo propio de Presencia Digital debe ser la "tarjeta viva": una mini pagina que se siente como tarjeta premium, menu, catalogo y contacto en un solo objeto.
 
-Visualmente puede parecer un fotograma o poster pequeno: foto blanco y negro, marco crema, chips de color y acciones muy claras.
+Visualmente debe parecer un producto SaaS simple: nav clara, hero directo, preview grande, modulos ordenados y acciones muy claras.
 
 Elementos:
 
@@ -102,7 +98,6 @@ Aplicacion:
 
 ## Decision
 
-Usar: Estudio Local Premium Retro.
+Usar: Clean SaaS Local.
 
-La marca se sostiene con superficies calidas, tinta profunda, acentos retro escasos, fotografia editorial en blanco y negro, acciones claras y una tarjeta viva como firma visual.
-
+La marca se sostiene con superficies blancas, tinta negra, acento amarillo escaso, modulos claros, acciones fuertes y una tarjeta viva como firma visual.

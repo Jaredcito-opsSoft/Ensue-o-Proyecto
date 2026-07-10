@@ -11,10 +11,10 @@ export function BusinessQR({ business }: { business: Business }) {
     <Card className="p-6">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <QrCode className="text-[var(--pde-plum)]" />
+          <QrCode className="text-[var(--pde-ink)]" />
           <h2 className="mt-5 text-2xl font-semibold">Comparte este negocio</h2>
         </div>
-        <span className="rounded-full border border-[var(--pde-ink)] bg-[var(--pde-brass)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[var(--pde-ink)]">
+        <span className="rounded-full border border-[var(--pde-border)] bg-[var(--pde-accent)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[var(--pde-ink)]">
           listo para QR
         </span>
       </div>

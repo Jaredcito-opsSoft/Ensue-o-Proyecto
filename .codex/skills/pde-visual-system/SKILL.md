@@ -21,13 +21,14 @@ The product should feel like a polished digital business card studio for local b
 
 Target reaction: "Si, quiero que mi negocio se vea asi."
 
-The visual language is local premium: warm, direct, tactile, editorial, trustworthy, mobile-first, and lightly cinematic with a retro 90s film accent.
+The visual language is clean SaaS for local businesses: direct, trustworthy, product-like, mobile-first, and visually simple enough to feel modern instead of institutional.
 
 ## Non-Negotiables
 
 - No gradients: no `linear-gradient`, `radial-gradient`, `conic-gradient`, or decorative gradient backgrounds.
 - No glow-heavy effects, decorative blobs, glassmorphism, or generic SaaS hero patterns.
 - No WhatsApp-green branding. WhatsApp is a feature and CTA label, not the color identity.
+- Avoid retro poster colors unless the user explicitly asks to return to that direction.
 - No excessive motion. Motion supports clarity and perceived quality.
 - Public pages must be understandable with motion disabled.
 - Mobile comes first.
@@ -46,29 +47,29 @@ Do not copy brand colors, layouts, slogans, or signature animations from these r
 
 ## Palette
 
-- Paper: `#F3EAD8`
-- Paper strong: `#E7D8BD`
-- Surface: `#FFF8E9`
-- Surface strong: `#EAD7B6`
-- Ink: `#15100E`
-- Muted: `#62574F`
-- Border: `#D8C4A4`
-- Accent: `#C73E1D`
-- Accent strong: `#94290F`
-- Earth: `#8A4F2F`
-- Blue: `#0F5F78`
-- Brass: `#D99B2B`
-- Plum: `#3D2B5F`
+- Paper: `#FFFFFF`
+- Paper strong: `#F1F1F1`
+- Surface: `#FFFFFF`
+- Surface strong: `#F1F1F1`
+- Ink: `#000000`
+- Muted: `#5F6368`
+- Soft: `#8A8F98`
+- Border: `#DBE0EC`
+- Accent: `#FFF546`
+- Accent strong: `#E5DB24`
+- Earth: `#66640F`
+- Blue/primary dark: `#000000`
+- Plum/soft blue: `#DBE0EC`
 
-Accent is scarce. Use red, blue, brass, and plum like a restrained 90s poster palette. Brass is a micro-accent for premium cues, never the dominant color.
+Accent is scarce. Use yellow like the SaaS reference: badges, small dots, primary CTA, and emphasis. Most UI should stay black, white, light gray, and pale blue-gray.
 
 ## Identity Position
 
-Recommended direction: Estudio Local Premium with Retro Film color.
+Recommended direction: Clean SaaS for local business presence.
 
 PDE should feel like a boutique studio that packages a local business into a polished, shareable page. Use the "living business card" as the signature object: mini page, catalog, WhatsApp, map, and QR in one composed artifact.
 
-Images can use black-and-white or high-contrast editorial treatment, especially in demos, to create a cinematic "film still" feeling.
+Images can use black-and-white or high-contrast editorial treatment, especially in demos, but the color system should read as clean SaaS rather than retro film.
 
 ## Typography
 
