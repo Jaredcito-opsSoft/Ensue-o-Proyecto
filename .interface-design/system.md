@@ -25,6 +25,71 @@ The public experience should feel more like a polished digital business card stu
 - Earth: `#8A5A44`
 - Blue: `#1E3A5F`
 
+## Visual Direction Board
+
+### Reference Blend
+
+- Apple product pages: one idea per section, strong visual confidence, generous whitespace, and motion that never gets in the way.
+- Linear: precise hierarchy, quiet surfaces, disciplined spacing, and almost invisible interface structure.
+- BP&O / Minimalissimo: restrained local-premium identity, print-like composition, tactile materials, and sober color.
+- Motion.dev: transform-first motion, short staggers, spring-like settle, performance awareness, and reduced-motion respect.
+- Mobbin mobile patterns: clear sticky actions, large tap targets, scannable cards, and mobile-first reading order.
+
+### What To Borrow
+
+- From Apple: narrative pacing and large, confident product moments.
+- From Linear: hierarchy, density discipline, and understated controls.
+- From BP&O: restrained brand feel, tactile paper/card cues, and premium local personality.
+- From Motion.dev: motion principles only, not the black/neon look.
+- From Mobbin: mobile ergonomics and action placement.
+
+### What Not To Copy
+
+- Do not copy brand palettes, exact layouts, slogans, component shapes, or signature animations from reference sites.
+- Do not use Motion.dev's black/neon aesthetic.
+- Do not turn the landing into a generic SaaS dashboard page.
+- Do not use glassmorphism, glow-heavy effects, large decorative blobs, or gradients.
+- Do not make animations the content. The offer must remain readable with motion disabled.
+
+### Photography Direction
+
+- Use real-business feeling photography: hands, counters, storefront details, food plates, tools, salon interiors, phones, menus, QR/printed cards.
+- Avoid anonymous stock smiles, dark abstract images, blurred atmospheres, or photos where the business cannot be understood.
+- Crop photos like editorial product photography: clear subject, generous negative space, useful detail.
+- Images should help the owner imagine their own page, not merely decorate the layout.
+
+### Composition Direction
+
+- First viewport: offer + CTA + tangible preview. The user should understand "mini pagina + WhatsApp + QR" immediately.
+- Sections should behave like a guided sales conversation: problem -> solution -> proof/demos -> packages -> process -> FAQ -> CTA.
+- Use full-width bands or unframed layouts, not nested card stacks.
+- Let one object dominate each section: hero card, problem grid, demo rail, package comparison, QR/share card.
+- Mobile layout should lead with text and CTA, then preview. Desktop can balance text and visual preview side by side.
+
+### Typography Direction
+
+- Geist remains the base for now: clean, precise, and legible.
+- Large headings should feel editorial: strong weight, tight line-height, balanced wrapping.
+- Body copy should be plain and direct, never technical.
+- Avoid tiny labels except for category/metadata chips. Important copy starts at readable mobile sizes.
+
+### Tone And Copy
+
+- Speak to a business owner, not a developer.
+- Prefer: "Todo en un solo link", "Listo para compartir", "Tus clientes encuentran horarios, servicios y ubicacion".
+- Avoid: "backend", "CRUD", "arquitectura", "SaaS", "sistema robusto", "modulo avanzado".
+- CTA language should name the outcome: "Solicitar mi pagina", "Ver demo", "Escribir por WhatsApp".
+
+### Section Patterns
+
+- Hero: editorial headline, quick proof chips, primary WhatsApp CTA, secondary demo CTA, and living business card preview.
+- Problem: short quoted pains in breathable cards; no long explanations.
+- Solution: dark solid band allowed when it creates focus, but no gradient or glow.
+- Demos: three niche cards with real photo crop, category, benefit note, and clear link.
+- Packages: no final prices yet; use validation labels such as "Ideal para empezar" or "Precio piloto".
+- Mini page: premium digital card, visible WhatsApp, visible location, scannable catalog, gallery, hours, QR/share block.
+- Mobile mini page: sticky action bar for WhatsApp and ubicacion; calm, no pulsing.
+
 ## Component Patterns
 
 - Buttons: 44px minimum height, rounded-full, 14px/600, primary deep green.
