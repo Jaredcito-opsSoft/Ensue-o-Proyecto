@@ -1,0 +1,17 @@
+:root {
+  --pde-paper: #f7f3ec;
+  --pde-paper-strong: #efe8dd;
+  --pde-surface: #fffaf2;
+  --pde-surface-strong: #f0e8dc;
+  --pde-ink: #171717;
+  --pde-muted: #525252;
+  --pde-soft: #77716a;
+  --pde-border: #d8d2c8;
+  --pde-accent: #0f3d2e;
+  --pde-accent-strong: #0a2b20;
+  --pde-earth: #8a5a44;
+  --pde-blue: #1e3a5f;
+  --pde-success: #276749;
+  --shadow-soft: 0 12px 28px rgba(23, 23, 23, 0.1);
+  --shadow-card: 0 0 0 1px rgba(23, 23, 23, 0.03), 0 18px 38px rgba(23, 23, 23, 0.08);
+}

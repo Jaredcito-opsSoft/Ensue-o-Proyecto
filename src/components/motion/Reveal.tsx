@@ -1,0 +1,40 @@
+"use client";
+
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef, type ReactNode } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
+
+export function Reveal({ children, className = "" }: { children: ReactNode; className?: string }) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useGSAP(
+    () => {
+      if (!ref.current) return;
+      gsap.fromTo(
+        ref.current,
+        { autoAlpha: 0, y: 22 },
+        {
+          autoAlpha: 1,
+          y: 0,
+          duration: 0.7,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ref.current,
+            start: "top 86%",
+            once: true,
+          },
+        }
+      );
+    },
+    { scope: ref }
+  );
+
+  return (
+    <div ref={ref} className={className}>
+      {children}
+    </div>
+  );
+}
