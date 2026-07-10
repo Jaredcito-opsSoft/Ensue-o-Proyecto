@@ -26,12 +26,12 @@ const packages = [
 export function PackagesSection() {
   return (
     <Reveal>
-      <section className="bg-[var(--pde-paper-strong)] px-5 py-20 sm:px-8 lg:px-12">
+      <section id="paquetes" className="bg-[var(--pde-paper-strong)] px-4 py-16 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-7xl">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-earth)]">
             Paquetes piloto
           </p>
-          <h2 className="mt-4 max-w-3xl text-balance text-4xl font-semibold tracking-[-0.02em] sm:text-5xl">
+          <h2 className="mt-4 max-w-3xl text-balance text-4xl font-semibold leading-[0.98] sm:text-6xl">
             Alcance claro para vender sin prometer de mas.
           </h2>
           <AnimatedCards className="mt-10 grid gap-5 lg:grid-cols-3">

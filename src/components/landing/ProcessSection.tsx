@@ -11,9 +11,9 @@ const steps = [
 export function ProcessSection() {
   return (
     <Reveal>
-      <section className="px-5 py-20 sm:px-8 lg:px-12">
+      <section id="proceso" className="px-4 py-16 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-7xl">
-          <h2 className="max-w-3xl text-balance text-4xl font-semibold tracking-[-0.02em] sm:text-5xl">
+          <h2 className="max-w-3xl text-balance text-4xl font-semibold leading-[0.98] sm:text-6xl">
             Un proceso corto, pensado para negocios que no quieren complicarse.
           </h2>
           <div className="mt-10 grid gap-4 lg:grid-cols-5">

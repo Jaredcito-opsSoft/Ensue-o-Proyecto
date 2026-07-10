@@ -35,6 +35,7 @@ The visual language is local premium: warm, direct, tactile, editorial, trustwor
 ## Reference Blend
 
 - Tercia Gourmet: local-premium editorial warmth, deep ink, paper surfaces, restrained brass, strong photography, and boutique service cues. Borrow the feeling, not the restaurant identity.
+- Modern Clean SaaS Company / Day Base: clean product structure, simple nav, large direct sans headline with selective serif/italic emphasis, modular problem/solution sections, generous spacing, and mobile-first CTA hierarchy. Borrow structure and type rhythm, not the exact black/white/yellow palette.
 - Apple: narrative pacing and confident product moments.
 - Linear: precise hierarchy and quiet surface structure.
 - BP&O / Minimalissimo: restrained identity and tactile composition.
@@ -72,6 +73,7 @@ Images can use black-and-white or high-contrast editorial treatment, especially 
 ## Typography
 
 - Geist is the current base.
+- Source Serif is approved as a selective editorial accent for one or two words in major headings.
 - Headings are large, confident, and tightly set.
 - Body copy is plain, direct, and readable on mobile.
 - Avoid technical language in public pages.
@@ -125,10 +127,10 @@ Avoid:
 
 Landing:
 
-1. Editorial hero with offer, CTA and living business card preview.
+1. Clean SaaS-style hero with simple nav, direct offer, CTA and living business card preview.
 2. Useful signal ticker.
-3. Problem cards.
-4. Solid solution band.
+3. Problem section as clear rows, not decorative cards.
+4. Solid solution band with modular product capabilities.
 5. Benefits with real business outcome.
 6. Demo cards for beauty, food and repair.
 7. Packages without final pricing.

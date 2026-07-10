@@ -55,6 +55,7 @@ Avoid:
 ### Reference Blend
 
 - Apple product pages: one idea per section, strong visual confidence, generous whitespace, and motion that never gets in the way.
+- Modern Clean SaaS Company / Day Base: simple nav, oversized direct sans type, selective serif/italic words, product-like modular sections, clear mobile CTAs, and low-noise structure.
 - Linear: precise hierarchy, quiet surfaces, disciplined spacing, and almost invisible interface structure.
 - BP&O / Minimalissimo: restrained local-premium identity, print-like composition, tactile materials, and sober color.
 - Motion.dev: transform-first motion, short staggers, spring-like settle, performance awareness, and reduced-motion respect.
@@ -63,6 +64,7 @@ Avoid:
 ### What To Borrow
 
 - From Apple: narrative pacing and large, confident product moments.
+- From Modern Clean SaaS: typography rhythm, clean navigation, product-section structure, and mobile-first CTA hierarchy.
 - From Linear: hierarchy, density discipline, and understated controls.
 - From BP&O: restrained brand feel, tactile paper/card cues, and premium local personality.
 - From Motion.dev: motion principles only, not the black/neon look.
@@ -71,6 +73,7 @@ Avoid:
 ### What Not To Copy
 
 - Do not copy brand palettes, exact layouts, slogans, component shapes, or signature animations from reference sites.
+- Do not copy the Day Base/Aetherfield brand or its exact black/white/yellow palette.
 - Do not use Motion.dev's black/neon aesthetic.
 - Do not turn the landing into a generic SaaS dashboard page.
 - Do not use glassmorphism, glow-heavy effects, large decorative blobs, or gradients.
@@ -94,6 +97,7 @@ Avoid:
 ### Typography Direction
 
 - Geist remains the base for now: clean, precise, and legible.
+- Source Serif is allowed as a selective italic accent inside major public headings.
 - Large headings should feel editorial: strong weight, tight line-height, balanced wrapping.
 - Body copy should be plain and direct, never technical.
 - Avoid tiny labels except for category/metadata chips. Important copy starts at readable mobile sizes.

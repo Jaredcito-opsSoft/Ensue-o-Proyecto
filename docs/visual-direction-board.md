@@ -13,6 +13,7 @@ The owner should think: "Si, quiero que mi negocio se vea asi."
 | Reference | What we borrow | What we avoid |
 | --- | --- | --- |
 | Apple product pages | Narrative pacing, whitespace, confident product moments | Overly cinematic sections that slow the MVP |
+| Modern Clean SaaS Company / Day Base | Simple nav, huge direct type, serif/italic emphasis, modular product structure | Copying the exact brand, black/white/yellow palette or database messaging |
 | Linear | Precise hierarchy, subtle borders, disciplined spacing | Cold developer-dashboard feeling |
 | BP&O / Minimalissimo | Local-premium restraint, print-like composition | Being too editorial to sell quickly |
 | Motion.dev | Transform-first motion, short stagger, performance awareness | Black/neon brand look |
@@ -26,6 +27,7 @@ The owner should think: "Si, quiero que mi negocio se vea asi."
 - No generic SaaS hero.
 - Use warm paper surfaces, strong type, real photography, subtle borders, and scarce retro film accents.
 - Avoid WhatsApp-green branding. The feature can say WhatsApp, but the palette should feel cinematic: poster red, deep teal, brass, plum, cream, and ink.
+- Use the Modern Clean SaaS reference for structure: simple top nav, one decisive hero sentence, clear CTA pair, product preview, and rows/sections that explain problem and solution without visual clutter.
 - Use motion to make the page feel alive, not to distract.
 
 ## Photography
