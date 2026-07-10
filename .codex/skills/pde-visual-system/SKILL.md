@@ -33,6 +33,7 @@ The visual language is local premium: warm, direct, tactile, editorial, trustwor
 
 ## Reference Blend
 
+- Tercia Gourmet: local-premium editorial warmth, deep ink, paper surfaces, restrained brass, strong photography, and boutique service cues. Borrow the feeling, not the restaurant identity.
 - Apple: narrative pacing and confident product moments.
 - Linear: precise hierarchy and quiet surface structure.
 - BP&O / Minimalissimo: restrained identity and tactile composition.
@@ -43,17 +44,25 @@ Do not copy brand colors, layouts, slogans, or signature animations from these r
 
 ## Palette
 
-- Paper: `#F7F3EC`
+- Paper: `#F5F0E8`
 - Paper strong: `#EFE8DD`
-- Surface: `#FFFAF2`
-- Ink: `#171717`
-- Muted: `#525252`
-- Border: `#D8D2C8`
-- Accent: `#0F3D2E`
+- Surface: `#FFF9EF`
+- Ink: `#0C0A09`
+- Soft ink: `#3A352E`
+- Muted: `#6B6158`
+- Border: `#E8DECE`
+- Accent: `#123D32`
+- Brass: `#C6A15B`
 - Earth: `#8A5A44`
 - Blue: `#1E3A5F`
 
-Accent is scarce. Deep green is for primary actions and key proof.
+Accent is scarce. Deep green is for primary actions and key proof. Brass is a micro-accent for premium cues, never the dominant color.
+
+## Identity Position
+
+Recommended direction: Estudio Local Premium.
+
+PDE should feel like a boutique studio that packages a local business into a polished, shareable page. Use the "living business card" as the signature object: mini page, catalog, WhatsApp, map, and QR in one composed artifact.
 
 ## Typography
 

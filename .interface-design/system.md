@@ -15,17 +15,40 @@ The public experience should feel more like a polished digital business card stu
 
 ## Tokens
 
-- Paper: `#F7F3EC`
+- Paper: `#F5F0E8`
 - Paper strong: `#EFE8DD`
-- Surface: `#FFFAF2`
-- Ink: `#171717`
-- Muted: `#525252`
-- Border: `#D8D2C8`
-- Accent: `#0F3D2E`
+- Surface: `#FFF9EF`
+- Ink: `#0C0A09`
+- Soft ink: `#3A352E`
+- Muted: `#6B6158`
+- Border: `#E8DECE`
+- Accent: `#123D32`
+- Brass: `#C6A15B`
 - Earth: `#8A5A44`
 - Blue: `#1E3A5F`
 
 ## Visual Direction Board
+
+### Tercia Gourmet As Brand Reference
+
+Presencia Digital Express can use Tercia Gourmet as a nearby aesthetic reference: local-premium, editorial, warm, high-contrast, image-led, and service-oriented.
+
+Borrow the feeling of a boutique local brand, not the restaurant identity itself. The translation for PDE is "estudio local premium": a digital presence service that makes small businesses feel carefully packaged, shareable, and ready for WhatsApp.
+
+Useful cues:
+
+- Warm paper surfaces paired with deep ink.
+- Brass/gold used as a restrained micro-accent.
+- Editorial photography and large confident headings.
+- Small ceremonial details such as diamonds, fine rules, labels, and composed section breaks.
+- Service language that feels personal and complete.
+
+Avoid:
+
+- Copying Tercia's exact gold-heavy palette.
+- Making the site feel like a fine-dining restaurant.
+- Overusing uppercase labels and wide letter spacing.
+- Turning every section dark or overly formal.
 
 ### Reference Blend
 
