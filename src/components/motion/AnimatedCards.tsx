@@ -4,7 +4,13 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef, type ReactNode } from "react";
 
-export function AnimatedCards({ children }: { children: ReactNode }) {
+export function AnimatedCards({
+  children,
+  className = "",
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
   const scope = useRef<HTMLDivElement>(null);
 
   useGSAP(
@@ -20,5 +26,9 @@ export function AnimatedCards({ children }: { children: ReactNode }) {
     { scope }
   );
 
-  return <div ref={scope}>{children}</div>;
+  return (
+    <div ref={scope} className={className}>
+      {children}
+    </div>
+  );
 }

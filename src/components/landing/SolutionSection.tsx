@@ -1,5 +1,6 @@
 import { Clock, Image, MapPin, MessageCircle, QrCode, ShoppingBag } from "lucide-react";
 import { Reveal } from "@/components/motion/Reveal";
+import { AnimatedCards } from "@/components/motion/AnimatedCards";
 
 const solutions = [
   { icon: ShoppingBag, title: "Catalogo", text: "Servicios, productos o menu ordenado." },
@@ -23,15 +24,15 @@ export function SolutionSection() {
               Una pagina pequena, pero suficiente para vender confianza.
             </h2>
           </div>
-          <div className="mt-12 grid gap-px overflow-hidden rounded-[28px] border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
+          <AnimatedCards className="mt-12 grid gap-px overflow-hidden rounded-[28px] border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
             {solutions.map(({ icon: Icon, title, text }) => (
-              <div key={title} className="bg-[var(--pde-ink)] p-7">
+              <div data-card key={title} className="bg-[var(--pde-ink)] p-7">
                 <Icon size={26} className="text-[#d8c4a7]" />
                 <h3 className="mt-8 text-2xl font-semibold">{title}</h3>
                 <p className="mt-3 leading-7 text-white/70">{text}</p>
               </div>
             ))}
-          </div>
+          </AnimatedCards>
         </div>
       </section>
     </Reveal>

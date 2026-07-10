@@ -29,3 +29,6 @@ Local premium, direct and operational. The public pages sell trust and clarity f
 - Cards: 22px radius, warm surface, subtle border, soft shadow.
 - Admin inputs: inset warm paper fill, 12px radius, visible label above control.
 - Public mini page: large image + compact action block, WhatsApp as primary action.
+- Public landing signature: editorial hero with a business card/mockup, proof chips, QR cue, and sparse deep-green action.
+- Mobile business page: fixed bottom action bar with WhatsApp and Ubicacion, only on small screens.
+- Demo cards: strong photo crop, category label, benefit note, and hover lift on desktop.
