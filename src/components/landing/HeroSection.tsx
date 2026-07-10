@@ -47,8 +47,8 @@ export function HeroSection() {
               ))}
             </div>
           </div>
-          <div data-hero-line className="relative lg:pl-8">
-            <div className="absolute -left-2 top-10 hidden w-36 rounded-[24px] border border-[var(--pde-border)] bg-[var(--pde-surface)] p-4 shadow-[var(--shadow-card)] lg:block">
+          <div data-hero-card className="relative lg:pl-8">
+            <div data-hero-chip className="absolute -left-2 top-10 hidden w-36 rounded-[24px] border border-[var(--pde-border)] bg-[var(--pde-surface)] p-4 shadow-[var(--shadow-card)] lg:block">
               <QrCode className="text-[var(--pde-accent)]" size={28} />
               <p className="mt-5 font-mono text-3xl font-semibold">QR</p>
               <p className="mt-1 text-xs font-medium uppercase tracking-[0.12em] text-[var(--pde-muted)]">
