@@ -37,7 +37,12 @@ export function ButtonLink({
   ...props
 }: ButtonLinkProps) {
   const classes = `${base} ${variants[variant]} ${className}`;
-  if (href.startsWith("http")) {
+  if (
+    href.startsWith("http") ||
+    href.startsWith("#") ||
+    href.startsWith("tel:") ||
+    href.startsWith("mailto:")
+  ) {
     return (
       <a className={classes} href={href} {...props}>
         {children}

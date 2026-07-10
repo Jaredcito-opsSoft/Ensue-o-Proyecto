@@ -9,8 +9,8 @@ export function BusinessQR({ business }: { business: Business }) {
   return (
     <Card className="p-6">
       <QrCode className="text-[var(--pde-accent)]" />
-      <h2 className="mt-5 text-2xl font-semibold">QR</h2>
-      <p className="mt-3 leading-7 text-[var(--pde-muted)]">Escanea para abrir esta pagina.</p>
+      <h2 className="mt-5 text-2xl font-semibold">Comparte este negocio</h2>
+      <p className="mt-3 leading-7 text-[var(--pde-muted)]">Escanea el QR o copia el link para abrir esta pagina.</p>
       <img
         className="mt-5 rounded-2xl border border-[var(--pde-border)] bg-white p-3"
         src={`/api/qr/${business.slug}`}

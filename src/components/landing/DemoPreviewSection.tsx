@@ -2,11 +2,18 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { demoBusinesses } from "@/lib/demo-data";
 import { Reveal } from "@/components/motion/Reveal";
+import { AnimatedCards } from "@/components/motion/AnimatedCards";
 
 const routes: Record<string, string> = {
   "bella-imagen-tuxtla": "/demo/estetica",
   "sazon-coleta": "/demo/comida",
   "celfix-tuxtla": "/demo/taller",
+};
+
+const demoBenefits: Record<string, string> = {
+  "bella-imagen-tuxtla": "Servicios visuales, agenda por mensaje y fotos cuidadas.",
+  "sazon-coleta": "Menu claro para pedir sin preguntar plato por plato.",
+  "celfix-tuxtla": "Confianza tecnica, servicios claros y ubicacion directa.",
 };
 
 export function DemoPreviewSection() {
@@ -27,18 +34,24 @@ export function DemoPreviewSection() {
               Ver mini pagina real
             </Link>
           </div>
-          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+          <AnimatedCards className="mt-10 grid gap-5 lg:grid-cols-3">
             {demoBusinesses.map((business) => (
               <Link
+                data-card
                 href={routes[business.slug]}
                 key={business.id}
-                className="group overflow-hidden rounded-[28px] border border-[var(--pde-border)] bg-[var(--pde-surface)] shadow-[var(--shadow-card)]"
+                className="group overflow-hidden rounded-[30px] border border-[var(--pde-border)] bg-[var(--pde-surface)] shadow-[var(--shadow-card)] transition-transform duration-300 hover:-translate-y-1"
               >
-                <img
-                  src={business.coverImageUrl}
-                  alt={business.name}
-                  className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                />
+                <div className="relative">
+                  <img
+                    src={business.coverImageUrl}
+                    alt={business.name}
+                    className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
+                  <span className="absolute left-4 top-4 rounded-full bg-[var(--pde-surface)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em]">
+                    Demo
+                  </span>
+                </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between gap-4">
                     <div>
@@ -50,10 +63,13 @@ export function DemoPreviewSection() {
                     <ArrowUpRight className="text-[var(--pde-accent)]" />
                   </div>
                   <p className="mt-4 leading-7 text-[var(--pde-muted)]">{business.shortDescription}</p>
+                  <p className="mt-4 rounded-2xl bg-[var(--pde-paper-strong)] p-4 text-sm font-semibold leading-6">
+                    {demoBenefits[business.slug]}
+                  </p>
                 </div>
               </Link>
             ))}
-          </div>
+          </AnimatedCards>
         </div>
       </section>
     </Reveal>

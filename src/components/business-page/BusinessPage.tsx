@@ -8,6 +8,7 @@ import { BusinessItems } from "./BusinessItems";
 import { BusinessLocation } from "./BusinessLocation";
 import { BusinessQR } from "./BusinessQR";
 import { BusinessSocials } from "./BusinessSocials";
+import { MobileActionBar } from "./MobileActionBar";
 
 export function BusinessPage({ business }: { business: Business }) {
   return (
@@ -25,6 +26,7 @@ export function BusinessPage({ business }: { business: Business }) {
         </div>
       </section>
       <BusinessFooter business={business} />
+      <MobileActionBar business={business} />
     </main>
   );
 }
