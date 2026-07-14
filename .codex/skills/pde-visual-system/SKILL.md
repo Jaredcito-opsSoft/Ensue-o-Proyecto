@@ -21,7 +21,7 @@ The product should feel like a polished digital business card studio for local b
 
 Target reaction: "Si, quiero que mi negocio se vea asi."
 
-The visual language is clean SaaS for local businesses: direct, trustworthy, product-like, mobile-first, and visually simple enough to feel modern instead of institutional. Color psychology priority: trust first, clarity second, warmth third.
+The visual language is glass-minimal SaaS for local businesses: direct, trustworthy, product-like, mobile-first, and visually simple enough to feel modern instead of institutional. Color psychology priority: trust first, clarity second, warmth third.
 
 ## Non-Negotiables
 
@@ -48,30 +48,33 @@ Do not copy brand colors, layouts, slogans, or signature animations from these r
 
 ## Palette
 
-- Paper: `#F7F9FC`
-- Paper strong: `#EEF3F8`
+- Paper: `#F6F8FB`
+- Paper strong: `#EAF1F8`
 - Surface: `#FFFFFF`
-- Surface strong: `#EDF2FF`
-- Ink: `#101828`
-- Muted: `#667085`
-- Soft: `#98A2B3`
-- Border: `#D9E2EC`
+- Surface strong: `#E9F7F5`
+- Glass: `rgba(255, 255, 255, 0.72)`
+- Glass dark: `rgba(255, 255, 255, 0.08)`
+- Ink: `#132033`
+- Muted: `#647084`
+- Soft: `#9AA7B8`
+- Border: `#D7E2EC`
 - Accent: `#315CF6`
 - Accent strong: `#2447C7`
-- Earth/warm local: `#B85C38`
+- Teal: `#25B7A5`
+- Coral: `#E58B6B`
+- Earth/warm local: `#C66F54`
 - Blue: `#315CF6`
-- Warm accent: `#F4B24F`
 - Navy: `#17213A`
 
-Accent is scarce. Use blue as the primary action color because it communicates trust, stability, and professionalism. Use warm amber only as a minor local-friendly accent. Most UI should stay white, cool gray, navy, and blue.
+Accent is scarce. Use blue as the primary action color because it communicates trust, stability, and professionalism. Use teal for clarity/growth cues and coral only as a small human warmth accent. Most UI should stay glass white, cool gray, navy, and blue.
 
 ## Identity Position
 
-Recommended direction: Trustworthy Local SaaS.
+Recommended direction: Glass Minimal Local SaaS.
 
 PDE should feel like a boutique studio that packages a local business into a polished, shareable page. Use the "living business card" as the signature object: mini page, catalog, WhatsApp, map, and QR in one composed artifact.
 
-Images can use black-and-white or high-contrast editorial treatment, especially in demos, but the color system should read as trustworthy SaaS rather than retro film.
+Images can use black-and-white or high-contrast editorial treatment, especially in demos. Glass surfaces should be translucent but readable: never depend on blur alone for contrast.
 
 ## Typography
 

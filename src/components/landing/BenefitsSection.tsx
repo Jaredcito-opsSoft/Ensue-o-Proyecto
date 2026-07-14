@@ -21,7 +21,7 @@ export function BenefitsSection() {
             width={1300}
             height={920}
             sizes="(min-width: 1024px) 50vw, 100vw"
-            className="h-72 w-full rounded-[30px] border border-[var(--pde-ink)] object-cover grayscale contrast-125 saturate-0 shadow-[var(--shadow-card)] sm:h-[520px]"
+            className="h-72 w-full rounded-[30px] border border-white/70 object-cover grayscale contrast-125 saturate-0 shadow-[var(--shadow-card)] sm:h-[520px]"
           />
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-earth)]">
@@ -33,8 +33,8 @@ export function BenefitsSection() {
             </h2>
             <div className="mt-8 grid gap-4">
               {benefits.map((benefit) => (
-                <div className="flex gap-3 rounded-2xl border border-[var(--pde-border)] bg-[var(--pde-surface)] p-4" key={benefit}>
-                  <CheckCircle2 className="mt-0.5 text-[var(--pde-blue)]" size={22} />
+                <div className="flex gap-3 rounded-2xl border border-white/70 bg-[var(--pde-glass)] p-4 shadow-[var(--shadow-soft)] backdrop-blur-xl" key={benefit}>
+                  <CheckCircle2 className="mt-0.5 text-[var(--pde-teal)]" size={22} />
                   <p className="text-lg font-medium">{benefit}</p>
                 </div>
               ))}

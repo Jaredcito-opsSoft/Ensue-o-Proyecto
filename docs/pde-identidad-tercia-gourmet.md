@@ -8,39 +8,43 @@ Tercia Gourmet comunica una experiencia boutique: tinta profunda, papel calido, 
 
 Para Presencia Digital Express conviene tomar esa energia, pero moverla hacia una promesa mas util y digital: una presencia compartible, clara, cercana y lista para vender por WhatsApp.
 
-## Giro Actual: Trustworthy Local SaaS
+## Giro Actual: Glass Minimal Local SaaS
 
 La direccion actual toma la estructura de una referencia SaaS limpia, pero ajusta la paleta segun psicologia de color. La lectura visual debe comunicar confianza, claridad y cercania:
 
 - Azul como confianza, estabilidad y profesionalismo.
-- Blanco y gris frio como claridad, orden y facilidad.
+- Teal como claridad, avance y sensacion de crecimiento.
+- Blanco/glass y gris frio como orden, facilidad y espacio.
 - Navy como seriedad para bloques fuertes.
-- Ambar pequeno como calidez local, no como identidad dominante.
+- Coral pequeno como calidez local, no como identidad dominante.
 - WhatsApp sigue siendo una accion, pero deja de dominar la identidad.
 
-## Identidad Recomendada: Trustworthy Local SaaS
+## Identidad Recomendada: Glass Minimal Local SaaS
 
 Una identidad para negocios que quieren verse bien sin sentirse inaccesibles. El tono debe decir: "tu negocio puede verse confiable y claro en un link", con una vibra limpia, moderna y mobile-first.
 
 ## Paleta Recomendada
 
-- Paper: `#F7F9FC`
+- Paper: `#F6F8FB`
 - Surface: `#FFFFFF`
-- Soft Surface: `#EEF3F8`
-- Ink: `#101828`
-- Muted: `#667085`
-- Line: `#D9E2EC`
+- Soft Surface: `#EAF1F8`
+- Glass: `rgba(255, 255, 255, 0.72)`
+- Ink: `#132033`
+- Muted: `#647084`
+- Line: `#D7E2EC`
 - Trust Blue: `#315CF6`
 - Trust Blue Strong: `#2447C7`
+- Teal Clarity: `#25B7A5`
 - Navy: `#17213A`
-- Warm Local: `#F4B24F`
-- Earth Note: `#B85C38`
+- Warm Local: `#E58B6B`
+- Earth Note: `#C66F54`
 
 Uso:
 
 - Paper y Soft Surface sostienen la mayoria del sitio.
 - Ink y Navy se reservan para titulares, navegacion, bandas de alto impacto y acciones de contacto.
 - Trust Blue es la accion principal: solicitar pagina, enlaces y pruebas clave.
+- Teal marca claridad, avance, checks y capacidades.
 - Warm Local aparece en detalles pequenos cuando se necesita cercania humana.
 - Line separa modulos con estructura SaaS sin hacer ruido.
 
@@ -103,6 +107,6 @@ Aplicacion:
 
 ## Decision
 
-Usar: Trustworthy Local SaaS.
+Usar: Glass Minimal Local SaaS.
 
 La marca se sostiene con superficies claras, tinta profunda, azul de confianza, modulos limpios, acciones fuertes y una tarjeta viva como firma visual.

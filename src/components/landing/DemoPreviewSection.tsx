@@ -41,7 +41,7 @@ export function DemoPreviewSection() {
                 data-card
                 href={routes[business.slug]}
                 key={business.id}
-                className="group overflow-hidden rounded-[30px] border border-[var(--pde-border)] bg-[var(--pde-surface)] shadow-[var(--shadow-card)] transition-transform duration-300 hover:-translate-y-1"
+                className="group overflow-hidden rounded-[30px] border border-white/70 bg-[var(--pde-glass)] shadow-[var(--shadow-card)] backdrop-blur-xl transition-transform duration-300 hover:-translate-y-1"
               >
                 <div className="relative">
                   <Image
@@ -52,7 +52,7 @@ export function DemoPreviewSection() {
                     sizes="(min-width: 1024px) 33vw, 100vw"
                     className="h-72 w-full object-cover grayscale contrast-125 saturate-0 transition-transform duration-500 group-hover:scale-[1.03] group-hover:grayscale-0 group-hover:saturate-100"
                   />
-                  <span className="absolute left-4 top-4 rounded-full border border-[var(--pde-border)] bg-[var(--pde-surface)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[var(--pde-accent)]">
+                  <span className="absolute left-4 top-4 rounded-full border border-white/70 bg-[var(--pde-glass)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[var(--pde-accent)] backdrop-blur-xl">
                     Demo
                   </span>
                 </div>
@@ -67,7 +67,7 @@ export function DemoPreviewSection() {
                     <ArrowUpRight className="text-[var(--pde-accent)]" />
                   </div>
                   <p className="mt-4 leading-7 text-[var(--pde-muted)]">{business.shortDescription}</p>
-                  <p className="mt-4 rounded-2xl bg-[var(--pde-paper-strong)] p-4 text-sm font-semibold leading-6">
+                  <p className="mt-4 rounded-2xl bg-[var(--pde-surface-strong)] p-4 text-sm font-semibold leading-6 text-[var(--pde-ink)]">
                     {demoBenefits[business.slug]}
                   </p>
                 </div>

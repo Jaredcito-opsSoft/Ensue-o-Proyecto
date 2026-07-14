@@ -17,7 +17,7 @@ export function HeroSection() {
         <div className="mx-auto max-w-7xl">
           <nav
             data-hero-line
-            className="flex min-h-14 items-center justify-between rounded-full border border-[var(--pde-border)] bg-[var(--pde-surface)] px-4 shadow-[var(--shadow-soft)] sm:px-5"
+            className="flex min-h-14 items-center justify-between rounded-full border border-white/70 bg-[var(--pde-glass)] px-4 shadow-[var(--shadow-soft)] backdrop-blur-xl sm:px-5"
             aria-label="Navegacion principal"
           >
             <a className="text-sm font-black uppercase tracking-[0.12em]" href="#">
@@ -37,7 +37,7 @@ export function HeroSection() {
             <div className="mx-auto max-w-5xl text-center">
               <p
                 data-hero-line
-                className="mx-auto inline-flex rounded-full border border-[var(--pde-border)] bg-[var(--pde-surface-strong)] px-3 py-1 text-xs font-black uppercase tracking-[0.14em] text-[var(--pde-accent)]"
+                className="mx-auto inline-flex rounded-full border border-white/70 bg-[var(--pde-glass)] px-3 py-1 text-xs font-black uppercase tracking-[0.14em] text-[var(--pde-accent)] shadow-[var(--shadow-soft)] backdrop-blur-xl"
               >
                 Mini paginas para negocios locales
               </p>
@@ -63,7 +63,7 @@ export function HeroSection() {
               <div data-hero-line className="mx-auto mt-7 grid max-w-2xl gap-3 text-left text-sm font-medium text-[var(--pde-muted)] sm:grid-cols-3">
               {["Sin aprender tecnologia", "Listo para QR", "Pensado para celular"].map((item) => (
                 <div className="flex items-center gap-2" key={item}>
-                  <CheckCircle2 size={17} className="text-[var(--pde-blue)]" />
+                  <CheckCircle2 size={17} className="text-[var(--pde-teal)]" />
                   {item}
                 </div>
               ))}
@@ -71,14 +71,14 @@ export function HeroSection() {
           </div>
 
             <div data-hero-card className="relative">
-              <div data-hero-chip className="absolute -left-2 top-14 z-10 hidden w-36 rounded-[24px] border border-[var(--pde-ink)] bg-[var(--pde-surface)] p-4 shadow-[var(--shadow-card)] lg:block">
-              <QrCode className="text-[var(--pde-ink)]" size={28} />
+              <div data-hero-chip className="absolute -left-2 top-14 z-10 hidden w-36 rounded-[24px] border border-white/70 bg-[var(--pde-glass)] p-4 shadow-[var(--shadow-card)] backdrop-blur-xl lg:block">
+              <QrCode className="text-[var(--pde-accent)]" size={28} />
               <p className="mt-5 font-mono text-3xl font-semibold">QR</p>
               <p className="mt-1 text-xs font-medium uppercase tracking-[0.12em] text-[var(--pde-muted)]">
                 listo para mostrador
               </p>
             </div>
-              <div className="rounded-[34px] border border-[var(--pde-ink)] bg-[var(--pde-surface)] p-2 shadow-[var(--shadow-card)] sm:p-3">
+              <div className="rounded-[34px] border border-white/70 bg-[var(--pde-glass)] p-2 shadow-[var(--shadow-card)] backdrop-blur-xl sm:p-3">
                 <div className="overflow-hidden rounded-[26px] border border-[var(--pde-border)] bg-[var(--pde-paper)]">
                 <Image
                   src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=1300&q=80"
@@ -102,11 +102,11 @@ export function HeroSection() {
                     </div>
                   </div>
                     <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-3">
-                    <div className="rounded-2xl bg-[var(--pde-surface-strong)] p-4">
+                    <div className="rounded-2xl bg-[var(--pde-surface-strong)] p-4 text-[var(--pde-ink)]">
                       <MessageCircle size={20} />
                       <p className="mt-3 text-sm font-semibold">WhatsApp</p>
                     </div>
-                    <div className="rounded-2xl bg-[var(--pde-surface-strong)] p-4 text-[var(--pde-accent)]">
+                    <div className="rounded-2xl bg-[var(--pde-surface-strong)] p-4 text-[var(--pde-teal)]">
                       <MapPin size={20} />
                       <p className="mt-3 text-sm font-semibold">Ubicacion</p>
                     </div>

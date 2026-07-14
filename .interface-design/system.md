@@ -2,9 +2,9 @@
 
 ## Direction
 
-Trustworthy Local SaaS, direct and operational. The public pages sell trust and clarity for local businesses; the admin panel stays quiet and practical.
+Glass Minimal Local SaaS, direct and operational. The public pages sell trust and clarity for local businesses; the admin panel stays quiet and practical.
 
-The public experience should feel like a modern SaaS product adapted to local businesses: simple navigation, strong type, clear modules, and a product preview that makes the offer obvious in seconds. The color psychology is trust first, clarity second, warmth third.
+The public experience should feel like a modern SaaS product adapted to local businesses: simple navigation, strong type, clear modules, glass-minimal surfaces, and a product preview that makes the offer obvious in seconds. The color psychology is trust first, clarity second, warmth third.
 
 ## Visual Rules
 
@@ -15,19 +15,22 @@ The public experience should feel like a modern SaaS product adapted to local bu
 
 ## Tokens
 
-- Paper: `#F7F9FC`
-- Paper strong: `#EEF3F8`
+- Paper: `#F6F8FB`
+- Paper strong: `#EAF1F8`
 - Surface: `#FFFFFF`
-- Surface strong: `#EDF2FF`
-- Ink: `#101828`
-- Muted: `#667085`
-- Soft: `#98A2B3`
-- Border: `#D9E2EC`
+- Surface strong: `#E9F7F5`
+- Glass: `rgba(255, 255, 255, 0.72)`
+- Glass dark: `rgba(255, 255, 255, 0.08)`
+- Ink: `#132033`
+- Muted: `#647084`
+- Soft: `#9AA7B8`
+- Border: `#D7E2EC`
 - Accent: `#315CF6`
 - Accent strong: `#2447C7`
-- Earth/warm local: `#B85C38`
+- Teal: `#25B7A5`
+- Coral: `#E58B6B`
+- Earth/warm local: `#C66F54`
 - Blue: `#315CF6`
-- Warm accent: `#F4B24F`
 - Navy: `#17213A`
 
 ## Visual Direction Board
@@ -41,7 +44,7 @@ Borrow the feeling of a boutique local brand, not the restaurant identity itself
 Useful cues:
 
 - Warm paper surfaces paired with deep ink.
-- Blue used as the primary product/action color; amber used only as a restrained warmth accent.
+- Blue used as the primary product/action color; teal used for clarity/growth; coral used only as a restrained warmth accent.
 - Editorial photography and large confident headings.
 - Small ceremonial details such as diamonds, fine rules, labels, and composed section breaks.
 - Service language that feels personal and complete.

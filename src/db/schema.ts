@@ -54,7 +54,7 @@ export const businesses = pgTable(
     logoUrl: text("logo_url"),
     coverImageUrl: text("cover_image_url"),
     primaryColor: text("primary_color").notNull().default("#315CF6"),
-    accentColor: text("accent_color").notNull().default("#F4B24F"),
+    accentColor: text("accent_color").notNull().default("#25B7A5"),
     status: businessStatusEnum("status").notNull().default("draft"),
     serviceStatus: serviceStatusEnum("service_status").notNull().default("new"),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow().notNull(),

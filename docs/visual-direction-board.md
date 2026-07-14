@@ -25,8 +25,9 @@ The owner should think: "Si, quiero que mi negocio se vea asi."
 - No glow-heavy effects.
 - No decorative blobs.
 - No generic SaaS hero.
-- Use cool white surfaces, strong type, real photography, subtle borders, pale blue-gray separators, and blue as the trust/action color.
-- Avoid WhatsApp-green branding. The feature can say WhatsApp, but the palette should feel like a trustworthy SaaS product: navy, blue, white, light gray, and a tiny warm amber accent.
+- Use cool white/glass surfaces, strong type, real photography, subtle borders, pale blue-gray separators, and blue as the trust/action color.
+- Avoid WhatsApp-green branding. The feature can say WhatsApp, but the palette should feel like a glass-minimal SaaS product: navy, blue, teal, cool white, light gray, and a tiny coral warmth accent.
+- Glassmorphism should be minimal: translucent white surfaces, visible borders, backdrop blur, and enough contrast for text.
 - Use the Modern Clean SaaS reference for structure: simple top nav, one decisive hero sentence, clear CTA pair, product preview, and rows/sections that explain problem and solution without visual clutter.
 - Use motion to make the page feel alive, not to distract.
 

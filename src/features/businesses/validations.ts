@@ -27,7 +27,7 @@ export const businessSchema = z.object({
   logoUrl: optionalUrl,
   coverImageUrl: optionalUrl,
   primaryColor: z.string().trim().default("#315CF6"),
-  accentColor: z.string().trim().default("#F4B24F"),
+  accentColor: z.string().trim().default("#25B7A5"),
   status: z.enum(["draft", "published", "hidden"]),
   serviceStatus: z.enum([
     "new",

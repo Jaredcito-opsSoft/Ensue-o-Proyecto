@@ -14,11 +14,11 @@ const solutions = [
 export function SolutionSection() {
   return (
     <Reveal>
-      <section className="bg-[var(--pde-ink)] px-4 py-16 text-white sm:px-6 lg:px-10">
+      <section className="bg-[var(--pde-plum)] px-4 py-16 text-white sm:px-6 lg:px-10">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-accent)]">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-teal)]">
               Solucion
             </p>
               <h2 className="mt-4 text-balance text-4xl font-semibold leading-[0.98] sm:text-6xl">
@@ -29,10 +29,10 @@ export function SolutionSection() {
               Como en una herramienta SaaS limpia: cada modulo tiene una tarea. Nada estorba, todo apunta a que el cliente vea, decida y escriba.
             </p>
           </div>
-          <AnimatedCards className="mt-10 grid gap-px overflow-hidden rounded-[28px] border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
+          <AnimatedCards className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {solutions.map(({ icon: Icon, title, text }) => (
-              <div data-card key={title} className="bg-[var(--pde-ink)] p-7">
-                <Icon size={26} className="text-[var(--pde-accent)]" />
+              <div data-card key={title} className="rounded-[24px] border border-white/10 bg-[var(--pde-glass-dark)] p-7 backdrop-blur-xl">
+                <Icon size={26} className="text-[var(--pde-teal)]" />
                 <h3 className="mt-8 text-2xl font-semibold">{title}</h3>
                 <p className="mt-3 leading-7 text-white/70">{text}</p>
               </div>

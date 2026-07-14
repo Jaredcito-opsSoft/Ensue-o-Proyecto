@@ -26,7 +26,7 @@ const packages = [
 export function PackagesSection() {
   return (
     <Reveal>
-      <section id="paquetes" className="bg-[var(--pde-paper-strong)] px-4 py-16 sm:px-6 lg:px-10">
+      <section id="paquetes" className="px-4 py-16 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-7xl">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-earth)]">
             Paquetes piloto

@@ -22,7 +22,7 @@ export function ProblemSection() {
     <Reveal>
       <section className="px-4 py-16 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-8 rounded-[32px] border border-[var(--pde-border)] bg-[var(--pde-surface)] p-5 shadow-[var(--shadow-card)] sm:p-8 lg:grid-cols-[0.8fr_1.2fr] lg:p-10">
+          <div className="grid gap-8 rounded-[32px] border border-white/70 bg-[var(--pde-glass)] p-5 shadow-[var(--shadow-card)] backdrop-blur-xl sm:p-8 lg:grid-cols-[0.8fr_1.2fr] lg:p-10">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-earth)]">
                 Problema real
@@ -38,7 +38,7 @@ export function ProblemSection() {
                   key={problem.title}
                   className="grid gap-4 py-6 sm:grid-cols-[auto_1fr] sm:items-start"
                 >
-                  <div className="grid h-11 w-11 place-items-center rounded-full border border-[var(--pde-border)] bg-[var(--pde-surface-strong)] text-[var(--pde-accent)]">
+                  <div className="grid h-11 w-11 place-items-center rounded-full border border-white/70 bg-[var(--pde-surface-strong)] text-[var(--pde-teal)]">
                     <MessageCircleQuestion size={20} />
                   </div>
                   <div>

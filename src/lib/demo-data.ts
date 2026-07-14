@@ -17,7 +17,7 @@ export const demoBusinesses: Business[] = [
     coverImageUrl:
       "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1400&q=80",
     primaryColor: "#315CF6",
-    accentColor: "#F4B24F",
+    accentColor: "#25B7A5",
     status: "published",
     serviceStatus: "delivered",
     hours: [
@@ -54,7 +54,7 @@ export const demoBusinesses: Business[] = [
     coverImageUrl:
       "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80",
     primaryColor: "#315CF6",
-    accentColor: "#F4B24F",
+    accentColor: "#E58B6B",
     status: "published",
     serviceStatus: "delivered",
     hours: [
@@ -90,7 +90,7 @@ export const demoBusinesses: Business[] = [
     coverImageUrl:
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80",
     primaryColor: "#17213A",
-    accentColor: "#315CF6",
+    accentColor: "#25B7A5",
     status: "published",
     serviceStatus: "delivered",
     hours: [
