@@ -15,7 +15,7 @@ export function MobileActionBar({ business }: { business: Business }) {
         <MessageCircle size={17} /> WhatsApp
       </a>
       <a
-        className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-[var(--pde-border)] bg-[var(--pde-accent)] px-4 text-sm font-semibold text-[var(--pde-ink)]"
+        className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-[var(--pde-border)] bg-[var(--pde-surface-strong)] px-4 text-sm font-semibold text-[var(--pde-accent)]"
         href={getMapsHref(business.address, business.mapsUrl)}
       >
         <MapPin size={17} /> Ubicacion

@@ -37,7 +37,7 @@ export function HeroSection() {
             <div className="mx-auto max-w-5xl text-center">
               <p
                 data-hero-line
-                className="mx-auto inline-flex rounded-full border border-[var(--pde-ink)] bg-[var(--pde-brass)] px-3 py-1 text-xs font-black uppercase tracking-[0.14em] text-[var(--pde-ink)]"
+                className="mx-auto inline-flex rounded-full border border-[var(--pde-border)] bg-[var(--pde-surface-strong)] px-3 py-1 text-xs font-black uppercase tracking-[0.14em] text-[var(--pde-accent)]"
               >
                 Mini paginas para negocios locales
               </p>
@@ -106,7 +106,7 @@ export function HeroSection() {
                       <MessageCircle size={20} />
                       <p className="mt-3 text-sm font-semibold">WhatsApp</p>
                     </div>
-                    <div className="rounded-2xl bg-[var(--pde-brass)] p-4 text-[var(--pde-ink)]">
+                    <div className="rounded-2xl bg-[var(--pde-surface-strong)] p-4 text-[var(--pde-accent)]">
                       <MapPin size={20} />
                       <p className="mt-3 text-sm font-semibold">Ubicacion</p>
                     </div>

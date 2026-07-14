@@ -52,7 +52,7 @@ export function DemoPreviewSection() {
                     sizes="(min-width: 1024px) 33vw, 100vw"
                     className="h-72 w-full object-cover grayscale contrast-125 saturate-0 transition-transform duration-500 group-hover:scale-[1.03] group-hover:grayscale-0 group-hover:saturate-100"
                   />
-                  <span className="absolute left-4 top-4 rounded-full border border-[var(--pde-ink)] bg-[var(--pde-brass)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[var(--pde-ink)]">
+                  <span className="absolute left-4 top-4 rounded-full border border-[var(--pde-border)] bg-[var(--pde-surface)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[var(--pde-accent)]">
                     Demo
                   </span>
                 </div>

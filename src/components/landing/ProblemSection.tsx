@@ -38,7 +38,7 @@ export function ProblemSection() {
                   key={problem.title}
                   className="grid gap-4 py-6 sm:grid-cols-[auto_1fr] sm:items-start"
                 >
-                  <div className="grid h-11 w-11 place-items-center rounded-full border border-[var(--pde-border)] bg-[var(--pde-accent)] text-[var(--pde-ink)]">
+                  <div className="grid h-11 w-11 place-items-center rounded-full border border-[var(--pde-border)] bg-[var(--pde-surface-strong)] text-[var(--pde-accent)]">
                     <MessageCircleQuestion size={20} />
                   </div>
                   <div>

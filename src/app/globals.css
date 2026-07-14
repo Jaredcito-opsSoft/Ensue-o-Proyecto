@@ -35,7 +35,7 @@ html {
 
 ::selection {
   background: var(--pde-accent);
-  color: var(--pde-ink);
+  color: white;
 }
 
 img {

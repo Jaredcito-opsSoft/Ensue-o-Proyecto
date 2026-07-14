@@ -8,35 +8,40 @@ Tercia Gourmet comunica una experiencia boutique: tinta profunda, papel calido, 
 
 Para Presencia Digital Express conviene tomar esa energia, pero moverla hacia una promesa mas util y digital: una presencia compartible, clara, cercana y lista para vender por WhatsApp.
 
-## Giro Actual: Clean SaaS
+## Giro Actual: Trustworthy Local SaaS
 
-La direccion actual toma la estructura y colores de una referencia SaaS limpia. La lectura visual debe ser mas moderna y producto que retro:
+La direccion actual toma la estructura de una referencia SaaS limpia, pero ajusta la paleta segun psicologia de color. La lectura visual debe comunicar confianza, claridad y cercania:
 
-- Blanco y negro como base.
-- Gris claro y azul grisaceo para estructura.
-- Amarillo como acento puntual de producto.
+- Azul como confianza, estabilidad y profesionalismo.
+- Blanco y gris frio como claridad, orden y facilidad.
+- Navy como seriedad para bloques fuertes.
+- Ambar pequeno como calidez local, no como identidad dominante.
 - WhatsApp sigue siendo una accion, pero deja de dominar la identidad.
 
-## Identidad Recomendada: Clean SaaS Local
+## Identidad Recomendada: Trustworthy Local SaaS
 
-Una identidad para negocios que quieren verse bien sin sentirse inaccesibles. El tono debe decir: "tu negocio puede verse asi de claro en un link", con una vibra limpia, moderna y mobile-first.
+Una identidad para negocios que quieren verse bien sin sentirse inaccesibles. El tono debe decir: "tu negocio puede verse confiable y claro en un link", con una vibra limpia, moderna y mobile-first.
 
 ## Paleta Recomendada
 
-- Paper: `#FFFFFF`
-- Soft Surface: `#F1F1F1`
-- Ink: `#000000`
-- Muted: `#5F6368`
-- Line: `#DBE0EC`
-- Accent Yellow: `#FFF546`
-- Accent Yellow Strong: `#E5DB24`
-- Olive Text: `#66640F`
+- Paper: `#F7F9FC`
+- Surface: `#FFFFFF`
+- Soft Surface: `#EEF3F8`
+- Ink: `#101828`
+- Muted: `#667085`
+- Line: `#D9E2EC`
+- Trust Blue: `#315CF6`
+- Trust Blue Strong: `#2447C7`
+- Navy: `#17213A`
+- Warm Local: `#F4B24F`
+- Earth Note: `#B85C38`
 
 Uso:
 
 - Paper y Soft Surface sostienen la mayoria del sitio.
-- Ink se reserva para titulares, navegacion, bandas de alto impacto y acciones de contacto.
-- Accent Yellow funciona como acento de producto: CTA, chips, puntos y estados destacados.
+- Ink y Navy se reservan para titulares, navegacion, bandas de alto impacto y acciones de contacto.
+- Trust Blue es la accion principal: solicitar pagina, enlaces y pruebas clave.
+- Warm Local aparece en detalles pequenos cuando se necesita cercania humana.
 - Line separa modulos con estructura SaaS sin hacer ruido.
 
 ## Que Tomamos De Tercia
@@ -54,7 +59,7 @@ Uso:
 - No abusar de mayusculas espaciadas; deben sentirse como etiquetas, no como voz principal.
 - No convertir el sitio en una pagina de lujo gastronomico.
 - No usar verde institucional o verde WhatsApp como identidad.
-- No regresar a rojo poster, azul petroleo o ciruela salvo que se apruebe un frente retro.
+- No usar amarillo como color dominante; puede sentirse llamativo pero menos confiable para este producto.
 
 ## Motivo Visual
 
@@ -98,6 +103,6 @@ Aplicacion:
 
 ## Decision
 
-Usar: Clean SaaS Local.
+Usar: Trustworthy Local SaaS.
 
-La marca se sostiene con superficies blancas, tinta negra, acento amarillo escaso, modulos claros, acciones fuertes y una tarjeta viva como firma visual.
+La marca se sostiene con superficies claras, tinta profunda, azul de confianza, modulos limpios, acciones fuertes y una tarjeta viva como firma visual.

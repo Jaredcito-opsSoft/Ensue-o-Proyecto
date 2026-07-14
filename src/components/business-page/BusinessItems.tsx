@@ -44,7 +44,7 @@ export function BusinessItems({ business }: { business: Business }) {
                 </div>
                 <p className="mt-4 leading-7 text-[var(--pde-muted)]">{item.description}</p>
                 {item.isFeatured ? (
-                  <p className="mt-5 inline-flex rounded-full border border-[var(--pde-border)] bg-[var(--pde-accent)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[var(--pde-ink)]">
+                  <p className="mt-5 inline-flex rounded-full border border-[var(--pde-border)] bg-[var(--pde-surface-strong)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[var(--pde-accent)]">
                     Destacado
                   </p>
                 ) : null}

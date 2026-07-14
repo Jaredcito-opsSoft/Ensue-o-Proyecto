@@ -1,19 +1,19 @@
 :root {
-  --pde-paper: #ffffff;
-  --pde-paper-strong: #f1f1f1;
+  --pde-paper: #f7f9fc;
+  --pde-paper-strong: #eef3f8;
   --pde-surface: #ffffff;
-  --pde-surface-strong: #f1f1f1;
-  --pde-ink: #000000;
-  --pde-muted: #5f6368;
-  --pde-soft: #8a8f98;
-  --pde-border: #dbe0ec;
-  --pde-accent: #fff546;
-  --pde-accent-strong: #e5db24;
-  --pde-earth: #66640f;
-  --pde-blue: #000000;
-  --pde-brass: #fff546;
-  --pde-plum: #dbe0ec;
-  --pde-success: #000000;
-  --shadow-soft: 0 12px 28px rgba(0, 0, 0, 0.08);
-  --shadow-card: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 18px 38px rgba(0, 0, 0, 0.08);
+  --pde-surface-strong: #edf2ff;
+  --pde-ink: #101828;
+  --pde-muted: #667085;
+  --pde-soft: #98a2b3;
+  --pde-border: #d9e2ec;
+  --pde-accent: #315cf6;
+  --pde-accent-strong: #2447c7;
+  --pde-earth: #b85c38;
+  --pde-blue: #315cf6;
+  --pde-brass: #f4b24f;
+  --pde-plum: #17213a;
+  --pde-success: #168a6a;
+  --shadow-soft: 0 12px 28px rgba(16, 24, 40, 0.08);
+  --shadow-card: 0 0 0 1px rgba(16, 24, 40, 0.04), 0 18px 38px rgba(16, 24, 40, 0.08);
 }
