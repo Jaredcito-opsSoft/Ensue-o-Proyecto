@@ -8,13 +8,13 @@ import { ExpandableDemoGrid } from "@/components/landing/ExpandableDemoGrid";
 
 const routes: Record<string, string> = {
   "bella-imagen-tuxtla": "/demo/estetica",
-  "sazon-coleta": "/demo/comida",
+  "sazon-coleta": "/demo/coleta",
   "celfix-tuxtla": "/demo/taller",
 };
 
 const demoBenefits: Record<string, string> = {
   "bella-imagen-tuxtla": "Belleza editorial, reserva directa y experiencia boutique.",
-  "sazon-coleta": "Menú claro para pedir sin preguntar plato por plato.",
+  "sazon-coleta": "Cocina de origen, reservas y una experiencia gastronómica completa.",
   "celfix-tuxtla": "Confianza técnica, servicios claros y ubicación directa.",
 };
 

@@ -163,6 +163,16 @@ Beauty LA demo (`/demo/estetica`):
 - Required sequence: hero, services, studio philosophy, gallery, testimonial, booking CTA, and footer.
 - Mobile retains a fixed booking action without covering the final content.
 
+Coleta demo (`/demo/coleta`, with `/demo/comida` compatibility):
+
+- This route is the gastronomic brand exception to the midnight parent landing.
+- Palette: charcoal `#0D0D0C`, ivory `#F4F1EC`, muted gold `#B79A5B`, and warm ink `#25211C`.
+- Source Serif carries the culinary manifesto and section titles; Geist handles navigation, menu notes, schedules, and actions.
+- The hero must feel cinematic and product-led, with the plated dish as the dominant first-viewport signal.
+- Required sequence: hero, tasting menu, chef story, reservations and hours, pairing experience, ambience gallery, testimonial/contact, and footer.
+- Use rectangular actions, fine borders, uppercase utility labels, and restrained gold. Do not reuse rounded PDE cards or pink accents.
+- Mobile retains a fixed reservation action and enough bottom padding to prevent overlap.
+
 Landing demo collection:
 
 - Show the first three demo pages by default.

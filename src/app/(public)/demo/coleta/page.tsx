@@ -6,6 +6,6 @@ export const metadata: Metadata = {
   description: "Cocina contemporánea en Chiapas que honra el producto, el territorio y el tiempo.",
 };
 
-export default function ComidaDemoPage() {
+export default function ColetaDemoPage() {
   return <ColetaPage />;
 }
