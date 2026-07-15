@@ -137,17 +137,30 @@ export function BeautyLaPage() {
       </section>
 
       <Reveal>
-        <section id="servicios" className="border-b border-[#1e1c19]/12 px-5 py-14 sm:px-8 lg:px-12">
+        <section id="servicios" className="border-b border-[#1e1c19]/12 bg-[#f8f4ee] px-5 py-16 sm:px-8 sm:py-20 lg:px-12">
           <div className="mx-auto max-w-[1240px]">
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-              <div><p className="text-[10px] font-semibold uppercase tracking-[0.2em]">Nuestros servicios</p><h2 className="mt-1 font-serif text-4xl sm:text-5xl">Arte. Técnica. Resultados.</h2></div>
-              <a href={bookingUrl} className="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.14em]">Ver todos los servicios <ArrowRight size={16} /></a>
+            <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.2em]"><span className="h-px w-7 bg-[#1e1c19]" /> Nuestros servicios</p>
+                <h2 className="mt-3 font-serif text-4xl leading-none sm:text-5xl">Arte. Técnica. Resultados.</h2>
+              </div>
+              <a href={bookingUrl} className="group inline-flex min-h-11 items-center gap-4 self-start border-b border-[#1e1c19]/30 text-xs font-bold uppercase tracking-[0.14em] transition-colors duration-300 hover:border-[#1e1c19] sm:self-auto">Ver todos los servicios <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" /></a>
             </div>
-            <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-              {services.map(({ name, description, image, icon: Icon }) => (
-                <article key={name} className="group overflow-hidden border border-[#1e1c19]/14 bg-[#f1ebe4] transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(47,39,31,.13)]">
-                  <div className="relative h-56 overflow-hidden"><Image src={image} alt={`Servicio de ${name}`} fill sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" /><span className="absolute -bottom-5 left-4 grid h-11 w-11 place-items-center rounded-full border border-white/60 bg-[#292621] text-white"><Icon size={18} /></span></div>
-                  <div className="p-4 pt-8"><h3 className="text-xs font-bold uppercase tracking-[0.14em]">{name}</h3><p className="mt-3 min-h-20 text-xs leading-5 text-[#5d5650]">{description}</p><a className="mt-3 inline-flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.12em]" href={bookingUrl}>Ver más <ArrowRight size={14} /></a></div>
+            <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+              {services.map(({ name, description, image, icon: Icon }, index) => (
+                <article key={name} className="group overflow-hidden border border-[#817568]/28 bg-[#fcfaf6] transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border-[#817568]/60 hover:shadow-[0_22px_44px_rgba(47,39,31,.12)]">
+                  <div className="relative h-60 overflow-hidden sm:h-64">
+                    <Image src={image} alt={`Servicio de ${name}`} fill sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
+                  </div>
+                  <div className="relative flex min-h-[230px] flex-col px-5 pb-5 pt-10">
+                    <span className="absolute -top-6 left-5 z-10 grid h-12 w-12 place-items-center rounded-full border-4 border-[#fcfaf6] bg-[#292621] text-white shadow-[0_8px_18px_rgba(30,28,25,.18)] transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-105">
+                      <Icon size={18} strokeWidth={1.7} aria-hidden />
+                    </span>
+                    <span className="absolute right-5 top-4 font-serif text-sm italic text-[#8a8076]">0{index + 1}</span>
+                    <h3 className="font-serif text-2xl leading-none">{name}</h3>
+                    <p className="mt-4 text-xs leading-5 text-[#5d5650]">{description}</p>
+                    <a className="mt-auto inline-flex items-center justify-between border-t border-[#1e1c19]/12 pt-4 text-[10px] font-bold uppercase tracking-[0.12em]" href={bookingUrl}>Conocer servicio <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-1" /></a>
+                  </div>
                 </article>
               ))}
             </div>
