@@ -42,6 +42,15 @@ export function LandingAnimations({ children }: { children: ReactNode }) {
         delay: 0.48,
         ease: "back.out(1.7)",
       });
+
+      gsap.to("[data-hero-chip]", {
+        y: -5,
+        duration: 2.8,
+        delay: 1.1,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
     },
     { scope }
   );
