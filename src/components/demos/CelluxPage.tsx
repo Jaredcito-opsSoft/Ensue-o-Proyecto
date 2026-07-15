@@ -4,15 +4,12 @@ import {
   ArrowRight,
   BadgeCheck,
   Headphones,
-  Menu,
   Plus,
-  Search,
   ShieldCheck,
-  ShoppingBag,
   Truck,
-  UserRound,
 } from "lucide-react";
 import { Reveal } from "@/components/motion/Reveal";
+import { CelluxHeroCarousel } from "@/components/demos/CelluxHeroCarousel";
 
 const contactUrl =
   "https://wa.me/529612345678?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20equipo%20en%20Cellux.";
@@ -70,49 +67,7 @@ function CelluxButton({ children, href, dark = false }: { children: ReactNode; h
 export function CelluxPage() {
   return (
     <main className="min-h-screen bg-[#f7f7f6] pb-20 text-[#0b0c0e] md:pb-0">
-      <section id="inicio" className="relative min-h-[760px] overflow-hidden bg-[#08090b] text-white lg:min-h-[700px]">
-        <Image
-          src="/images/cellux/hero-phones.png"
-          alt="Dos smartphones premium Cellux en acabado titanio"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-[68%_center] opacity-72 sm:object-[64%_center] sm:opacity-84 lg:object-center lg:opacity-100"
-        />
-        <div className="absolute inset-0 bg-black/24 lg:bg-black/8" />
-        <div className="relative mx-auto max-w-[1320px] px-5 sm:px-8 lg:px-12">
-          <nav className="flex min-h-24 items-center justify-between gap-6" aria-label="Navegación de Cellux">
-            <a href="#inicio" className="text-2xl font-bold tracking-[-0.02em]">Cellux.</a>
-            <div className="hidden items-center gap-9 text-xs font-medium text-white/78 lg:flex">
-              <a className="transition-colors hover:text-white" href="#productos">Tienda</a>
-              <a className="transition-colors hover:text-white" href="#accesorios">Accesorios</a>
-              <a className="transition-colors hover:text-white" href="#reparaciones">Reparaciones</a>
-              <a className="transition-colors hover:text-white" href="#nosotros">Nosotros</a>
-              <a className="transition-colors hover:text-white" href="#contacto">Contacto</a>
-            </div>
-            <div className="flex items-center gap-1 sm:gap-2">
-              <a className="grid h-11 w-11 place-items-center rounded-full transition-colors hover:bg-white/10" href="#productos" aria-label="Buscar productos"><Search size={21} /></a>
-              <a className="hidden h-11 w-11 place-items-center rounded-full transition-colors hover:bg-white/10 sm:grid" href={contactUrl} aria-label="Hablar con un asesor"><UserRound size={21} /></a>
-              <a className="hidden h-11 w-11 place-items-center rounded-full transition-colors hover:bg-white/10 sm:grid" href="#productos" aria-label="Ver bolsa de compra"><ShoppingBag size={20} /></a>
-              <a className="grid h-11 w-11 place-items-center rounded-full border border-white/20 transition-colors hover:bg-white/10 lg:hidden" href="#productos" aria-label="Abrir menú"><Menu size={20} /></a>
-            </div>
-          </nav>
-
-          <div className="flex min-h-[620px] items-start pb-16 pt-16 sm:pt-20 lg:min-h-[575px] lg:items-center lg:pt-0">
-            <div className="max-w-[430px]">
-              <p className="text-sm text-white/72">Tecnología que te conecta.</p>
-              <h1 className="mt-5 text-[4.15rem] font-semibold leading-[0.92] tracking-[-0.04em] sm:text-[5rem] lg:text-[5.35rem]">
-                Lo último.<br />Lo mejor.<br /><span className="text-white/46">Para ti.</span>
-              </h1>
-              <p className="mt-7 max-w-sm text-sm leading-6 text-white/72 sm:text-base">Descubre smartphones, accesorios premium y soluciones de reparación en un solo lugar.</p>
-              <div className="mt-8"><CelluxButton href="#productos">Explorar productos</CelluxButton></div>
-            </div>
-          </div>
-          <div className="absolute bottom-7 left-1/2 hidden -translate-x-1/2 items-center gap-3 lg:flex" aria-hidden="true">
-            <span className="h-[3px] w-9 rounded-full bg-white" /><span className="h-[3px] w-9 rounded-full bg-white/20" /><span className="h-[3px] w-9 rounded-full bg-white/20" /><span className="h-[3px] w-9 rounded-full bg-white/20" />
-          </div>
-        </div>
-      </section>
+      <CelluxHeroCarousel />
 
       <section id="nosotros" className="border-b border-black/10 bg-white px-5 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-[1220px] divide-y divide-black/10 py-8 sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4">

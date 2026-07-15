@@ -179,6 +179,7 @@ Cellux demo (`/demo/taller`):
 - Palette: near-black `#08090B`, white `#FFFFFF`, soft catalog gray `#EDEDEC`, and graphite `#111214`.
 - Geist carries the entire interface; hierarchy comes from weight, scale, spacing, and industrial precision rather than a display serif.
 - The hero uses a monumental unbranded flagship phone composition with clear negative space for the promise.
+- The hero is a three-scene carousel for products, repair, and accessories. It advances every 5.2 seconds, pauses on hover or focus, exposes previous/next and direct slide controls, and disables autoplay when reduced motion is requested.
 - Required sequence: product hero, trust strip, popular products, repair feature, accessories and financing, brand strip.
 - Use restrained rectangular buttons, circular icon actions, eight-pixel-or-less corners, fine black borders, and monochromatic photography.
 - Mobile retains a fixed repair quote action and enough bottom padding to prevent overlap.
