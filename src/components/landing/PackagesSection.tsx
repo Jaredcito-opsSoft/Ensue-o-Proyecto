@@ -5,16 +5,16 @@ import { AnimatedCards } from "@/components/motion/AnimatedCards";
 
 const packages = [
   {
-    name: "Basico",
-    text: "Para aparecer profesional y compartir informacion esencial.",
+    name: "Básico",
+    text: "Para aparecer profesional y compartir información esencial.",
     label: "Ideal para empezar",
-    items: ["Mini pagina", "WhatsApp", "Ubicacion", "Horarios", "QR"],
+    items: ["Mini página", "WhatsApp", "Ubicación", "Horarios", "QR"],
   },
   {
-    name: "Catalogo",
-    text: "Para negocios que necesitan mostrar productos, servicios o menu.",
+    name: "Catálogo",
+    text: "Para negocios que necesitan mostrar productos, servicios o menú.",
     label: "Cotizacion inicial",
-    items: ["Todo lo del basico", "Productos o servicios", "Precios", "Fotos", "Categorias"],
+    items: ["Todo lo del básico", "Productos o servicios", "Precios", "Fotos", "Categorías"],
   },
   {
     name: "Plus",
@@ -52,7 +52,7 @@ export function PackagesSection() {
                     </li>
                   ))}
                 </ul>
-                <ButtonLink href="#contacto" variant={index === 1 ? "primary" : "secondary"} className="mt-8 w-full">Elegir plan <ArrowRight size={16} /></ButtonLink>
+                <ButtonLink href="#contacto" variant={index === 1 ? "primary" : "secondary"} className="mt-8 w-full">Elegir este plan <ArrowRight size={16} /></ButtonLink>
               </article>
             ))}
           </AnimatedCards>

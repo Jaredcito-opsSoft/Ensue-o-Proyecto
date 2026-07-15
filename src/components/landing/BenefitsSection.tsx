@@ -4,7 +4,7 @@ import { Reveal } from "@/components/motion/Reveal";
 
 const benefits = [
   "Reduce preguntas repetidas por WhatsApp.",
-  "Da una primera impresion mas profesional.",
+  "Da una primera impresión más profesional.",
   "Permite compartir un solo link.",
   "Funciona bien desde celular.",
   "Se entrega con QR listo para usar.",
@@ -18,7 +18,7 @@ export function BenefitsSection() {
           <div className="relative overflow-hidden rounded-[28px] border border-[var(--pde-border)] shadow-[var(--shadow-card)]">
           <Image
             src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1300&q=80"
-            alt="Equipo revisando informacion de negocio local"
+            alt="Equipo revisando información de negocio local"
             width={1300}
             height={920}
             sizes="(min-width: 1024px) 50vw, 100vw"
@@ -32,12 +32,12 @@ export function BenefitsSection() {
             </p>
             <h2 className="mt-4 text-balance text-4xl font-semibold leading-[0.98] sm:text-6xl">
               Menos explicaciones sueltas.{" "}
-              <span className="font-serif italic font-normal">Mas claridad</span> para comprar.
+              <span className="font-serif italic font-normal text-[var(--pde-coral)]">Más claridad</span> para comprar.
             </h2>
             <div className="mt-8 grid gap-4">
               {benefits.map((benefit) => (
-                <div className="flex gap-3 rounded-2xl border border-[var(--pde-border)] bg-[#1c337f]/50 p-4 shadow-[var(--shadow-soft)] backdrop-blur-xl" key={benefit}>
-                  <CheckCircle2 className="mt-0.5 text-[var(--pde-coral)]" size={22} />
+                <div className="group flex gap-3 rounded-2xl border border-[var(--pde-border)] bg-[#1c337f]/50 p-4 shadow-[var(--shadow-soft)] backdrop-blur-xl transition-[transform,border-color,background-color,box-shadow] duration-300 hover:-translate-y-0.5 hover:border-[#ffb5cd]/65 hover:bg-[#ff6f9f]/15 hover:shadow-[0_14px_28px_rgba(255,111,159,0.14)]" key={benefit}>
+                  <CheckCircle2 className="mt-0.5 text-[var(--pde-coral)] transition-transform duration-300 group-hover:scale-110" size={22} />
                   <p className="text-lg font-medium">{benefit}</p>
                 </div>
               ))}

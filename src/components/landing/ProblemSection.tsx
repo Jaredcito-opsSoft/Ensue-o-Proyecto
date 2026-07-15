@@ -4,12 +4,12 @@ import { AnimatedCards } from "@/components/motion/AnimatedCards";
 
 const problems = [
   {
-    title: "La informacion esta regada",
-    text: "Horarios en una historia, catalogo en fotos, ubicacion en otro mensaje y precios por confirmar.",
+    title: "La información está dispersa",
+    text: "Horarios en una historia, catálogo en fotos, ubicación en otro mensaje y precios por confirmar.",
   },
   {
     title: "El cliente pregunta antes de decidir",
-    text: "Cuando no encuentra lo basico rapido, el negocio pierde tiempo respondiendo lo mismo.",
+    text: "Cuando no encuentra lo básico rápido, el negocio pierde tiempo respondiendo lo mismo.",
   },
   {
     title: "La primera impresion no ayuda",
@@ -36,7 +36,7 @@ export function ProblemSection() {
                 <div
                   data-card
                   key={problem.title}
-                  className="grid gap-4 py-6 sm:grid-cols-[auto_1fr] sm:items-start"
+                  className="grid gap-4 py-6 transition-transform duration-300 hover:translate-x-1 sm:grid-cols-[auto_1fr] sm:items-start"
                 >
                   <div className="grid h-11 w-11 place-items-center rounded-full border border-[var(--pde-border)] bg-[#253d91] text-[var(--pde-coral)] shadow-[var(--shadow-soft)]">
                     <MessageCircleQuestion size={20} />

@@ -1,12 +1,12 @@
 import { Reveal } from "@/components/motion/Reveal";
 
 const faqs = [
-  ["Necesito saber usar una plataforma?", "No. En el MVP el equipo configura la informacion por ti."],
-  ["El QR se puede imprimir?", "Si. El QR apunta al link publico del negocio."],
-  ["Puedo compartirlo por WhatsApp?", "Si. La pagina esta pensada para enviarse en un solo mensaje."],
-  ["Sirve si solo tengo Facebook?", "Si. La mini pagina ordena tu informacion y puede enlazar a tus redes."],
-  ["Puedo mostrar precios?", "Si. Tambien puedes usar textos como 'Desde...' o 'Cotizar'."],
-  ["Puedo pedir cambios?", "Si. El alcance piloto debe definir rondas incluidas y cambios adicionales."],
+  ["¿Necesito saber usar una plataforma?", "No. En el MVP el equipo configura la información por ti."],
+  ["¿El QR se puede imprimir?", "Sí. El QR apunta al enlace público del negocio."],
+  ["¿Puedo compartirlo por WhatsApp?", "Sí. La página está pensada para enviarse en un solo mensaje."],
+  ["¿Sirve si solo tengo Facebook?", "Sí. La mini página ordena tu información y puede enlazar a tus redes."],
+  ["¿Puedo mostrar precios?", "Sí. También puedes usar textos como ‘Desde…’ o ‘Cotizar’."],
+  ["¿Puedo pedir cambios?", "Sí. El alcance piloto debe definir rondas incluidas y cambios adicionales."],
   ["Incluye pagos o inventario?", "No en esta version. Primero validamos presencia digital."],
 ];
 

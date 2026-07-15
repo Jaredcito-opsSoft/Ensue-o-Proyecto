@@ -5,12 +5,12 @@ import { LandingAnimations } from "@/components/motion/LandingAnimations";
 import { appConfig } from "@/lib/constants";
 import { createWhatsAppLink } from "@/lib/whatsapp";
 
-const proof = ["Entrega guiada", "Diseno a tu medida", "Listo para celular"];
+const proof = ["Entrega guiada", "Diseño a tu medida", "Listo para celular"];
 
 export function HeroSection() {
   const whatsappHref = createWhatsAppLink(
     appConfig.whatsappSalesNumber,
-    "Hola, quiero una mini pagina profesional para mi negocio."
+    "Hola, quiero una mini página profesional para mi negocio."
   );
 
   return (
@@ -22,10 +22,10 @@ export function HeroSection() {
           <nav
             data-hero-line
             className="flex min-h-16 items-center justify-between rounded-2xl border border-[var(--pde-border)] bg-[#101e63]/72 px-4 shadow-[var(--shadow-soft)] backdrop-blur-xl sm:px-6"
-            aria-label="Navegacion principal"
+            aria-label="Navegación principal"
           >
             <a className="flex items-center gap-2 text-lg font-semibold" href="#inicio">
-              <Sparkles size={21} className="text-[var(--pde-coral)]" aria-hidden />
+              <Sparkles size={21} className="pde-twinkle text-[var(--pde-coral)]" aria-hidden />
               Ensueño
             </a>
             <div className="hidden items-center gap-7 text-sm font-medium text-white/82 md:flex">
@@ -45,13 +45,13 @@ export function HeroSection() {
           <div id="inicio" className="grid items-center gap-10 pt-14 lg:grid-cols-[0.88fr_1.12fr] lg:gap-12 lg:pt-20">
             <div className="relative z-10">
               <p data-hero-line className="inline-flex items-center gap-2 rounded-full border border-[#f5b9d3]/40 bg-[#a26dce]/25 px-3 py-1.5 text-xs font-semibold text-[#ffe5f0] shadow-[var(--shadow-soft)]">
-                Mini sitios web, maximo impacto <Sparkles size={13} />
+                Mini sitios web, máximo impacto <Sparkles size={13} className="pde-twinkle" />
               </p>
               <h1 className="mt-5 text-balance font-serif text-[3.35rem] leading-[0.94] text-white sm:text-7xl lg:text-[5.4rem]">
-                Paginas digitales <span className="text-[var(--pde-coral)]">hermosas</span> para negocios que quieren destacar.
+                Páginas digitales <span className="text-[var(--pde-coral)]">hermosas</span> para negocios que quieren destacar.
               </h1>
               <p data-hero-line className="mt-6 max-w-xl text-pretty text-base leading-7 text-[var(--pde-muted)] sm:text-lg sm:leading-8">
-                Convertimos la informacion de tu negocio en una pagina viva, clara y lista para inspirar confianza desde el primer toque.
+                Convertimos la información de tu negocio en una página viva, clara y lista para inspirar confianza desde el primer toque.
               </p>
               <div data-hero-line className="mt-7 flex flex-col gap-3 sm:flex-row">
                 <ButtonLink href="#demos">Ver plantillas <ArrowRight size={18} /></ButtonLink>
@@ -75,10 +75,10 @@ export function HeroSection() {
                     <span className="ml-4 hidden rounded-md bg-white/10 px-10 py-1 text-[10px] text-white/45 sm:block">ensueno.mx/florencia</span>
                   </div>
                   <div className="relative min-h-[390px] overflow-hidden p-5 sm:min-h-[460px] sm:p-7">
-                    <Image src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1100&q=85" alt="Ejemplo de una pagina para negocio local" fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover opacity-60" />
+                    <Image src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1100&q=85" alt="Ejemplo de una página para negocio local" fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover opacity-60" />
                     <div className="absolute inset-0 bg-[#162461]/65" />
-                    <div className="relative flex items-center justify-between text-xs text-white/85"><span className="font-serif text-lg">Florencia</span><span className="hidden gap-5 sm:flex"><span>Inicio</span><span>Servicios</span><span>Contacto</span></span><span className="rounded-full bg-[var(--pde-accent)] px-3 py-2 font-semibold text-[#301148]">Agenda ahora</span></div>
-                    <div className="relative mt-16 max-w-[285px] sm:mt-20"><p className="font-serif text-4xl leading-[.96] text-white sm:text-5xl">Flores que cuentan historias</p><p className="mt-4 text-sm leading-6 text-white/78">Arreglos florales unicos para cada ocasion especial.</p><span className="mt-5 inline-flex rounded-full bg-[var(--pde-accent)] px-4 py-2.5 text-xs font-semibold text-[#301148]">Ver arreglos</span></div>
+                    <div className="relative flex items-center justify-between text-xs text-white/85"><span className="font-serif text-lg">Florencia</span><span className="hidden gap-5 sm:flex"><span>Inicio</span><span>Servicios</span><span>Contacto</span></span><span className="rounded-full border border-[#ffc2d6]/60 bg-[#ff6f9f]/35 px-3 py-2 font-semibold text-white backdrop-blur-xl">Agenda ahora</span></div>
+                    <div className="relative mt-16 max-w-[285px] sm:mt-20"><p className="font-serif text-4xl leading-[.96] text-white sm:text-5xl">Flores que cuentan historias</p><p className="mt-4 text-sm leading-6 text-white/78">Arreglos florales únicos para cada ocasión especial.</p><span className="mt-5 inline-flex rounded-full border border-[#ffc2d6]/60 bg-[#ff6f9f]/35 px-4 py-2.5 text-xs font-semibold text-white backdrop-blur-xl">Ver arreglos</span></div>
                     <div className="relative mt-10 grid grid-cols-3 gap-2"><div className="rounded-xl border border-white/20 bg-[#293a85]/55 p-3 text-xs text-white/82">Arreglos<br /><strong className="text-white">Personalizados</strong></div><div className="rounded-xl border border-white/20 bg-[#293a85]/55 p-3 text-xs text-white/82">Entrega<br /><strong className="text-white">a domicilio</strong></div><div className="rounded-xl border border-white/20 bg-[#293a85]/55 p-3 text-xs text-white/82">Eventos<br /><strong className="text-white">especiales</strong></div></div>
                   </div>
                 </div>

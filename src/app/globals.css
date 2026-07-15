@@ -50,3 +50,25 @@ img {
 .text-pretty {
   text-wrap: pretty;
 }
+
+@keyframes pde-twinkle {
+  0%,
+  100% {
+    opacity: 0.72;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+.pde-twinkle {
+  animation: pde-twinkle 2.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pde-twinkle {
+    animation: none;
+  }
+}

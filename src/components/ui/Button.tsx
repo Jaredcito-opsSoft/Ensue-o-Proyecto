@@ -5,15 +5,15 @@ type ButtonVariant = "primary" | "secondary" | "ghost" | "dark";
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-    "bg-[var(--pde-accent)] text-[#251049] shadow-[var(--shadow-soft)] hover:-translate-y-0.5 hover:bg-[var(--pde-accent-strong)] hover:text-white",
+    "border border-[#ffc2d6]/70 bg-[#ff6f9f]/28 text-white shadow-[0_12px_28px_rgba(255,111,159,0.2)] backdrop-blur-xl hover:-translate-y-0.5 hover:border-[#ffd0df] hover:bg-[#ff6f9f]/48 hover:shadow-[0_16px_34px_rgba(255,111,159,0.32)]",
   secondary:
-    "border border-[var(--pde-border)] bg-white/10 text-[var(--pde-ink)] shadow-[var(--shadow-soft)] backdrop-blur-xl hover:-translate-y-0.5 hover:border-[var(--pde-coral)] hover:bg-white/18",
-  ghost: "text-[var(--pde-ink)] hover:bg-white/10",
-  dark: "bg-[#061243] text-white hover:-translate-y-0.5 hover:bg-[#0b236c]",
+    "border border-[#d8c6ff]/38 bg-[#c49eff]/12 text-[var(--pde-ink)] shadow-[var(--shadow-soft)] backdrop-blur-xl hover:-translate-y-0.5 hover:border-[#ffb5cd]/70 hover:bg-[#ff6f9f]/20",
+  ghost: "text-[var(--pde-ink)] hover:bg-[#ff6f9f]/12",
+  dark: "border border-[#ffbad1]/35 bg-[#192b72]/72 text-white backdrop-blur-xl hover:-translate-y-0.5 hover:border-[#ffb5cd]/70 hover:bg-[#ff6f9f]/22",
 };
 
 const base =
-  "inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-[background-color,border-color,transform,color,box-shadow] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--pde-accent)] active:scale-[0.98]";
+  "inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-[background-color,border-color,transform,color,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ffb5cd] active:scale-[0.98]";
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: ButtonVariant;

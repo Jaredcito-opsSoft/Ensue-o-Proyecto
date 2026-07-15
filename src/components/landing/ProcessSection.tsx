@@ -4,15 +4,15 @@ import { AnimatedCards } from "@/components/motion/AnimatedCards";
 
 const steps = [
   {
-    title: "Nos mandas la informacion",
+    title: "Nos mandas la información",
     text: "Fotos, horarios, servicios y datos de contacto en el formato que ya tengas.",
   },
   {
     title: "Ordenamos el mensaje",
-    text: "Convertimos lo disperso en una estructura clara para que el cliente entienda rapido.",
+    text: "Convertimos lo disperso en una estructura clara para que el cliente entienda rápido.",
   },
   {
-    title: "Publicamos la mini pagina",
+    title: "Publicamos la mini página",
     text: "Creamos el link, revisamos mobile y dejamos las acciones principales visibles.",
   },
   {
@@ -44,11 +44,11 @@ export function ProcessSection() {
               <div
                 data-card
                 key={step.title}
-                className="rounded-[20px] border border-[var(--pde-border)] bg-[#1c337f]/55 p-6 shadow-[var(--shadow-card)] backdrop-blur-xl"
+                className="group rounded-[20px] border border-[var(--pde-border)] bg-[#1c337f]/55 p-6 shadow-[var(--shadow-card)] backdrop-blur-xl transition-[transform,border-color,background-color] duration-300 hover:-translate-y-1 hover:border-[#ffb5cd]/65 hover:bg-[#ff6f9f]/14"
               >
                 <div className="flex items-center justify-between">
                   <p className="grid h-8 w-8 place-items-center rounded-full border border-[#f1b3d1]/60 font-mono text-sm text-[var(--pde-coral)]">{index + 1}</p>
-                  <CheckCircle2 className="text-[var(--pde-teal)]" size={20} />
+                  <CheckCircle2 className="text-[var(--pde-teal)] transition-transform duration-300 group-hover:scale-110" size={20} />
                 </div>
                 <h3 className="mt-8 text-2xl font-semibold leading-7">{step.title}</h3>
                 <p className="mt-3 leading-7 text-[var(--pde-muted)]">{step.text}</p>

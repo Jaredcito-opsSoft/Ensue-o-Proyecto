@@ -13,8 +13,8 @@ const routes: Record<string, string> = {
 
 const demoBenefits: Record<string, string> = {
   "bella-imagen-tuxtla": "Servicios visuales, agenda por mensaje y fotos cuidadas.",
-  "sazon-coleta": "Menu claro para pedir sin preguntar plato por plato.",
-  "celfix-tuxtla": "Confianza tecnica, servicios claros y ubicacion directa.",
+  "sazon-coleta": "Menú claro para pedir sin preguntar plato por plato.",
+  "celfix-tuxtla": "Confianza técnica, servicios claros y ubicación directa.",
 };
 
 export function DemoPreviewSection() {
@@ -28,11 +28,11 @@ export function DemoPreviewSection() {
                 Demos
               </p>
               <h2 className="mt-4 text-balance text-4xl font-semibold tracking-[-0.02em] sm:text-5xl">
-                Tres nichos para validar rapido.
+                Tres nichos para validar rápido.
               </h2>
             </div>
             <Link className="inline-flex min-h-11 items-center gap-2 rounded-full border border-[var(--pde-border)] bg-[#283e92]/60 px-4 py-2 font-semibold text-white shadow-[var(--shadow-soft)] backdrop-blur-xl transition-transform duration-200 hover:-translate-y-0.5" href="/negocio/bella-imagen-tuxtla">
-              Ver mini pagina real <ArrowUpRight size={16} />
+              Ver una página real <ArrowUpRight size={16} />
             </Link>
           </div>
           <AnimatedCards className="mt-10 grid gap-5 lg:grid-cols-3">
@@ -41,7 +41,7 @@ export function DemoPreviewSection() {
                 data-card
                 href={routes[business.slug]}
                 key={business.id}
-                className="group overflow-hidden rounded-[24px] border border-[var(--pde-border)] bg-[#1d347f]/64 shadow-[var(--shadow-card)] backdrop-blur-xl transition-transform duration-300 hover:-translate-y-1"
+                className="group overflow-hidden rounded-[24px] border border-[var(--pde-border)] bg-[#1d347f]/64 shadow-[var(--shadow-card)] backdrop-blur-xl transition-[transform,border-color,box-shadow] duration-300 hover:-translate-y-1 hover:border-[#ffb5cd]/65 hover:shadow-[0_20px_42px_rgba(255,111,159,0.16)]"
               >
                 <div className="relative">
                   <Image
@@ -64,7 +64,7 @@ export function DemoPreviewSection() {
                       </p>
                       <h3 className="mt-2 text-2xl font-semibold">{business.name}</h3>
                     </div>
-                    <ArrowUpRight className="text-[var(--pde-accent)]" />
+                    <ArrowUpRight className="text-[var(--pde-accent)] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
                   </div>
                   <p className="mt-4 leading-7 text-[var(--pde-muted)]">{business.shortDescription}</p>
                   <p className="mt-4 rounded-2xl border border-white/15 bg-white/8 p-4 text-sm font-semibold leading-6 text-white/90">
