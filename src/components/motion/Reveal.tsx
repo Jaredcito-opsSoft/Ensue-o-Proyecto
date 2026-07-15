@@ -24,6 +24,8 @@ export function Reveal({ children, className = "" }: { children: ReactNode; clas
           y: 0,
           duration: 0.7,
           ease: "power3.out",
+          // Content stays readable before ScrollTrigger observes it.
+          immediateRender: false,
           scrollTrigger: {
             trigger: ref.current,
             start: "top 86%",

@@ -14,11 +14,11 @@ const solutions = [
 export function SolutionSection() {
   return (
     <Reveal>
-      <section className="bg-[var(--pde-plum)] px-4 py-16 text-white sm:px-6 lg:px-10">
+      <section id="solucion" className="relative my-6 overflow-hidden border-y border-[var(--pde-border)] bg-[#0a1a59] px-4 py-16 text-white sm:px-6 lg:px-20">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-teal)]">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-coral)]">
               Solucion
             </p>
               <h2 className="mt-4 text-balance text-4xl font-semibold leading-[0.98] sm:text-6xl">
@@ -31,8 +31,8 @@ export function SolutionSection() {
           </div>
           <AnimatedCards className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {solutions.map(({ icon: Icon, title, text }) => (
-              <div data-card key={title} className="rounded-[24px] border border-white/10 bg-[var(--pde-glass-dark)] p-7 backdrop-blur-xl">
-                <Icon size={26} className="text-[var(--pde-teal)]" />
+              <div data-card key={title} className="rounded-[20px] border border-[var(--pde-border)] bg-[#243a8e]/50 p-6 backdrop-blur-xl transition-transform duration-300 hover:-translate-y-1">
+                <Icon size={26} className="text-[var(--pde-coral)]" />
                 <h3 className="mt-8 text-2xl font-semibold">{title}</h3>
                 <p className="mt-3 leading-7 text-white/70">{text}</p>
               </div>

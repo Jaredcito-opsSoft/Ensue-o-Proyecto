@@ -20,6 +20,7 @@ body {
   color: var(--foreground);
   font-family: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
   overflow-x: hidden;
+  background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 90H180M90 0V180' stroke='%23abb7ff' stroke-opacity='.045' stroke-width='1'/%3E%3C/svg%3E");
 }
 
 h1,
@@ -34,8 +35,8 @@ html {
 }
 
 ::selection {
-  background: var(--pde-accent);
-  color: white;
+  background: #ff6f9f;
+  color: #07164b;
 }
 
 img {

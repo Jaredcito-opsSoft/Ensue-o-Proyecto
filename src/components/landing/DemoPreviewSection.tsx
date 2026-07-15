@@ -24,14 +24,14 @@ export function DemoPreviewSection() {
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-teal)]">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-coral)]">
                 Demos
               </p>
               <h2 className="mt-4 text-balance text-4xl font-semibold tracking-[-0.02em] sm:text-5xl">
                 Tres nichos para validar rapido.
               </h2>
             </div>
-            <Link className="inline-flex min-h-11 items-center gap-2 rounded-full border border-white/70 bg-[var(--pde-glass)] px-4 py-2 font-semibold text-[var(--pde-accent)] shadow-[var(--shadow-soft)] backdrop-blur-xl transition-transform duration-200 hover:-translate-y-0.5" href="/negocio/bella-imagen-tuxtla">
+            <Link className="inline-flex min-h-11 items-center gap-2 rounded-full border border-[var(--pde-border)] bg-[#283e92]/60 px-4 py-2 font-semibold text-white shadow-[var(--shadow-soft)] backdrop-blur-xl transition-transform duration-200 hover:-translate-y-0.5" href="/negocio/bella-imagen-tuxtla">
               Ver mini pagina real <ArrowUpRight size={16} />
             </Link>
           </div>
@@ -41,7 +41,7 @@ export function DemoPreviewSection() {
                 data-card
                 href={routes[business.slug]}
                 key={business.id}
-                className="group overflow-hidden rounded-[30px] border border-white/70 bg-[var(--pde-glass)] shadow-[var(--shadow-card)] backdrop-blur-xl transition-transform duration-300 hover:-translate-y-1"
+                className="group overflow-hidden rounded-[24px] border border-[var(--pde-border)] bg-[#1d347f]/64 shadow-[var(--shadow-card)] backdrop-blur-xl transition-transform duration-300 hover:-translate-y-1"
               >
                 <div className="relative">
                   <Image
@@ -50,9 +50,9 @@ export function DemoPreviewSection() {
                     width={900}
                     height={620}
                     sizes="(min-width: 1024px) 33vw, 100vw"
-                    className="h-72 w-full object-cover grayscale contrast-125 saturate-0 transition-transform duration-500 group-hover:scale-[1.03] group-hover:grayscale-0 group-hover:saturate-100"
+                    className="h-72 w-full object-cover saturate-125 transition-transform duration-500 group-hover:scale-[1.03]"
                   />
-                  <span className="absolute left-4 top-4 rounded-full border border-white/70 bg-[var(--pde-glass)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[var(--pde-accent)] backdrop-blur-xl">
+                  <span className="absolute left-4 top-4 rounded-full border border-white/25 bg-[#1c2d75]/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-white backdrop-blur-xl">
                     Demo
                   </span>
                 </div>
@@ -67,7 +67,7 @@ export function DemoPreviewSection() {
                     <ArrowUpRight className="text-[var(--pde-accent)]" />
                   </div>
                   <p className="mt-4 leading-7 text-[var(--pde-muted)]">{business.shortDescription}</p>
-                  <p className="mt-4 rounded-2xl border border-white/70 bg-white/80 p-4 text-sm font-semibold leading-6 text-[var(--pde-ink)]">
+                  <p className="mt-4 rounded-2xl border border-white/15 bg-white/8 p-4 text-sm font-semibold leading-6 text-white/90">
                     {demoBenefits[business.slug]}
                   </p>
                 </div>

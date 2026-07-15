@@ -21,12 +21,12 @@ The product should feel like a polished digital business card studio for local b
 
 Target reaction: "Si, quiero que mi negocio se vea asi."
 
-The visual language is glass-minimal SaaS for local businesses: direct, trustworthy, product-like, mobile-first, and visually simple enough to feel modern instead of institutional. Color psychology priority: trust first, clarity second, warmth third.
+The visual language is luminous midnight SaaS for local businesses: direct, aspirational, product-like, mobile-first, and visually rich enough to make a local owner want to see their own business in it. Color psychology priority: trust first, aspiration second, warmth third.
 
 ## Non-Negotiables
 
 - No gradients: no `linear-gradient`, `radial-gradient`, `conic-gradient`, or decorative gradient backgrounds.
-- No glow-heavy effects, decorative blobs, decorative glassmorphism, or generic SaaS hero patterns.
+- No glow-heavy effects, decorative blobs, decorative glassmorphism, or generic SaaS hero patterns. Use translucent blue glass, fine luminous borders, restrained circles, and photography instead.
 - No WhatsApp-green branding. WhatsApp is a feature and CTA label, not the color identity.
 - Avoid retro poster colors unless the user explicitly asks to return to that direction.
 - Avoid dominant yellow. Yellow can call attention, but it should not drive the brand because it feels less trustworthy for this product.
@@ -48,38 +48,34 @@ Do not copy brand colors, layouts, slogans, or signature animations from these r
 
 ## Palette
 
-- Paper: `#F6F8FB`
-- Paper strong: `#EAF1F8`
-- Surface: `#FFFFFF`
-- Surface strong: `#E9F7F5`
-- Glass: `rgba(255, 255, 255, 0.72)`
-- Glass dark: `rgba(255, 255, 255, 0.08)`
-- Ink: `#132033`
-- Muted: `#647084`
-- Soft: `#9AA7B8`
-- Border: `#D7E2EC`
-- Accent: `#315CF6`
-- Accent strong: `#2447C7`
-- Teal: `#25B7A5`
-- Coral: `#E58B6B`
-- Earth/warm local: `#C66F54`
-- Blue: `#315CF6`
-- Navy: `#17213A`
+- Midnight: `#07164B`
+- Midnight strong: `#0B236C`
+- Surface: `#152A78`
+- Surface bright: `#233B91`
+- Glass: `rgba(32, 52, 136, 0.56)`
+- Ink: `#F8F4FF`
+- Muted: `#C7C8E8`
+- Border: `rgba(210, 209, 255, 0.28)`
+- Action pink: `#FF6F9F`
+- Action pink dark: `#E84D82`
+- Lilac signal: `#9F8CFF`
+- Soft rose: `#F6A1C1`
+- Blue light: `#6F93FF`
 
-Accent is scarce. Use blue as the primary action color because it communicates trust, stability, and professionalism. Use teal for clarity/growth cues and coral only as a small human warmth accent. Most UI should stay glass white, cool gray, navy, and blue.
+Blue is the field of trust and continuity. Pink is scarce and reserved for the action that moves the user forward. Lilac signals craft and digital polish. Keep most UI in midnight blue glass with pale borders; never introduce green or yellow as a brand driver.
 
 ## Identity Position
 
-Recommended direction: Glass Minimal Local SaaS.
+Recommended direction: Luminous Midnight Local SaaS.
 
-PDE should feel like a boutique studio that packages a local business into a polished, shareable page. Use the "living business card" as the signature object: mini page, catalog, WhatsApp, map, and QR in one composed artifact.
+PDE should feel like a boutique studio that packages a local business into a polished, shareable page. Use the "living business card" as the signature object: a browser-like mini page, catalog, WhatsApp, map, and QR in one composed artifact. In the hero it is the visible proof of the offer, not a generic dashboard mockup.
 
 Images can use black-and-white or high-contrast editorial treatment, especially in demos. Glass surfaces are allowed only when they clarify hierarchy: translucent but readable, bordered, and never dependent on blur alone for contrast.
 
 ## Typography
 
 - Geist is the current base.
-- Source Serif is approved as a selective editorial accent for one or two words in major headings.
+- Source Serif is the display face for the primary hero and closing promise; it keeps the studio considered rather than corporate.
 - Headings are large, confident, and tightly set.
 - Body copy is plain, direct, and readable on mobile.
 - Avoid technical language in public pages.
@@ -133,14 +129,14 @@ Avoid:
 
 Landing:
 
-1. Clean SaaS-style hero with simple nav, direct offer, CTA and living business card preview.
+1. Midnight SaaS-style hero with compact glass nav, direct offer, pink CTA and living business card preview.
 2. Useful signal ticker.
 3. Problem section as clear rows, not decorative cards.
-4. Solid solution band with modular product capabilities.
+4. Deep-blue solution band with modular product capabilities.
 5. Benefits with real business outcome.
 6. Demo cards for beauty, food and repair.
 7. Packages without final pricing.
-8. Simple process.
+8. Simple process, with order markers that communicate the real sequence.
 9. FAQ.
 10. Final CTA.
 

@@ -28,7 +28,7 @@ export function ProcessSection() {
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-5 lg:grid-cols-[0.78fr_1fr] lg:items-end">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-teal)]">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-coral)]">
                 Proceso
               </p>
               <h2 className="mt-4 max-w-3xl text-balance text-4xl font-semibold leading-[0.98] sm:text-6xl">
@@ -44,10 +44,10 @@ export function ProcessSection() {
               <div
                 data-card
                 key={step.title}
-                className="rounded-[24px] border border-white/70 bg-[var(--pde-glass)] p-6 shadow-[var(--shadow-card)] backdrop-blur-xl"
+                className="rounded-[20px] border border-[var(--pde-border)] bg-[#1c337f]/55 p-6 shadow-[var(--shadow-card)] backdrop-blur-xl"
               >
                 <div className="flex items-center justify-between">
-                  <p className="font-mono text-sm text-[var(--pde-muted)]">0{index + 1}</p>
+                  <p className="grid h-8 w-8 place-items-center rounded-full border border-[#f1b3d1]/60 font-mono text-sm text-[var(--pde-coral)]">{index + 1}</p>
                   <CheckCircle2 className="text-[var(--pde-teal)]" size={20} />
                 </div>
                 <h3 className="mt-8 text-2xl font-semibold leading-7">{step.title}</h3>

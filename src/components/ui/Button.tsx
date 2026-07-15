@@ -5,11 +5,11 @@ type ButtonVariant = "primary" | "secondary" | "ghost" | "dark";
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-    "bg-[var(--pde-accent)] text-white shadow-[var(--shadow-soft)] hover:-translate-y-0.5 hover:bg-[var(--pde-accent-strong)]",
+    "bg-[var(--pde-accent)] text-[#251049] shadow-[var(--shadow-soft)] hover:-translate-y-0.5 hover:bg-[var(--pde-accent-strong)] hover:text-white",
   secondary:
-    "border border-white/70 bg-[var(--pde-glass)] text-[var(--pde-ink)] shadow-[var(--shadow-soft)] backdrop-blur-xl hover:-translate-y-0.5 hover:border-[var(--pde-accent)] hover:bg-white",
-  ghost: "text-[var(--pde-ink)] hover:bg-white/70",
-  dark: "bg-[var(--pde-ink)] text-white hover:-translate-y-0.5 hover:bg-black",
+    "border border-[var(--pde-border)] bg-white/10 text-[var(--pde-ink)] shadow-[var(--shadow-soft)] backdrop-blur-xl hover:-translate-y-0.5 hover:border-[var(--pde-coral)] hover:bg-white/18",
+  ghost: "text-[var(--pde-ink)] hover:bg-white/10",
+  dark: "bg-[#061243] text-white hover:-translate-y-0.5 hover:bg-[#0b236c]",
 };
 
 const base =

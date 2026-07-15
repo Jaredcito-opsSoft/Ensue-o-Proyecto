@@ -1,9 +1,11 @@
-import { ArrowRight, CheckCircle2, MapPin, MessageCircle, QrCode, Smartphone } from "lucide-react";
+import { ArrowRight, Check, Menu, MessageCircle, Sparkles } from "lucide-react";
 import Image from "next/image";
 import { ButtonLink } from "@/components/ui/Button";
 import { LandingAnimations } from "@/components/motion/LandingAnimations";
 import { appConfig } from "@/lib/constants";
 import { createWhatsAppLink } from "@/lib/whatsapp";
+
+const proof = ["Entrega guiada", "Diseno a tu medida", "Listo para celular"];
 
 export function HeroSection() {
   const whatsappHref = createWhatsAppLink(
@@ -13,128 +15,76 @@ export function HeroSection() {
 
   return (
     <LandingAnimations>
-      <section className="relative overflow-hidden px-4 pb-10 pt-4 sm:px-6 lg:px-10">
-        <div className="mx-auto max-w-7xl">
+      <section className="relative overflow-hidden px-4 pb-16 pt-4 sm:px-6 lg:px-10 lg:pb-24">
+        <div className="pointer-events-none absolute left-[8%] top-28 h-72 w-72 rounded-full border border-[#c0b5ff]/20" />
+        <div className="pointer-events-none absolute right-[-8rem] top-10 h-[32rem] w-[32rem] rounded-full border border-[#ff9dc2]/15" />
+        <div className="relative mx-auto max-w-7xl">
           <nav
             data-hero-line
-            className="flex min-h-14 items-center justify-between rounded-full border border-white/70 bg-[var(--pde-glass)] px-4 shadow-[var(--shadow-soft)] backdrop-blur-xl sm:px-5"
+            className="flex min-h-16 items-center justify-between rounded-2xl border border-[var(--pde-border)] bg-[#101e63]/72 px-4 shadow-[var(--shadow-soft)] backdrop-blur-xl sm:px-6"
             aria-label="Navegacion principal"
           >
-            <a className="text-sm font-black uppercase tracking-[0.12em]" href="#">
-              Presencia Digital
+            <a className="flex items-center gap-2 text-lg font-semibold" href="#inicio">
+              <Sparkles size={21} className="text-[var(--pde-coral)]" aria-hidden />
+              Ensueño
             </a>
-            <div className="hidden items-center gap-6 text-sm font-semibold text-[var(--pde-muted)] md:flex">
-              <a className="hover:text-[var(--pde-ink)]" href="#demos">Demos</a>
-              <a className="hover:text-[var(--pde-ink)]" href="#paquetes">Paquetes</a>
-              <a className="hover:text-[var(--pde-ink)]" href="#proceso">Proceso</a>
+            <div className="hidden items-center gap-7 text-sm font-medium text-white/82 md:flex">
+              <a className="transition-colors hover:text-[var(--pde-coral)]" href="#inicio">Inicio</a>
+              <a className="transition-colors hover:text-[var(--pde-coral)]" href="#demos">Plantillas</a>
+              <a className="transition-colors hover:text-[var(--pde-coral)]" href="#solucion">Servicios</a>
+              <a className="transition-colors hover:text-[var(--pde-coral)]" href="#proceso">Proceso</a>
             </div>
             <ButtonLink href={whatsappHref} className="min-h-10 px-4 py-2 text-xs sm:text-sm">
-              Empezar <ArrowRight size={16} />
+              <span className="hidden sm:inline">Comienza ahora</span><span className="sm:hidden">Empezar</span> <Sparkles size={15} />
             </ButtonLink>
+            <button className="grid h-10 w-10 place-items-center rounded-xl border border-[var(--pde-border)] text-white md:hidden" aria-label="Abrir navegacion">
+              <Menu size={19} />
+            </button>
           </nav>
 
-          <div className="grid gap-8 pt-12 sm:pt-16 lg:min-h-[calc(100svh-94px)] lg:grid-rows-[auto_1fr]">
-            <div className="mx-auto max-w-5xl text-center">
-              <p
-                data-hero-line
-                className="mx-auto inline-flex rounded-full border border-white/70 bg-[var(--pde-glass)] px-3 py-1 text-xs font-black uppercase tracking-[0.14em] text-[var(--pde-accent)] shadow-[var(--shadow-soft)] backdrop-blur-xl"
-              >
-                Mini paginas para negocios locales
+          <div id="inicio" className="grid items-center gap-10 pt-14 lg:grid-cols-[0.88fr_1.12fr] lg:gap-12 lg:pt-20">
+            <div className="relative z-10">
+              <p data-hero-line className="inline-flex items-center gap-2 rounded-full border border-[#f5b9d3]/40 bg-[#a26dce]/25 px-3 py-1.5 text-xs font-semibold text-[#ffe5f0] shadow-[var(--shadow-soft)]">
+                Mini sitios web, maximo impacto <Sparkles size={13} />
               </p>
-              <h1 className="mt-5 text-balance text-[3.2rem] font-semibold leading-[0.9] text-[var(--pde-ink)] sm:text-7xl lg:text-[7.2rem]">
-                Presencia digital para el{" "}
-                <span className="font-serif italic font-normal">mundo real.</span>
+              <h1 className="mt-5 text-balance font-serif text-[3.35rem] leading-[0.94] text-white sm:text-7xl lg:text-[5.4rem]">
+                Paginas digitales <span className="text-[var(--pde-coral)]">hermosas</span> para negocios que quieren destacar.
               </h1>
-              <p
-                data-hero-line
-                className="mx-auto mt-5 max-w-2xl text-pretty text-base leading-7 text-[var(--pde-muted)] sm:text-xl sm:leading-8"
-              >
-                Ordenamos servicios, horarios, ubicacion, WhatsApp y QR en un
-                link claro. Tu negocio se ve listo para compartir desde el celular.
+              <p data-hero-line className="mt-6 max-w-xl text-pretty text-base leading-7 text-[var(--pde-muted)] sm:text-lg sm:leading-8">
+                Convertimos la informacion de tu negocio en una pagina viva, clara y lista para inspirar confianza desde el primer toque.
               </p>
-              <div data-hero-line className="mx-auto mt-6 flex max-w-md flex-col gap-3 sm:flex-row sm:justify-center">
-                <ButtonLink href={whatsappHref}>
-                  Solicitar pagina <ArrowRight size={18} />
-                </ButtonLink>
-                <ButtonLink href="#demos" variant="secondary">
-                  Ver demos
-                </ButtonLink>
+              <div data-hero-line className="mt-7 flex flex-col gap-3 sm:flex-row">
+                <ButtonLink href="#demos">Ver plantillas <ArrowRight size={18} /></ButtonLink>
+                <ButtonLink href={whatsappHref} variant="secondary">Hablar con un asesor <MessageCircle size={17} /></ButtonLink>
               </div>
-              <div data-hero-line className="mx-auto mt-7 grid max-w-2xl gap-3 text-left text-sm font-medium text-[var(--pde-muted)] sm:grid-cols-3">
-              {["Sin aprender tecnologia", "Listo para QR", "Pensado para celular"].map((item) => (
-                <div className="flex items-center gap-2" key={item}>
-                  <CheckCircle2 size={17} className="text-[var(--pde-teal)]" />
-                  {item}
-                </div>
-              ))}
+              <div data-hero-line className="mt-8 grid gap-2 rounded-2xl border border-[var(--pde-border)] bg-[#192d78]/52 p-3 sm:grid-cols-3 sm:gap-0">
+                {proof.map((item) => (
+                  <p className="flex items-center gap-2 border-white/10 px-2 text-xs leading-5 text-white/84 sm:border-r last:border-0" key={item}>
+                    <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full border border-[#bcb2ff]/60 text-[#d9d4ff]"><Check size={12} /></span>{item}
+                  </p>
+                ))}
+              </div>
             </div>
-          </div>
 
-            <div data-hero-card className="relative">
-              <div data-hero-chip className="absolute -left-2 top-14 z-10 hidden w-36 rounded-[24px] border border-white/70 bg-[var(--pde-glass)] p-4 shadow-[var(--shadow-card)] backdrop-blur-xl lg:block">
-              <QrCode className="text-[var(--pde-accent)]" size={28} />
-              <p className="mt-5 font-mono text-3xl font-semibold">QR</p>
-              <p className="mt-1 text-xs font-medium uppercase tracking-[0.12em] text-[var(--pde-muted)]">
-                listo para mostrador
-              </p>
-            </div>
-              <div className="rounded-[34px] border border-white/70 bg-[var(--pde-glass)] p-2 shadow-[var(--shadow-card)] backdrop-blur-xl sm:p-3">
-                <div className="overflow-hidden rounded-[26px] border border-[var(--pde-border)] bg-[var(--pde-paper)]">
-                <Image
-                  src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=1300&q=80"
-                  alt="Duena de negocio local atendiendo desde celular"
-                  width={1300}
-                  height={900}
-                  priority
-                  sizes="(min-width: 1024px) 42vw, 100vw"
-                    className="h-56 w-full object-cover grayscale contrast-125 saturate-0 sm:h-80 lg:h-[24rem]"
-                />
-                  <div className="grid gap-4 p-4 sm:p-6 lg:grid-cols-[1fr_0.9fr] lg:items-end">
-                    <div className="flex items-center justify-between gap-4 lg:block">
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--pde-muted)]">
-                        Demo publicado
-                      </p>
-                        <p className="mt-1 text-2xl font-semibold sm:text-3xl">Bella Imagen Tuxtla</p>
-                    </div>
-                    <div className="grid h-14 w-14 place-items-center rounded-2xl bg-[var(--pde-ink)] text-white">
-                      <QrCode size={26} />
-                    </div>
+            <div data-hero-card className="relative mx-auto w-full max-w-[650px] lg:mx-0">
+              <div className="absolute -inset-3 rounded-[32px] border border-[#9fa4ff]/20 bg-[#7b64c5]/15" />
+              <div className="relative overflow-hidden rounded-[25px] border border-[#c7c8ff]/50 bg-[#243882] p-2 shadow-[0_28px_60px_rgba(1,7,43,.42)] sm:p-3">
+                <div className="overflow-hidden rounded-[18px] border border-white/15 bg-[#243277]">
+                  <div className="flex items-center gap-1.5 border-b border-white/10 bg-[#6070aa]/55 px-4 py-2.5">
+                    <span className="h-2.5 w-2.5 rounded-full bg-[#f6a1c1]" /><span className="h-2.5 w-2.5 rounded-full bg-[#e9d2a5]" /><span className="h-2.5 w-2.5 rounded-full bg-[#b4e3bf]" />
+                    <span className="ml-4 hidden rounded-md bg-white/10 px-10 py-1 text-[10px] text-white/45 sm:block">ensueno.mx/florencia</span>
                   </div>
-                    <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-3">
-                    <div className="rounded-2xl bg-[var(--pde-surface-strong)] p-4 text-[var(--pde-ink)]">
-                      <MessageCircle size={20} />
-                      <p className="mt-3 text-sm font-semibold">WhatsApp</p>
-                    </div>
-                    <div className="rounded-2xl bg-[var(--pde-surface-strong)] p-4 text-[var(--pde-teal)]">
-                      <MapPin size={20} />
-                      <p className="mt-3 text-sm font-semibold">Ubicacion</p>
-                    </div>
-                    <div className="rounded-2xl bg-[var(--pde-ink)] p-4 text-white">
-                      <Smartphone size={20} />
-                      <p className="mt-3 text-sm font-semibold">Link unico</p>
-                    </div>
+                  <div className="relative min-h-[390px] overflow-hidden p-5 sm:min-h-[460px] sm:p-7">
+                    <Image src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1100&q=85" alt="Ejemplo de una pagina para negocio local" fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover opacity-60" />
+                    <div className="absolute inset-0 bg-[#162461]/65" />
+                    <div className="relative flex items-center justify-between text-xs text-white/85"><span className="font-serif text-lg">Florencia</span><span className="hidden gap-5 sm:flex"><span>Inicio</span><span>Servicios</span><span>Contacto</span></span><span className="rounded-full bg-[var(--pde-accent)] px-3 py-2 font-semibold text-[#301148]">Agenda ahora</span></div>
+                    <div className="relative mt-16 max-w-[285px] sm:mt-20"><p className="font-serif text-4xl leading-[.96] text-white sm:text-5xl">Flores que cuentan historias</p><p className="mt-4 text-sm leading-6 text-white/78">Arreglos florales unicos para cada ocasion especial.</p><span className="mt-5 inline-flex rounded-full bg-[var(--pde-accent)] px-4 py-2.5 text-xs font-semibold text-[#301148]">Ver arreglos</span></div>
+                    <div className="relative mt-10 grid grid-cols-3 gap-2"><div className="rounded-xl border border-white/20 bg-[#293a85]/55 p-3 text-xs text-white/82">Arreglos<br /><strong className="text-white">Personalizados</strong></div><div className="rounded-xl border border-white/20 bg-[#293a85]/55 p-3 text-xs text-white/82">Entrega<br /><strong className="text-white">a domicilio</strong></div><div className="rounded-xl border border-white/20 bg-[#293a85]/55 p-3 text-xs text-white/82">Eventos<br /><strong className="text-white">especiales</strong></div></div>
                   </div>
-                    <div className="rounded-2xl border border-white/70 bg-white/80 p-4 sm:col-span-2 lg:col-span-2">
-                      <div className="grid gap-3 text-sm sm:grid-cols-3">
-                        <div>
-                          <p className="font-mono text-lg font-semibold text-[var(--pde-accent)]">1 link</p>
-                          <p className="mt-1 text-[var(--pde-muted)]">para compartir</p>
-                        </div>
-                        <div>
-                          <p className="font-mono text-lg font-semibold text-[var(--pde-teal)]">5 datos</p>
-                          <p className="mt-1 text-[var(--pde-muted)]">ordenados</p>
-                        </div>
-                        <div>
-                          <p className="font-mono text-lg font-semibold text-[var(--pde-coral)]">QR</p>
-                          <p className="mt-1 text-[var(--pde-muted)]">listo para imprimir</p>
-                        </div>
-                      </div>
-                    </div>
                 </div>
               </div>
+              <div data-hero-chip className="absolute -bottom-6 -right-2 w-36 rounded-[24px] border border-[#e9ddff]/45 bg-[#1c2d75]/90 p-3 shadow-[var(--shadow-card)] backdrop-blur-xl sm:w-44 sm:p-4"><p className="font-serif text-2xl text-white">Zen</p><p className="mt-1 text-xs leading-5 text-white/70">Otra identidad, el mismo sistema.</p></div>
             </div>
-          </div>
           </div>
         </div>
       </section>
