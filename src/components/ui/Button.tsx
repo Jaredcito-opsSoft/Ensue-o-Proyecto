@@ -7,13 +7,13 @@ const variants: Record<ButtonVariant, string> = {
   primary:
     "bg-[var(--pde-accent)] text-white shadow-[var(--shadow-soft)] hover:-translate-y-0.5 hover:bg-[var(--pde-accent-strong)]",
   secondary:
-    "border border-[var(--pde-border)] bg-[var(--pde-surface)] text-[var(--pde-ink)] hover:-translate-y-0.5 hover:border-[var(--pde-ink)] hover:bg-[var(--pde-paper-strong)]",
-  ghost: "text-[var(--pde-ink)] hover:bg-[var(--pde-paper-strong)]",
+    "border border-white/70 bg-[var(--pde-glass)] text-[var(--pde-ink)] shadow-[var(--shadow-soft)] backdrop-blur-xl hover:-translate-y-0.5 hover:border-[var(--pde-accent)] hover:bg-white",
+  ghost: "text-[var(--pde-ink)] hover:bg-white/70",
   dark: "bg-[var(--pde-ink)] text-white hover:-translate-y-0.5 hover:bg-black",
 };
 
 const base =
-  "inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-[background-color,border-color,transform,color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--pde-accent)] active:scale-[0.98]";
+  "inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-[background-color,border-color,transform,color,box-shadow] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--pde-accent)] active:scale-[0.98]";
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: ButtonVariant;

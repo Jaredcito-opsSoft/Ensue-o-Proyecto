@@ -15,6 +15,9 @@ export function AnimatedCards({
 
   useGSAP(
     () => {
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (reduceMotion) return;
+
       gsap.from("[data-card]", {
         opacity: 0,
         y: 18,

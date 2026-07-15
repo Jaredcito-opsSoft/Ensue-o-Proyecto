@@ -32,7 +32,7 @@ export function MotionTicker({ items }: { items: string[] }) {
   return (
     <div
       ref={scope}
-      className="overflow-hidden border-y border-[var(--pde-border)] bg-[var(--pde-surface)]"
+      className="overflow-hidden border-y border-white/70 bg-[var(--pde-glass)] shadow-[var(--shadow-soft)] backdrop-blur-xl"
       aria-label="Funciones incluidas"
     >
       <div data-ticker-track className="flex w-max items-center gap-3 py-3 will-change-transform">
@@ -43,7 +43,7 @@ export function MotionTicker({ items }: { items: string[] }) {
             aria-hidden={index >= items.length}
           >
             <span>{item}</span>
-            <span className="h-1.5 w-1.5 rounded-full bg-[var(--pde-accent)]" />
+            <span className="h-1.5 w-1.5 rounded-full bg-[var(--pde-teal)]" />
           </div>
         ))}
       </div>

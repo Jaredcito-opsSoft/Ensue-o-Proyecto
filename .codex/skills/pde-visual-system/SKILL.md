@@ -26,7 +26,7 @@ The visual language is glass-minimal SaaS for local businesses: direct, trustwor
 ## Non-Negotiables
 
 - No gradients: no `linear-gradient`, `radial-gradient`, `conic-gradient`, or decorative gradient backgrounds.
-- No glow-heavy effects, decorative blobs, glassmorphism, or generic SaaS hero patterns.
+- No glow-heavy effects, decorative blobs, decorative glassmorphism, or generic SaaS hero patterns.
 - No WhatsApp-green branding. WhatsApp is a feature and CTA label, not the color identity.
 - Avoid retro poster colors unless the user explicitly asks to return to that direction.
 - Avoid dominant yellow. Yellow can call attention, but it should not drive the brand because it feels less trustworthy for this product.
@@ -74,7 +74,7 @@ Recommended direction: Glass Minimal Local SaaS.
 
 PDE should feel like a boutique studio that packages a local business into a polished, shareable page. Use the "living business card" as the signature object: mini page, catalog, WhatsApp, map, and QR in one composed artifact.
 
-Images can use black-and-white or high-contrast editorial treatment, especially in demos. Glass surfaces should be translucent but readable: never depend on blur alone for contrast.
+Images can use black-and-white or high-contrast editorial treatment, especially in demos. Glass surfaces are allowed only when they clarify hierarchy: translucent but readable, bordered, and never dependent on blur alone for contrast.
 
 ## Typography
 

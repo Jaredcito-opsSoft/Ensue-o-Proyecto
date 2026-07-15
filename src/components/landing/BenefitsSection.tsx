@@ -24,7 +24,7 @@ export function BenefitsSection() {
             className="h-72 w-full rounded-[30px] border border-white/70 object-cover grayscale contrast-125 saturate-0 shadow-[var(--shadow-card)] sm:h-[520px]"
           />
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-earth)]">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-teal)]">
               Beneficios
             </p>
             <h2 className="mt-4 text-balance text-4xl font-semibold leading-[0.98] sm:text-6xl">

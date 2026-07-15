@@ -21,7 +21,7 @@ export function HeroSection() {
             aria-label="Navegacion principal"
           >
             <a className="text-sm font-black uppercase tracking-[0.12em]" href="#">
-              PDE
+              Presencia Digital
             </a>
             <div className="hidden items-center gap-6 text-sm font-semibold text-[var(--pde-muted)] md:flex">
               <a className="hover:text-[var(--pde-ink)]" href="#demos">Demos</a>
@@ -115,6 +115,22 @@ export function HeroSection() {
                       <p className="mt-3 text-sm font-semibold">Link unico</p>
                     </div>
                   </div>
+                    <div className="rounded-2xl border border-white/70 bg-white/80 p-4 sm:col-span-2 lg:col-span-2">
+                      <div className="grid gap-3 text-sm sm:grid-cols-3">
+                        <div>
+                          <p className="font-mono text-lg font-semibold text-[var(--pde-accent)]">1 link</p>
+                          <p className="mt-1 text-[var(--pde-muted)]">para compartir</p>
+                        </div>
+                        <div>
+                          <p className="font-mono text-lg font-semibold text-[var(--pde-teal)]">5 datos</p>
+                          <p className="mt-1 text-[var(--pde-muted)]">ordenados</p>
+                        </div>
+                        <div>
+                          <p className="font-mono text-lg font-semibold text-[var(--pde-coral)]">QR</p>
+                          <p className="mt-1 text-[var(--pde-muted)]">listo para imprimir</p>
+                        </div>
+                      </div>
+                    </div>
                 </div>
               </div>
             </div>

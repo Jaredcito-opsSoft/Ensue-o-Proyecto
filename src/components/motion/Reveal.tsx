@@ -13,6 +13,9 @@ export function Reveal({ children, className = "" }: { children: ReactNode; clas
   useGSAP(
     () => {
       if (!ref.current) return;
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (reduceMotion) return;
+
       gsap.fromTo(
         ref.current,
         { autoAlpha: 0, y: 22 },

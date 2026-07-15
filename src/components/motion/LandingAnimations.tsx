@@ -9,6 +9,9 @@ export function LandingAnimations({ children }: { children: ReactNode }) {
 
   useGSAP(
     () => {
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (reduceMotion) return;
+
       gsap.from("[data-hero-word]", {
         y: 18,
         opacity: 0,

@@ -28,7 +28,7 @@ export function PackagesSection() {
     <Reveal>
       <section id="paquetes" className="px-4 py-16 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-7xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-earth)]">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-teal)]">
             Paquetes piloto
           </p>
           <h2 className="mt-4 max-w-3xl text-balance text-4xl font-semibold leading-[0.98] sm:text-6xl">
@@ -37,7 +37,7 @@ export function PackagesSection() {
           <AnimatedCards className="mt-10 grid gap-5 lg:grid-cols-3">
             {packages.map((pack) => (
               <Card data-card key={pack.name} className="p-7">
-                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--pde-earth)]">
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--pde-coral)]">
                   {pack.label}
                 </p>
                 <h3 className="mt-4 text-3xl font-semibold">{pack.name}</h3>
@@ -45,7 +45,7 @@ export function PackagesSection() {
                 <ul className="mt-7 grid gap-3">
                   {pack.items.map((item) => (
                     <li className="flex items-center gap-3 font-medium" key={item}>
-                      <span className="h-2 w-2 rounded-full bg-[var(--pde-accent)]" />
+                      <span className="h-2 w-2 rounded-full bg-[var(--pde-teal)]" />
                       {item}
                     </li>
                   ))}

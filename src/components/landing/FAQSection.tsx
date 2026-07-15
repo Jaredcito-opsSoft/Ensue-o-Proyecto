@@ -18,10 +18,15 @@ export function FAQSection() {
           <h2 className="text-balance text-4xl font-semibold tracking-[-0.02em] sm:text-5xl">
             Preguntas frecuentes
           </h2>
-          <div className="mt-8 divide-y divide-[var(--pde-border)] rounded-[24px] border border-[var(--pde-border)] bg-[var(--pde-surface)]">
+          <div className="mt-8 divide-y divide-[var(--pde-border)] rounded-[28px] border border-white/70 bg-[var(--pde-glass)] shadow-[var(--shadow-card)] backdrop-blur-xl">
             {faqs.map(([question, answer]) => (
               <details className="group p-6" key={question}>
-                <summary className="cursor-pointer list-none text-lg font-semibold">{question}</summary>
+                <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--pde-accent)]">
+                  {question}
+                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white text-[var(--pde-accent)] transition-transform duration-200 group-open:rotate-45">
+                    +
+                  </span>
+                </summary>
                 <p className="mt-3 leading-7 text-[var(--pde-muted)]">{answer}</p>
               </details>
             ))}
