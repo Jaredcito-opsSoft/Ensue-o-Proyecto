@@ -1,6 +1,11 @@
-import { BusinessPage } from "@/components/business-page/BusinessPage";
-import { getDemoBusinessBySlug } from "@/lib/demo-data";
+import type { Metadata } from "next";
+import { CelluxPage } from "@/components/demos/CelluxPage";
+
+export const metadata: Metadata = {
+  title: "Cellux | Tecnología y reparación premium",
+  description: "Smartphones, accesorios premium y reparación especializada en un solo lugar.",
+};
 
 export default function TallerDemoPage() {
-  return <BusinessPage business={getDemoBusinessBySlug("celfix-tuxtla")!} />;
+  return <CelluxPage />;
 }

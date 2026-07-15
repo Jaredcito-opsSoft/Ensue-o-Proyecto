@@ -173,6 +173,16 @@ Coleta demo (`/demo/coleta`, with `/demo/comida` compatibility):
 - Use rectangular actions, fine borders, uppercase utility labels, and restrained gold. Do not reuse rounded PDE cards or pink accents.
 - Mobile retains a fixed reservation action and enough bottom padding to prevent overlap.
 
+Cellux demo (`/demo/taller`):
+
+- This route is the technology and repair brand exception to the midnight parent landing.
+- Palette: near-black `#08090B`, white `#FFFFFF`, soft catalog gray `#EDEDEC`, and graphite `#111214`.
+- Geist carries the entire interface; hierarchy comes from weight, scale, spacing, and industrial precision rather than a display serif.
+- The hero uses a monumental unbranded flagship phone composition with clear negative space for the promise.
+- Required sequence: product hero, trust strip, popular products, repair feature, accessories and financing, brand strip.
+- Use restrained rectangular buttons, circular icon actions, eight-pixel-or-less corners, fine black borders, and monochromatic photography.
+- Mobile retains a fixed repair quote action and enough bottom padding to prevent overlap.
+
 Landing demo collection:
 
 - Show the first three demo pages by default.
