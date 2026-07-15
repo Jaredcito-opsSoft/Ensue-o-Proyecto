@@ -4,6 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { demoBusinesses } from "@/lib/demo-data";
 import { Reveal } from "@/components/motion/Reveal";
 import { AnimatedCards } from "@/components/motion/AnimatedCards";
+import { ExpandableDemoGrid } from "@/components/landing/ExpandableDemoGrid";
 
 const routes: Record<string, string> = {
   "bella-imagen-tuxtla": "/demo/estetica",
@@ -12,7 +13,7 @@ const routes: Record<string, string> = {
 };
 
 const demoBenefits: Record<string, string> = {
-  "bella-imagen-tuxtla": "Servicios visuales, agenda por mensaje y fotos cuidadas.",
+  "bella-imagen-tuxtla": "Belleza editorial, reserva directa y experiencia boutique.",
   "sazon-coleta": "Menú claro para pedir sin preguntar plato por plato.",
   "celfix-tuxtla": "Confianza técnica, servicios claros y ubicación directa.",
 };
@@ -31,11 +32,12 @@ export function DemoPreviewSection() {
                 Tres nichos para validar rápido.
               </h2>
             </div>
-            <Link className="inline-flex min-h-11 items-center gap-2 rounded-full border border-[var(--pde-border)] bg-[#283e92]/60 px-4 py-2 font-semibold text-white shadow-[var(--shadow-soft)] backdrop-blur-xl transition-transform duration-200 hover:-translate-y-0.5" href="/negocio/bella-imagen-tuxtla">
+            <Link className="inline-flex min-h-11 items-center gap-2 rounded-full border border-[var(--pde-border)] bg-[#283e92]/60 px-4 py-2 font-semibold text-white shadow-[var(--shadow-soft)] backdrop-blur-xl transition-transform duration-200 hover:-translate-y-0.5" href="/demo/estetica">
               Ver una página real <ArrowUpRight size={16} />
             </Link>
           </div>
-          <AnimatedCards className="mt-10 grid gap-5 lg:grid-cols-3">
+          <AnimatedCards>
+            <ExpandableDemoGrid>
             {demoBusinesses.map((business) => (
               <Link
                 data-card
@@ -73,6 +75,7 @@ export function DemoPreviewSection() {
                 </div>
               </Link>
             ))}
+            </ExpandableDemoGrid>
           </AnimatedCards>
         </div>
       </section>

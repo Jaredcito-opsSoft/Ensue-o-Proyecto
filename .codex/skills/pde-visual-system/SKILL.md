@@ -153,6 +153,22 @@ Mini business page:
 9. QR/share block.
 10. Footer.
 
+Beauty LA demo (`/demo/estetica`):
+
+- This route is a deliberate brand exception to the midnight parent landing.
+- Palette: warm ivory `#F6F1EA`, near-black `#1E1C19`, warm gray `#5A534D`, and translucent charcoal overlays.
+- Source Serif carries the editorial headlines; Geist handles navigation, labels, details, and actions.
+- The hero pairs a large brand promise with a real editorial portrait and compact schedule/consultation panels.
+- Keep corners restrained, borders fine, and buttons rectangular. Do not reuse the rounded blue/pink PDE card language inside this demo.
+- Required sequence: hero, services, studio philosophy, gallery, testimonial, booking CTA, and footer.
+- Mobile retains a fixed booking action without covering the final content.
+
+Landing demo collection:
+
+- Show the first three demo pages by default.
+- When a fourth page is added, expose the remaining cards through the `Ver más páginas` / `Ver menos` control.
+- The control must preserve keyboard focus, `aria-expanded`, and the three-column desktop rhythm.
+
 Mobile mini page:
 
 - Fixed bottom action bar: WhatsApp and Ubicacion.

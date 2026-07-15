@@ -3,21 +3,21 @@ import type { Business } from "@/types";
 export const demoBusinesses: Business[] = [
   {
     id: "demo-estetica",
-    name: "Bella Imagen Tuxtla",
+    name: "Beauty LA",
     slug: "bella-imagen-tuxtla",
     category: "Belleza",
-    shortDescription: "Estetica local para cortes, color, unas y peinados de evento.",
+    shortDescription: "Estudio boutique de belleza, faciales, cabello, uñas y maquillaje.",
     longDescription:
-      "Atencion cercana, servicios cuidados y una agenda flexible para que salgas lista sin dar vueltas. Trabajamos con cita y recomendaciones segun tu estilo.",
+      "Belleza con carácter y calma con estilo. Tratamientos personalizados en un ambiente íntimo y sofisticado.",
     whatsapp: "529611234567",
-    phone: "961 123 4567",
-    address: "Tuxtla Gutierrez, Chiapas",
-    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Tuxtla%20Gutierrez%20Chiapas",
+    phone: "(323) 555-0199",
+    address: "Los Ángeles, California",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Melrose%20Avenue%20Los%20Angeles",
     instagramUrl: "https://instagram.com/",
     coverImageUrl:
-      "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1400&q=80",
-    primaryColor: "#315CF6",
-    accentColor: "#25B7A5",
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1400&q=84",
+    primaryColor: "#1E1C19",
+    accentColor: "#B39A83",
     status: "published",
     serviceStatus: "delivered",
     hours: [
