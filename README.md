@@ -22,7 +22,7 @@ de la oferta principal de lanzamiento.
 Produccion:
 
 - LocalPOS: https://localpos-marketing.vercel.app/
-- CelLab Tuxtla: https://localpos-cellab.vercel.app/
+- CelLab Tuxtla: https://cellab-tuxtla.vercel.app/
 
 ## Stack
 

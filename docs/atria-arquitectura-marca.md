@@ -30,7 +30,7 @@ https://localpos-marketing.vercel.app/
 Caso real desarrollado dentro de Atria y ejemplo de una presencia especializada para
 telefonía, accesorios y reparación:
 
-https://localpos-cellab.vercel.app/
+https://cellab-tuxtla.vercel.app/
 
 ## Nombres descartados
 

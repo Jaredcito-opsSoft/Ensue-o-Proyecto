@@ -39,7 +39,7 @@ const demos = [
   {
     name: "CelLaB",
     category: "Tecnología y reparación",
-    href: "https://localpos-cellab.vercel.app/",
+    href: "https://cellab-tuxtla.vercel.app/",
     image: "/images/cellux/hero-phones.png",
     copy: "Smartphones, accesorios premium y servicio técnico especializado.",
     color: "bg-[#e9e9e8] text-[#0a0b0d]",

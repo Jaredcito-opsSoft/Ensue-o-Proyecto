@@ -3,7 +3,7 @@ import { appConfig } from "@/lib/constants";
 import { createWhatsAppLink } from "@/lib/whatsapp";
 
 const localPOSUrl = "https://localpos-marketing.vercel.app/";
-const celLabUrl = "https://localpos-cellab.vercel.app/";
+const celLabUrl = "https://cellab-tuxtla.vercel.app/";
 
 export function FinalCTASection() {
   const href = createWhatsAppLink(
