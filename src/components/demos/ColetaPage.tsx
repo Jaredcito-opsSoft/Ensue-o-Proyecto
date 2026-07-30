@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
-import { ArrowRight, CalendarDays, Clock3, Leaf, MapPin, Menu, Plus, Quote } from "lucide-react";
+import { ArrowLeft, ArrowRight, CalendarDays, Clock3, Leaf, MapPin, Menu, Plus, Quote } from "lucide-react";
+import Link from "next/link";
 import { Reveal } from "@/components/motion/Reveal";
 
 const reservationUrl =
@@ -61,6 +62,14 @@ function ColetaButton({ children, href, outline = false }: { children: ReactNode
 export function ColetaPage() {
   return (
     <main className="min-h-screen bg-[#f4f1ec] pb-20 text-[#25211c] md:pb-0">
+      <Link
+        href="/"
+        className="fixed left-4 top-4 z-50 flex items-center gap-2 border border-[#b79a5b]/30 bg-[#0d0d0c]/80 px-3.5 py-1.5 font-serif text-[10px] font-bold uppercase tracking-[0.15em] text-[#dfd2b8] shadow-[0_8px_30px_rgba(0,0,0,0.3)] backdrop-blur-md rounded-full transition-all duration-300 hover:-translate-y-0.5 hover:border-[#b79a5b] hover:bg-[#b79a5b] hover:text-[#0d0d0c] active:translate-y-0 active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#b79a5b] md:left-8 md:top-8 group pde-back-btn-anim"
+      >
+        <ArrowLeft size={13} strokeWidth={2.5} className="transition-transform duration-300 group-hover:-translate-x-0.5" />
+        <span className="hidden sm:inline">Volver a Ensueño</span>
+        <span className="sm:hidden">Volver</span>
+      </Link>
       <section id="inicio" className="relative min-h-[760px] overflow-hidden bg-[#0d0d0c] text-[#f3eee5] lg:min-h-[720px]">
         <Image
           src="https://images.unsplash.com/photo-1616669944447-d65d41a222bd?auto=format&fit=crop&w=1800&q=88"

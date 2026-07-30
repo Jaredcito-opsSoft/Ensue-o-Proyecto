@@ -1,4 +1,50 @@
+/* ═══════════════════════════════════════════════════════════════
+   Ensueño Design Tokens
+   New warm/dark identity + legacy PDE tokens for admin panel
+   ═══════════════════════════════════════════════════════════════ */
+
 :root {
+  /* Atria: light editorial identity */
+  --atria-page: #ededeb;
+  --atria-surface: #ffffff;
+  --atria-surface-soft: #f5f2ee;
+  --atria-surface-warm: #f7eee7;
+  --atria-ink: #111214;
+  --atria-ink-soft: #626267;
+  --atria-muted: #8a898d;
+  --atria-accent: #ef5a2f;
+  --atria-accent-hover: #d84a24;
+  --atria-accent-soft: #fbe2d7;
+  --atria-border: #d9d7d3;
+  --atria-dark: #11100f;
+  --atria-dark-soft: #1a1714;
+  --atria-copper: #a7622c;
+  --atria-gold: #e7b978;
+
+  /* ── Ensueño: Warm Dark Identity ─────────────────────────── */
+  --ens-bg-primary: #090706;
+  --ens-bg-secondary: #120D09;
+  --ens-surface-dark: #1A120D;
+  --ens-surface-elevated: #251810;
+  --ens-copper-dark: #633719;
+  --ens-copper: #A7622C;
+  --ens-amber: #D9954B;
+  --ens-gold-soft: #E7B978;
+  --ens-cream: #F1E4D3;
+  --ens-ivory: #FAF5ED;
+  --ens-text-primary: #F7F0E7;
+  --ens-text-secondary: #BDAE9F;
+  --ens-border-subtle: rgba(231, 185, 120, 0.18);
+  --ens-border-strong: rgba(167, 98, 44, 0.35);
+  --ens-glass: rgba(26, 18, 13, 0.72);
+  --ens-glass-light: rgba(231, 185, 120, 0.08);
+
+  /* Shadows */
+  --ens-shadow-soft: 0 14px 32px rgba(0, 0, 0, 0.45);
+  --ens-shadow-card: 0 0 0 1px rgba(231, 185, 120, 0.08), 0 22px 48px rgba(0, 0, 0, 0.5);
+  --ens-shadow-glow: 0 0 60px rgba(167, 98, 44, 0.15);
+
+  /* ── Legacy PDE tokens (admin panel compatibility) ───────── */
   --pde-paper: #07164b;
   --pde-paper-strong: #0b236c;
   --pde-surface: #152a78;

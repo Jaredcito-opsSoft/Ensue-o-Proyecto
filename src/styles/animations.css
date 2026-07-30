@@ -1,3 +1,55 @@
+/* ═══════════════════════════════════════════════════════════════
+   Ensueño Animation Keyframes
+   ═══════════════════════════════════════════════════════════════ */
+
+@keyframes ens-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes ens-glow-pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes ens-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes ens-draw-line {
+  from { stroke-dashoffset: var(--line-length, 300); }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes ens-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ens-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes ens-scroll-hint {
+  0%, 100% { opacity: 0.6; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(6px); }
+}
+
+/* ── Reduced Motion ────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

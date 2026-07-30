@@ -2,6 +2,11 @@
 @import "../styles/tokens.css";
 @import "../styles/animations.css";
 
+/* ═══════════════════════════════════════════════════════════════
+   Ensueño Global Styles
+   Warm, dark, cinematic identity
+   ═══════════════════════════════════════════════════════════════ */
+
 :root {
   --background: var(--pde-paper);
   --foreground: var(--pde-ink);
@@ -10,33 +15,58 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Manrope", "Manrope Fallback", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
-  --font-serif: var(--font-source-serif), Georgia, serif;
+  --font-serif: var(--font-cormorant), Georgia, serif;
+
+  /* Ensueño palette as Tailwind colors */
+  --color-ens-bg: var(--ens-bg-primary);
+  --color-ens-bg-secondary: var(--ens-bg-secondary);
+  --color-ens-surface: var(--ens-surface-dark);
+  --color-ens-surface-elevated: var(--ens-surface-elevated);
+  --color-ens-copper-dark: var(--ens-copper-dark);
+  --color-ens-copper: var(--ens-copper);
+  --color-ens-amber: var(--ens-amber);
+  --color-ens-gold: var(--ens-gold-soft);
+  --color-ens-cream: var(--ens-cream);
+  --color-ens-ivory: var(--ens-ivory);
+  --color-ens-text: var(--ens-text-primary);
+  --color-ens-text-secondary: var(--ens-text-secondary);
+  --color-ens-border: var(--ens-border-subtle);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--atria-nav-offset, 92px);
+  overflow-x: hidden;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+  font-family: "Manrope", "Manrope Fallback", ui-sans-serif, system-ui, sans-serif;
   overflow-x: hidden;
-  background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 90H180M90 0V180' stroke='%23abb7ff' stroke-opacity='.045' stroke-width='1'/%3E%3C/svg%3E");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3 {
+body:has(.ensueno-cinematic) {
+  background: var(--ens-bg-primary);
+  color: var(--ens-text-primary);
+}
+
+body:has(.atria-landing) {
+  background: var(--atria-page);
+  color: var(--atria-ink);
+}
+
+h1, h2, h3, h4 {
   letter-spacing: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
 ::selection {
-  background: #ff6f9f;
-  color: #07164b;
+  background: var(--ens-copper);
+  color: var(--ens-ivory);
 }
 
 img {
@@ -51,24 +81,424 @@ img {
   text-wrap: pretty;
 }
 
+/* ── Ensueño utility classes ───────────────────────────────── */
+
+.ens-glass {
+  background: var(--ens-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.ens-glass-light {
+  background: var(--ens-glass-light);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.ens-border {
+  border: 1px solid var(--ens-border-subtle);
+}
+
+.ens-glow {
+  box-shadow: var(--ens-shadow-glow);
+}
+
+.ens-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(231, 185, 120, 0.06) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: ens-shimmer 3s ease-in-out infinite;
+}
+
+.ens-float {
+  animation: ens-float 3.5s ease-in-out infinite;
+}
+
+.ens-scroll-hint {
+  animation: ens-scroll-hint 2s ease-in-out infinite;
+}
+
+.ensueno-cinematic {
+  color-scheme: dark;
+  background: var(--ens-bg-primary);
+  color: var(--ens-text-primary);
+}
+
+.atria-landing {
+  color-scheme: light;
+  background: var(--atria-page);
+  color: var(--atria-ink);
+}
+
+.atria-landing section[id],
+.atria-landing footer[id] {
+  scroll-margin-top: var(--atria-nav-offset, 92px);
+}
+
+.atria-liquid-nav,
+.atria-liquid-menu {
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.92),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.24),
+    0 1px 2px rgba(17, 18, 20, 0.05),
+    0 14px 36px rgba(17, 18, 20, 0.1);
+  backdrop-filter: blur(26px) saturate(150%);
+  -webkit-backdrop-filter: blur(26px) saturate(150%);
+}
+
+.atria-liquid-nav {
+  border-radius: 999px;
+}
+
+.atria-liquid-menu {
+  background: rgba(255, 255, 255, 0.88);
+  animation: atria-menu-enter 260ms cubic-bezier(0.23, 1, 0.32, 1) both;
+  transform-origin: top center;
+}
+
+.atria-nav-link {
+  position: relative;
+}
+
+.atria-nav-link::after {
+  position: absolute;
+  right: 0;
+  bottom: -8px;
+  left: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--atria-accent);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 220ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.atria-nav-link:hover::after,
+.atria-nav-link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.atria-menu-item {
+  opacity: 0;
+  animation: atria-menu-item-enter 300ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.atria-menu-item:nth-child(1) { animation-delay: 35ms; }
+.atria-menu-item:nth-child(2) { animation-delay: 65ms; }
+.atria-menu-item:nth-child(3) { animation-delay: 95ms; }
+.atria-menu-item:nth-child(4) { animation-delay: 125ms; }
+.atria-menu-item:nth-child(5) { animation-delay: 155ms; }
+.atria-menu-item:nth-child(6) { animation-delay: 185ms; }
+
+.atria-float-action {
+  transition:
+    transform 220ms cubic-bezier(0.23, 1, 0.32, 1),
+    background-color 220ms ease-out,
+    border-color 220ms ease-out,
+    color 220ms ease-out,
+    box-shadow 220ms ease-out;
+}
+
+.atria-float-action:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(17, 18, 20, 0.14);
+}
+
+.atria-float-action:active {
+  transform: translateY(0) scale(0.97);
+}
+
+.atria-project-track {
+  cursor: grab;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  touch-action: pan-x pan-y;
+}
+
+.atria-project-track:active {
+  cursor: grabbing;
+}
+
+.atria-project-track::-webkit-scrollbar {
+  display: none;
+}
+
+.atria-project-card {
+  transition:
+    transform 280ms cubic-bezier(0.23, 1, 0.32, 1),
+    filter 280ms ease-out;
+}
+
+.atria-project-card:hover {
+  transform: translateY(-7px);
+  filter: drop-shadow(0 18px 22px rgba(17, 18, 20, 0.1));
+}
+
+.atria-project-card > a {
+  transition:
+    border-color 220ms ease-out,
+    box-shadow 220ms ease-out;
+}
+
+.atria-project-card:hover > a {
+  border-color: color-mix(in srgb, var(--atria-accent) 62%, transparent);
+  box-shadow: 0 20px 45px rgba(17, 18, 20, 0.08);
+}
+
+.atria-carousel-control {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid rgba(17, 18, 20, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--atria-ink);
+  transition:
+    transform 180ms cubic-bezier(0.23, 1, 0.32, 1),
+    border-color 180ms ease-out,
+    background-color 180ms ease-out,
+    color 180ms ease-out;
+}
+
+.atria-carousel-control:hover:not(:disabled) {
+  border-color: var(--atria-accent);
+  background: var(--atria-accent);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.atria-carousel-control:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+.atria-carousel-control:disabled {
+  cursor: not-allowed;
+  opacity: 0.34;
+}
+
+.atria-morph-arrow {
+  position: relative;
+  display: grid;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+}
+
+.atria-morph-arrow > svg {
+  position: absolute;
+  opacity: 1;
+  transform: scale(0.94);
+  transition:
+    opacity 180ms ease-out,
+    transform 240ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.atria-morph-dots {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 4px);
+  gap: 3px;
+  opacity: 0;
+  transform: scale(0.55) rotate(45deg);
+  transition:
+    opacity 140ms ease-out,
+    transform 240ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.atria-morph-dots i {
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.atria-carousel-control:hover:not(:disabled) .atria-morph-dots,
+.atria-carousel-control:focus-visible .atria-morph-dots {
+  opacity: 0.38;
+  transform: scale(1) rotate(45deg);
+}
+
+.atria-carousel-control:hover:not(:disabled) .atria-morph-arrow > svg,
+.atria-carousel-control:focus-visible .atria-morph-arrow > svg {
+  opacity: 1;
+}
+
+.atria-carousel-control:hover:not(:disabled) .atria-morph-arrow:not(.is-left) > svg,
+.atria-carousel-control:focus-visible .atria-morph-arrow:not(.is-left) > svg {
+  transform: translateX(2px) scale(1);
+}
+
+.atria-carousel-control:hover:not(:disabled) .atria-morph-arrow.is-left > svg,
+.atria-carousel-control:focus-visible .atria-morph-arrow.is-left > svg {
+  transform: translateX(-2px) scale(1);
+}
+
+@keyframes atria-menu-enter {
+  from { opacity: 0; transform: translateY(-8px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes atria-menu-item-enter {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .atria-liquid-nav,
+  .atria-liquid-menu {
+    background: rgba(255, 255, 255, 0.96);
+  }
+}
+
+.atria-landing ::selection {
+  background: var(--atria-accent);
+  color: white;
+}
+
+.atria-butterfly-mask {
+  background-color: var(--atria-accent);
+  -webkit-mask: url("/images/landing/motion/butterfly.svg") center / contain no-repeat;
+  mask: url("/images/landing/motion/butterfly.svg") center / contain no-repeat;
+}
+
+.ens-scroll-motion {
+  display: none;
+}
+
+.ens-scroll-static {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .ens-scroll-motion {
+    display: block;
+  }
+
+  .ens-scroll-static {
+    display: none;
+  }
+}
+
+/* ── Legacy animations (kept for admin/other pages) ────────── */
+
 @keyframes pde-twinkle {
-  0%,
-  100% {
-    opacity: 0.72;
-    transform: scale(0.92);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.08);
-  }
+  0%, 100% { opacity: 0.72; transform: scale(0.92); }
+  50% { opacity: 1; transform: scale(1.08); }
 }
 
 .pde-twinkle {
   animation: pde-twinkle 2.8s ease-in-out infinite;
 }
 
+@keyframes pde-back-btn-fade-in {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.pde-back-btn-anim {
+  animation: pde-back-btn-fade-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .pde-twinkle {
-    animation: none;
+  .pde-twinkle,
+  .pde-back-btn-anim,
+  .ens-shimmer,
+  .ens-float,
+  .ens-scroll-hint {
+    animation: none !important;
   }
+
+  .ens-scroll-motion {
+    display: none !important;
+  }
+
+  .ens-scroll-static {
+    display: block !important;
+  }
+
+  .atria-butterfly-mask {
+    display: none !important;
+  }
+
+  .atria-liquid-menu,
+  .atria-menu-item {
+    animation: none !important;
+    opacity: 1;
+  }
+
+  .atria-float-action,
+  .atria-project-card,
+  .atria-carousel-control,
+  .atria-morph-arrow > svg,
+  .atria-morph-dots {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── Focus visible styles ──────────────────────────────────── */
+
+:focus-visible {
+  outline: 2px solid var(--pde-accent);
+  outline-offset: 2px;
+}
+
+.ensueno-cinematic :focus-visible {
+  outline-color: var(--ens-amber);
+}
+
+.atria-landing :focus-visible {
+  outline-color: var(--atria-accent);
+}
+
+/* ── Scrollbar styling ─────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ens-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ens-surface-elevated);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ens-copper-dark);
+}
+
+html:has(.atria-landing) {
+  scrollbar-color: var(--atria-accent) var(--atria-surface-warm);
+  scrollbar-width: auto;
+}
+
+html:has(.atria-landing)::-webkit-scrollbar {
+  width: 12px;
+}
+
+html:has(.atria-landing)::-webkit-scrollbar-track {
+  border-left: 1px solid rgba(17, 18, 20, 0.08);
+  background: var(--atria-surface-warm);
+}
+
+html:has(.atria-landing)::-webkit-scrollbar-thumb {
+  min-height: 64px;
+  border: 3px solid var(--atria-surface-warm);
+  border-radius: 999px;
+  background: var(--atria-accent);
+}
+
+html:has(.atria-landing)::-webkit-scrollbar-thumb:hover {
+  background: var(--atria-accent-hover);
 }

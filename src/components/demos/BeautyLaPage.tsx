@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 import {
+  ArrowLeft,
   ArrowRight,
   CalendarDays,
   Clock3,
@@ -11,6 +12,7 @@ import {
   Scissors,
   Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 import { Reveal } from "@/components/motion/Reveal";
 
 const bookingUrl =
@@ -77,6 +79,14 @@ function BeautyButton({ children, href, light = false }: { children: ReactNode; 
 export function BeautyLaPage() {
   return (
     <main className="min-h-screen bg-[#f6f1ea] pb-20 text-[#1e1c19] md:pb-0">
+      <Link
+        href="/"
+        className="fixed left-4 top-4 z-50 flex items-center gap-2 border border-[#1e1c19]/15 bg-[#f8f4ee]/80 px-3.5 py-1.5 font-serif text-[10px] font-bold uppercase tracking-[0.15em] text-[#1e1c19] shadow-[0_8px_30px_rgba(30,28,25,0.06)] backdrop-blur-md rounded-full transition-all duration-300 hover:-translate-y-0.5 hover:border-[#1e1c19] hover:bg-[#1e1c19] hover:text-[#f8f4ee] active:translate-y-0 active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#1e1c19] md:left-8 md:top-8 group pde-back-btn-anim"
+      >
+        <ArrowLeft size={13} strokeWidth={2.5} className="transition-transform duration-300 group-hover:-translate-x-0.5" />
+        <span className="hidden sm:inline">Volver a Ensueño</span>
+        <span className="sm:hidden">Volver</span>
+      </Link>
       <header className="border-b border-[#1e1c19]/12 bg-[#f8f4ee]/92 px-5 backdrop-blur-lg sm:px-8 lg:px-12">
         <nav className="mx-auto flex min-h-20 max-w-[1320px] items-center justify-between gap-6" aria-label="Navegación de Beauty LA">
           <a href="#inicio" className="font-serif text-3xl leading-none sm:text-4xl">Beauty LA</a>

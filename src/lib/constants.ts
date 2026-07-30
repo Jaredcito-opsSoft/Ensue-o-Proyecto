@@ -4,7 +4,7 @@ export const appConfig = {
   description:
     "Mini paginas profesionales con catalogo, WhatsApp, ubicacion y QR para negocios locales.",
   baseUrl: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
-  whatsappSalesNumber: process.env.NEXT_PUBLIC_SALES_WHATSAPP || "529611234567",
+  whatsappSalesNumber: process.env.NEXT_PUBLIC_SALES_WHATSAPP || "529612858828",
 };
 
 export const serviceStatuses = {

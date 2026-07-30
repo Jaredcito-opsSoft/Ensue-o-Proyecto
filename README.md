@@ -1,6 +1,28 @@
-# Presencia Digital Express
+# Atria
 
-MVP funcional para crear mini paginas profesionales para negocios locales, con catalogo o servicios, WhatsApp, ubicacion, horarios, imagenes y QR.
+Atria es el estudio digital y la marca madre del proyecto. El repositorio conserva el
+MVP funcional para crear paginas profesionales para negocios locales, con catalogo o
+servicios, WhatsApp, ubicacion, horarios, imagenes y QR.
+
+## Arquitectura de marca
+
+- `Atria`: marca madre y estudio digital.
+- `Atria Web`: sitios personalizados con presencia online incluida.
+- `Ensueño Momentos`: experiencias digitales para celebraciones.
+- `LocalPOS`: producto independiente para ventas y operacion.
+- `CelLab Tuxtla`: caso real desarrollado dentro de Atria.
+
+No se utilizan los nombres `Ensueño Web`, `Ensueño Eventos` ni `Ensueño POS`.
+`Presencia Esencial` tampoco se presenta como una linea independiente: Google
+Business, Maps, WhatsApp, dominio y datos consistentes se integran a Atria Web segun
+el alcance.
+El manejo mensual de redes sociales y las automatizaciones genericas no forman parte
+de la oferta principal de lanzamiento.
+
+Produccion:
+
+- LocalPOS: https://localpos-marketing.vercel.app/
+- CelLab Tuxtla: https://localpos-cellab.vercel.app/
 
 ## Stack
 
@@ -79,13 +101,17 @@ La app usa datos demo si no existe `DATABASE_URL`, para que landing, demos, pane
 
 - `Bella Imagen Tuxtla`
 - `Sazon Coleta`
-- `CelFix Tuxtla`
+- `Cellux`
 
 Cada demo tiene servicios/productos, horarios, imagenes, WhatsApp, ubicacion y QR.
 
 ## Regla visual
 
-No se usan gradientes. La direccion visual se apoya en fondos solidos, tipografia fuerte, fotografia, bordes sutiles, sombras suaves y animaciones discretas con GSAP.
+La landing publica de Atria es luminosa, editorial y humana. Utiliza gris claro, blanco,
+crema, grafito y terracota; reserva el negro calido, cobre y dorado para el
+scrollytelling fotografico y Ensueño Momentos. No se usan gradientes decorativos. La
+direccion visual se apoya en fondos solidos, fotografia, bordes sutiles y movimiento
+que explica la relacion entre las soluciones.
 
 ## Documentacion de producto
 
@@ -95,3 +121,4 @@ No se usan gradientes. La direccion visual se apoya en fondos solidos, tipografi
 - [Modelo de datos](docs/modelo-datos.md)
 - [Validacion comercial](docs/validacion-comercial.md)
 - [Criterios de calidad](docs/criterios-calidad.md)
+- [Arquitectura de marca Atria](docs/atria-arquitectura-marca.md)

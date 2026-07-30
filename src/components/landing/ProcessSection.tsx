@@ -1,62 +1,68 @@
-import { CheckCircle2 } from "lucide-react";
-import { Reveal } from "@/components/motion/Reveal";
-import { AnimatedCards } from "@/components/motion/AnimatedCards";
+import { SectionReveal } from "@/components/motion/SectionReveal";
 
 const steps = [
   {
-    title: "Nos mandas la información",
-    text: "Fotos, horarios, servicios y datos de contacto en el formato que ya tengas.",
+    title: "Te escuchamos",
+    text: "Entendemos el negocio, sus clientes y el resultado que necesitas.",
   },
   {
-    title: "Ordenamos el mensaje",
-    text: "Convertimos lo disperso en una estructura clara para que el cliente entienda rápido.",
+    title: "Definimos la solución",
+    text: "Elegimos el alcance, el contenido y el sistema visual adecuado.",
   },
   {
-    title: "Publicamos la mini página",
-    text: "Creamos el link, revisamos mobile y dejamos las acciones principales visibles.",
+    title: "Diseñamos",
+    text: "Construimos una experiencia clara, coherente y pensada primero para móvil.",
   },
   {
-    title: "Entregamos QR y guia",
-    text: "Te damos el QR listo para mostrador, redes o mensajes de WhatsApp.",
+    title: "Implementamos",
+    text: "Configuramos componentes, contenido e integraciones sin añadir complejidad innecesaria.",
+  },
+  {
+    title: "Probamos",
+    text: "Revisamos lectura, navegación, dispositivos y los caminos de contacto.",
+  },
+  {
+    title: "Acompañamos",
+    text: "Publicamos, explicamos lo esencial y dejamos una base preparada para crecer.",
   },
 ];
 
 export function ProcessSection() {
   return (
-    <Reveal>
-      <section id="proceso" className="px-4 py-16 sm:px-6 lg:px-10">
-        <div className="mx-auto max-w-7xl">
-          <div className="grid gap-5 lg:grid-cols-[0.78fr_1fr] lg:items-end">
+    <SectionReveal>
+      <section id="proceso" className="bg-white px-4 py-18 sm:px-8 sm:py-24 lg:px-12">
+        <div className="mx-auto max-w-[1320px]">
+          <div className="grid gap-7 lg:grid-cols-[.9fr_1.1fr] lg:items-end">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--pde-coral)]">
-                Proceso
+              <p className="text-[11px] font-bold uppercase text-[var(--atria-accent)]">
+                Cómo trabajamos
               </p>
-              <h2 className="mt-4 max-w-3xl text-balance text-4xl font-semibold leading-[0.98] sm:text-6xl">
-                Corto, guiado y pensado para negocios ocupados.
+              <h2 className="mt-4 font-serif text-5xl font-medium leading-[0.94] sm:text-6xl">
+                Un proceso claro, sin hacer el proyecto más complicado.
               </h2>
             </div>
-            <p className="text-pretty text-lg leading-8 text-[var(--pde-muted)]">
-              La experiencia evita formularios largos y decisiones tecnicas. El negocio aporta lo que ya tiene; nosotros lo convertimos en un punto de entrada listo para compartir.
+            <p className="max-w-xl text-base leading-7 text-[var(--atria-ink-soft)] lg:justify-self-end">
+              Utilizamos sistemas visuales, componentes reutilizables, plantillas
+              profesionales configurables y procesos definidos para reducir tiempos sin
+              sacrificar calidad.
             </p>
           </div>
-          <AnimatedCards className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+
+          <ol className="mt-12 grid border-l border-t border-black/12 sm:grid-cols-2 lg:grid-cols-3">
             {steps.map((step, index) => (
-              <div
-                data-card
-                key={step.title}
-                className="group rounded-[20px] border border-[var(--pde-border)] bg-[#1c337f]/55 p-6 shadow-[var(--shadow-card)] backdrop-blur-xl transition-[transform,border-color,background-color] duration-300 hover:-translate-y-1 hover:border-[#ffb5cd]/65 hover:bg-[#ff6f9f]/14"
-              >
-                <div className="flex items-center justify-between">
-                  <p className="grid h-8 w-8 place-items-center rounded-full border border-[#f1b3d1]/60 font-mono text-sm text-[var(--pde-coral)]">{index + 1}</p>
-                  <CheckCircle2 className="text-[var(--pde-teal)] transition-transform duration-300 group-hover:scale-110" size={20} />
-                </div>
-                <h3 className="mt-8 text-2xl font-semibold leading-7">{step.title}</h3>
-                <p className="mt-3 leading-7 text-[var(--pde-muted)]">{step.text}</p>
-              </div>
+              <li key={step.title} className="min-h-56 border-b border-r border-black/12 p-6 sm:p-8">
+                <span className="text-xs font-bold text-[var(--atria-accent)]">
+                  0{index + 1}
+                </span>
+                <h3 className="mt-10 font-serif text-3xl font-medium">{step.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-[var(--atria-ink-soft)]">
+                  {step.text}
+                </p>
+              </li>
             ))}
-          </AnimatedCards>
+          </ol>
         </div>
       </section>
-    </Reveal>
+    </SectionReveal>
   );
 }

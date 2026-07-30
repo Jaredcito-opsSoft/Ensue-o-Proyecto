@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 import {
+  ArrowLeft,
   ArrowRight,
   BadgeCheck,
   Headphones,
@@ -8,6 +9,7 @@ import {
   ShieldCheck,
   Truck,
 } from "lucide-react";
+import Link from "next/link";
 import { Reveal } from "@/components/motion/Reveal";
 import { CelluxHeroCarousel } from "@/components/demos/CelluxHeroCarousel";
 
@@ -67,6 +69,14 @@ function CelluxButton({ children, href, dark = false }: { children: ReactNode; h
 export function CelluxPage() {
   return (
     <main className="min-h-screen bg-[#f7f7f6] pb-20 text-[#0b0c0e] md:pb-0">
+      <Link
+        href="/"
+        className="fixed left-4 top-4 z-50 flex items-center gap-2 border border-white/10 bg-black/60 px-3.5 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-white shadow-[0_8px_30px_rgba(0,0,0,0.3)] backdrop-blur-md rounded-full transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-black hover:border-white active:translate-y-0 active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white md:left-8 md:top-8 group pde-back-btn-anim"
+      >
+        <ArrowLeft size={13} strokeWidth={2.5} className="transition-transform duration-300 group-hover:-translate-x-0.5" />
+        <span className="hidden sm:inline">Volver a Ensueño</span>
+        <span className="sm:hidden">Volver</span>
+      </Link>
       <CelluxHeroCarousel />
 
       <section id="nosotros" className="border-b border-black/10 bg-white px-5 sm:px-8 lg:px-12">

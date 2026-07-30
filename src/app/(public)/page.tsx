@@ -1,25 +1,12 @@
-import { BenefitsSection } from "@/components/landing/BenefitsSection";
-import { DemoPreviewSection } from "@/components/landing/DemoPreviewSection";
-import { FAQSection } from "@/components/landing/FAQSection";
-import { FinalCTASection } from "@/components/landing/FinalCTASection";
-import { HeroSection } from "@/components/landing/HeroSection";
-import { PackagesSection } from "@/components/landing/PackagesSection";
-import { ProblemSection } from "@/components/landing/ProblemSection";
-import { ProcessSection } from "@/components/landing/ProcessSection";
-import { SolutionSection } from "@/components/landing/SolutionSection";
+import type { Metadata } from "next";
+import { CinematicLanding } from "@/components/landing/CinematicLanding";
+
+export const metadata: Metadata = {
+  title: "Atria — Estudio digital para negocios",
+  description:
+    "Creamos sitios web, presencia online, experiencias digitales para eventos y herramientas para pequeños negocios en Tuxtla Gutiérrez.",
+};
 
 export default function HomePage() {
-  return (
-    <main>
-      <HeroSection />
-      <ProblemSection />
-      <SolutionSection />
-      <BenefitsSection />
-      <DemoPreviewSection />
-      <PackagesSection />
-      <ProcessSection />
-      <FAQSection />
-      <FinalCTASection />
-    </main>
-  );
+  return <CinematicLanding />;
 }

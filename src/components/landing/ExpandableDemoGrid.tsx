@@ -1,8 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import type { ReactNode } from "react";
 
 const INITIAL_VISIBLE_PAGES = 3;
 
@@ -13,14 +12,14 @@ export function ExpandableDemoGrid({ children }: { children: ReactNode[] }) {
 
   return (
     <>
-      <div className="mt-10 grid gap-5 lg:grid-cols-3">{visibleChildren}</div>
+      <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">{visibleChildren}</div>
       {hasMorePages ? (
         <div className="mt-8 flex justify-center">
           <button
             type="button"
             aria-expanded={expanded}
             onClick={() => setExpanded((current) => !current)}
-            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-[#ffb5cd]/55 bg-[#ff6f9f]/16 px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_28px_rgba(255,111,159,0.14)] backdrop-blur-xl transition-[transform,border-color,background-color] duration-300 hover:-translate-y-0.5 hover:border-[#ffd0de] hover:bg-[#ff6f9f]/28 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ffb5cd]"
+            className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-black/15 bg-white px-6 py-3 text-sm font-bold text-[var(--atria-ink)] transition-[transform,border-color,background-color] duration-300 hover:-translate-y-0.5 hover:border-[var(--atria-accent)] hover:bg-[var(--atria-accent-soft)]"
           >
             {expanded ? "Ver menos" : "Ver más páginas"}
             {expanded ? <ChevronUp size={17} /> : <ChevronDown size={17} />}

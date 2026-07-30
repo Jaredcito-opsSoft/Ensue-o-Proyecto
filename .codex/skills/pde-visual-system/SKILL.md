@@ -1,11 +1,11 @@
 ---
 name: pde-visual-system
-description: Visual direction and implementation guardrails for Presencia Digital Express / Ensueno public pages, mini business pages, motion, mobile-first QA, and no-gradient local-premium UI.
+description: Visual direction and implementation guardrails for Atria, Ensueño Momentos, public business pages, purposeful motion, mobile-first QA, and no-gradient local-premium UI.
 ---
 
-# Presencia Digital Express Visual System Skill
+# Atria Public Visual System Skill
 
-Use this skill when designing, reviewing, or implementing the public experience for Presencia Digital Express / Ensueno:
+Use this skill when designing, reviewing, or implementing the public experience for Atria and Ensueño Momentos:
 
 - Landing page.
 - Demo pages.
@@ -15,21 +15,33 @@ Use this skill when designing, reviewing, or implementing the public experience 
 
 Do not use this skill for backend, database, auth, CRUD, POS, inventory, billing, or internal admin workflows except for light visual consistency checks.
 
+## Brand Architecture (July 29, 2026)
+
+- Atria is the parent brand and digital studio.
+- Atria Web creates custom business websites with online presence included according to scope.
+- Google Business, Maps, WhatsApp, domain, location, hours, and contact channels are Atria Web capabilities, not a separate product.
+- Ensueño Momentos is the emotional line for weddings, couples, birthdays, and celebrations.
+- LocalPOS is an independent operational product created by Atria.
+- CelLab Tuxtla is an operating project and case study, not an Atria service.
+- Do not use Ensueño Web, Ensueño Eventos, or Ensueño POS.
+- Social media management and generic automation are not core launch offers.
+
 ## Product Aesthetic
 
-The product should feel like a polished digital business card studio for local businesses.
+The public Atria landing is light, editorial, optimistic, and human. Light gray,
+white, cream, graphite, and terracotta define the main experience. Warm black,
+copper, and soft gold are reserved for the six-stage cinematic interlude and the
+Ensueño Momentos contrast section.
 
-Target reaction: "Si, quiero que mi negocio se vea asi."
-
-The visual language is luminous midnight SaaS for local businesses: direct, aspirational, product-like, mobile-first, and visually rich enough to make a local owner want to see their own business in it. Color psychology priority: trust first, aspiration second, warmth third.
+Target reaction: "Quiero que mi negocio tenga una presencia asi de cuidada."
 
 ## Non-Negotiables
 
-- No gradients: no `linear-gradient`, `radial-gradient`, `conic-gradient`, or decorative gradient backgrounds.
-- No glow-heavy effects, decorative blobs, decorative glassmorphism, or generic SaaS hero patterns. Use translucent blue glass, fine luminous borders, restrained circles, and photography instead.
+- Gradients are limited to low-opacity environmental light and readability overlays over photography. Never use colorful gradient decoration.
+- No glow-heavy effects, decorative blobs, excessive glassmorphism, or generic SaaS hero patterns. Use neutral hairline borders, solid light fields, and purposeful photography instead.
 - No WhatsApp-green branding. WhatsApp is a feature and CTA label, not the color identity.
 - Avoid retro poster colors unless the user explicitly asks to return to that direction.
-- Avoid dominant yellow. Yellow can call attention, but it should not drive the brand because it feels less trustworthy for this product.
+- Terracotta is Atria's primary action color. Gold and amber belong mainly to the dark cinematic interlude.
 - No excessive motion. Motion supports clarity and perceived quality.
 - Public pages must be understandable with motion disabled.
 - Mobile comes first.
@@ -46,36 +58,42 @@ The visual language is luminous midnight SaaS for local businesses: direct, aspi
 
 Do not copy brand colors, layouts, slogans, or signature animations from these references.
 
-## Palette
+## Public Landing Palette
 
-- Midnight: `#07164B`
-- Midnight strong: `#0B236C`
-- Surface: `#152A78`
-- Surface bright: `#233B91`
-- Glass: `rgba(32, 52, 136, 0.56)`
-- Ink: `#F8F4FF`
-- Muted: `#C7C8E8`
-- Border: `rgba(210, 209, 255, 0.28)`
-- Action pink: `#FF6F9F`
-- Action pink dark: `#E84D82`
-- Lilac signal: `#9F8CFF`
-- Soft rose: `#F6A1C1`
-- Blue light: `#6F93FF`
+- Page: `#EDEDEB`
+- Surface: `#FFFFFF`
+- Surface soft: `#F5F2EE`
+- Surface warm: `#F7EEE7`
+- Text: `#111214`
+- Text secondary: `#626267`
+- Accent: `#EF5A2F`
+- Accent hover: `#D84A24`
+- Accent soft: `#FBE2D7`
+- Border: `#D9D7D3`
+- Cinematic dark: `#11100F`
+- Copper: `#A7622C`
+- Gold soft: `#E7B978`
 
-Blue is the field of trust and continuity. Pink is scarce and reserved for the action that moves the user forward. Lilac signals craft and digital polish. Keep most UI in midnight blue glass with pale borders; never introduce green or yellow as a brand driver.
+The legacy PDE and Ensueño tokens remain available for panel compatibility,
+existing demos, and the cinematic scrollytelling. They are not Atria's primary
+landing identity.
 
 ## Identity Position
 
-Recommended direction: Luminous Midnight Local SaaS.
+Recommended direction: Light Editorial Product House.
 
-PDE should feel like a boutique studio that packages a local business into a polished, shareable page. Use the "living business card" as the signature object: a browser-like mini page, catalog, WhatsApp, map, and QR in one composed artifact. In the hero it is the visible proof of the offer, not a generic dashboard mockup.
+The hero signature is an original daylight studio image plus restrained, independently
+controlled butterfly paths and one shared preview containing Atria Web, Ensueño
+Momentos, and LocalPOS. It must communicate a product house, not a fictional unified
+SaaS dashboard. Do not restore the 33 MB remote hero video: its embedded butterflies
+cannot be controlled accessibly or paused with the page lifecycle.
 
 Images can use black-and-white or high-contrast editorial treatment, especially in demos. Glass surfaces are allowed only when they clarify hierarchy: translucent but readable, bordered, and never dependent on blur alone for contrast.
 
 ## Typography
 
-- Geist is the current base.
-- Source Serif is the display face for the primary hero and closing promise; it keeps the studio considered rather than corporate.
+- Manrope is the current interface and body face.
+- Cormorant Garamond is the display face for editorial headlines and the closing promise.
 - Headings are large, confident, and tightly set.
 - Body copy is plain, direct, and readable on mobile.
 - Avoid technical language in public pages.
@@ -87,7 +105,7 @@ Preferred copy:
 - "Mini pagina, QR y contacto directo."
 - "Ideal para negocios que venden por WhatsApp."
 
-Avoid:
+Avoid in public copy:
 
 - "backend"
 - "CRUD"
@@ -109,12 +127,14 @@ Borrow Motion.dev principles:
 
 Approved patterns:
 
-- Hero preview card settle.
-- QR chip/card settle.
-- Demo card stagger.
-- Service card stagger.
-- Gallery reveal.
-- Useful signal ticker.
+- One GSAP ScrollTrigger timeline for the six-stage desktop/tablet narrative.
+- Crossfades with restrained translation, scale, blur, and environmental light.
+- Short section reveals below the narrative.
+- Mobile natural-flow storytelling with no pin or scrub.
+- A free-scroll Atria project carousel with native touch/trackpad movement, keyboard arrows, explicit previous/next controls, visible progress, and user-approved autoplay at a calm 5-6 second cadence. Autoplay pauses on hover/focus, exposes a play/pause control, stops while the document is hidden, and remains disabled under `prefers-reduced-motion`.
+- Primary actions may lift up to 3px on hover and compress to `0.97` on press. Do not loop or pulse.
+- Carousel controls keep a familiar arrow visible at rest; small dot motion may support hover/focus but must never obscure the control's direction.
+- The mobile navigation panel can use a short scale/translate entrance and 30ms staggered link reveals, while reduced motion shows all items immediately.
 
 Avoid:
 
@@ -122,23 +142,40 @@ Avoid:
 - Confetti.
 - Typewriter.
 - Drag interactions.
-- Long scroll-linked effects.
+- Competing ScrollTriggers inside the six-stage narrative.
 - Any animation that delays core content.
 
 ## Page Patterns
 
 Landing:
 
-1. Midnight SaaS-style hero with compact glass nav, direct offer, pink CTA and living business card preview.
-2. Useful signal ticker.
-3. Problem section as clear rows, not decorative cards.
-4. Deep-blue solution band with modular product capabilities.
-5. Benefits with real business outcome.
-6. Demo cards for beauty, food and repair.
-7. Packages without final pricing.
-8. Simple process, with order markers that communicate the real sequence.
-9. FAQ.
-10. Final CTA.
+1. Floating white navigation over a light, full-viewport editorial hero.
+2. Concise explanation of Atria.
+3. Editorial problem-to-solution list.
+4. Atria Web with online presence included.
+5. Audience profiles.
+6. Six-stage GSAP narrative: Atria, web, presence, Ensueño Momentos, LocalPOS, growth.
+7. Real production projects only.
+8. Dedicated Ensueño Momentos and LocalPOS sections.
+9. Six-step process.
+10. Atria Web launch plans presented as editorial rows.
+11. Terracotta closing CTA and dark footer.
+
+Current landing direction (July 29, 2026):
+
+- The parent landing brand is Atria; Ensueño only appears as Ensueño Momentos.
+- Use the art-directed AVIF files under `public/media/atria-scroll/desktop`,
+  `tablet`, and `mobile` as successive states of one experience. Keep the sources and
+  attribution in `public/media/atria-scroll/source` and `SOURCES.md`.
+- Desktop uses one pinned ScrollTrigger timeline ending near `+=450%`; tablet uses a shorter pinned timeline; mobile and reduced-motion use normal document flow.
+- Preload only the first scene. Warm the second scene as the sequence approaches and then load the remainder.
+- Keep all explanatory content in semantic HTML. Information visible inside an image must not be the only source of meaning.
+- Use the approved Atria Web Esencial, Atria Web Crecimiento, and Atria Profesional names with a clear scope disclaimer.
+- Scope the light parent identity to `.atria-landing`; do not recolor demos, panel, backend, or LocalPOS.
+- The Atria header uses restrained neutral liquid glass: compact, readable, measured for anchor offsets, and more opaque when the mobile menu is open.
+- Do not refresh the six-stage ScrollTrigger as progressively loaded frames decode. Keep the first scene deterministic before scroll and let later images load without recalculating the pinned timeline.
+- The Atria project grid presents CelLab Tuxtla and LocalPOS as production work, plus Beauty LA and Coleta as clearly labeled design demos. Do not include Cellux in the parent portfolio grid.
+- Ensueño Momentos should use human event photography where the gathering is immediately legible. Prefer celebrations with people, tables, light, and interaction over invitation flat lays.
 
 Mini business page:
 
@@ -155,7 +192,7 @@ Mini business page:
 
 Beauty LA demo (`/demo/estetica`):
 
-- This route is a deliberate brand exception to the midnight parent landing.
+- This route is a deliberate brand exception to the warm cinematic parent landing.
 - Palette: warm ivory `#F6F1EA`, near-black `#1E1C19`, warm gray `#5A534D`, and translucent charcoal overlays.
 - Source Serif carries the editorial headlines; Geist handles navigation, labels, details, and actions.
 - The hero pairs a large brand promise with a real editorial portrait and compact schedule/consultation panels.
@@ -165,7 +202,7 @@ Beauty LA demo (`/demo/estetica`):
 
 Coleta demo (`/demo/coleta`, with `/demo/comida` compatibility):
 
-- This route is the gastronomic brand exception to the midnight parent landing.
+- This route is the gastronomic brand exception to the warm cinematic parent landing.
 - Palette: charcoal `#0D0D0C`, ivory `#F4F1EC`, muted gold `#B79A5B`, and warm ink `#25211C`.
 - Source Serif carries the culinary manifesto and section titles; Geist handles navigation, menu notes, schedules, and actions.
 - The hero must feel cinematic and product-led, with the plated dish as the dominant first-viewport signal.
@@ -175,7 +212,7 @@ Coleta demo (`/demo/coleta`, with `/demo/comida` compatibility):
 
 Cellux demo (`/demo/taller`):
 
-- This route is the technology and repair brand exception to the midnight parent landing.
+- This route is the technology and repair brand exception to the warm cinematic parent landing.
 - Palette: near-black `#08090B`, white `#FFFFFF`, soft catalog gray `#EDEDEC`, and graphite `#111214`.
 - Geist carries the entire interface; hierarchy comes from weight, scale, spacing, and industrial precision rather than a display serif.
 - The hero uses a monumental unbranded flagship phone composition with clear negative space for the promise.
