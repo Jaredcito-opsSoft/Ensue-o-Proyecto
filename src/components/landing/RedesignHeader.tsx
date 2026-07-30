@@ -1,9 +1,10 @@
 "use client";
 
-import { ArrowUpRight, Menu, Sparkles, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { ArrowUpRight, Menu, Sparkles, X } from "lucide-react";
 import { appConfig } from "@/lib/constants";
 import { createWhatsAppLink } from "@/lib/whatsapp";
+import { AtriaLogo } from "@/components/ui/AtriaLogo";
 
 const links = [
   { label: "Demos", href: "#demos" },
@@ -30,9 +31,8 @@ export function RedesignHeader() {
   return (
     <header className={`fixed inset-x-0 top-0 z-[100] border-b transition-[background-color,border-color] duration-300 ${scrolled || open ? "border-white/14 bg-[#07164b]/94 backdrop-blur-xl" : "border-transparent bg-transparent"}`}>
       <div className="mx-auto flex min-h-[74px] max-w-[1400px] items-center justify-between px-5 sm:px-8 lg:px-12">
-        <a href="#inicio" className="inline-flex items-center gap-2 text-xl font-semibold text-white">
-          <Sparkles size={17} className="text-[#ff7bab]" aria-hidden="true" />
-          Ensueño
+        <a href="#inicio" className="group inline-flex items-center text-white" aria-label="Atria — Estudio Digital, ir al inicio">
+          <AtriaLogo light showSlogan={!scrolled} sloganText="Estudio Digital" />
         </a>
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-white/70 md:flex" aria-label="Navegación principal">

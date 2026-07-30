@@ -18,9 +18,37 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Ensueño — Todo tu negocio, en un solo lugar",
+  metadataBase: new URL("https://atria-designstudio.vercel.app"),
+  title: {
+    default: "Atria — Estudio Digital | Diseño, Código & Presencia Web",
+    template: "%s | Atria — Estudio Digital",
+  },
   description:
-    "Diseñamos presencia online, sitios web, experiencias para eventos, automatizaciones y sistemas que evolucionan junto con tu negocio.",
+    "Estudio digital especializado en presencia online, sitios web a medida, experiencias digitales para eventos y soluciones tecnológicas para negocios.",
+  keywords: [
+    "Atria",
+    "Estudio Digital",
+    "Diseño Web",
+    "Desarrollo Web",
+    "Presencia Online",
+    "Tuxtla Gutiérrez",
+    "LocalPOS",
+  ],
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/favicon.svg",
+  },
+  openGraph: {
+    title: "Atria — Estudio Digital para Negocios",
+    description:
+      "Diseño web, experiencias interactivas y soluciones digitales creadas a medida para tu marca.",
+    url: "https://atria-designstudio.vercel.app",
+    siteName: "Atria — Estudio Digital",
+    locale: "es_MX",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

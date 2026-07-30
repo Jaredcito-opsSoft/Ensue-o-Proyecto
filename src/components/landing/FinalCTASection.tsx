@@ -1,6 +1,7 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { appConfig } from "@/lib/constants";
 import { createWhatsAppLink } from "@/lib/whatsapp";
+import { AtriaLogo } from "@/components/ui/AtriaLogo";
 
 const localPOSUrl = "https://localpos-marketing.vercel.app/";
 const celLabUrl = "https://cellab-tuxtla.vercel.app/";
@@ -58,16 +59,11 @@ export function FinalCTASection() {
             <div>
               <a
                 href="#inicio"
-                className="inline-flex items-center gap-2 font-serif text-3xl font-semibold text-white"
+                className="group inline-flex items-center text-white"
+                aria-label="Atria — Estudio Digital, ir al inicio"
               >
-                <span className="grid h-7 w-7 place-items-center rounded-full bg-white font-sans text-xs font-bold text-[var(--atria-dark)]">
-                  A
-                </span>
-                Atria
+                <AtriaLogo light sloganText="Estudio Digital" />
               </a>
-              <p className="mt-2 text-xs font-bold uppercase text-[var(--atria-gold)]">
-                Estudio digital
-              </p>
               <p className="mt-4 max-w-sm leading-6">
                 Diseño y tecnología para negocios con algo que contar.
               </p>

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, type MouseEvent } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { appConfig } from "@/lib/constants";
 import { createWhatsAppLink } from "@/lib/whatsapp";
+import { AtriaLogo } from "@/components/ui/AtriaLogo";
 
 const navLinks = [
   { label: "Servicios", href: "#servicios" },
@@ -108,13 +109,10 @@ export function Header() {
         <a
           href="#inicio"
           onClick={(event) => handleAnchorNavigation(event, "#inicio")}
-          className="inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full px-2.5 font-serif text-[1.55rem] font-semibold leading-none text-[var(--atria-ink)]"
-          aria-label="Atria, ir al inicio"
+          className="group inline-flex min-h-11 shrink-0 items-center rounded-full px-2 text-[var(--atria-ink)]"
+          aria-label="Atria — Estudio Digital, ir al inicio"
         >
-          <span className="grid h-7 w-7 place-items-center rounded-full bg-[var(--atria-ink)] font-sans text-xs font-bold text-white">
-            A
-          </span>
-          Atria
+          <AtriaLogo showSlogan={!scrolled} sloganText="Estudio Digital" />
         </a>
 
         <nav className="mx-auto hidden items-center gap-5 xl:flex" aria-label="Navegación principal">
