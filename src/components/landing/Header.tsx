@@ -36,7 +36,7 @@ export function Header() {
     if (!header) return;
 
     const updateOffset = () => {
-      document.documentElement.style.setProperty("--atria-nav-offset", "28px");
+      document.documentElement.style.setProperty("--atria-nav-offset", "0px");
     };
     const observer = new ResizeObserver(updateOffset);
 
@@ -54,7 +54,7 @@ export function Header() {
       const offset =
         Number.parseFloat(
           getComputedStyle(document.documentElement).getPropertyValue("--atria-nav-offset")
-        ) || 28;
+        ) || 0;
       const top = target.getBoundingClientRect().top + window.scrollY - offset;
       window.scrollTo({ top: Math.max(0, top), behavior: "auto" });
     };
@@ -84,7 +84,7 @@ export function Header() {
     const offset =
       Number.parseFloat(
         getComputedStyle(document.documentElement).getPropertyValue("--atria-nav-offset")
-      ) || 28;
+      ) || 0;
     const top = target.getBoundingClientRect().top + window.scrollY - offset;
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
