@@ -37,7 +37,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: var(--atria-nav-offset, 92px);
+  scroll-padding-top: var(--atria-nav-offset, 124px);
   overflow-x: hidden;
 }
 
@@ -136,7 +136,7 @@ img {
 
 .atria-landing section[id],
 .atria-landing footer[id] {
-  scroll-margin-top: var(--atria-nav-offset, 92px);
+  scroll-margin-top: var(--atria-nav-offset, 124px);
 }
 
 .atria-liquid-nav,

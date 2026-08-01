@@ -37,7 +37,7 @@ export function Header() {
 
     const updateOffset = () => {
       const height = Math.ceil(header.getBoundingClientRect().height);
-      document.documentElement.style.setProperty("--atria-nav-offset", `${height + 20}px`);
+      document.documentElement.style.setProperty("--atria-nav-offset", `${height + 52}px`);
     };
     const observer = new ResizeObserver(updateOffset);
 
