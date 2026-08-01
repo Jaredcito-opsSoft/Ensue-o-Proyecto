@@ -67,7 +67,7 @@ export function HeroSection() {
             data-hero-reveal
             className="inline-flex min-h-8 items-center gap-2 rounded-full border border-black/10 bg-white/92 px-4 text-[10px] font-bold uppercase text-[#55565a] shadow-sm sm:text-xs"
           >
-            <span className="h-2 w-2 rounded-full bg-[var(--atria-accent)]" />
+            <span className="atria-dot-live h-2 w-2 rounded-full bg-[var(--atria-accent)]" />
             Atria · Estudio digital
           </div>
 

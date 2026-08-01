@@ -11,7 +11,7 @@ export function AtriaIntroSection() {
         <div className="mx-auto max-w-[1320px] border-t border-black/12 pt-8 sm:pt-10">
           <div className="grid gap-10 lg:grid-cols-[1.15fr_.85fr] lg:items-end">
             <div>
-              <p className="text-[11px] font-bold uppercase text-[var(--atria-accent)]">
+              <p className="atria-eyebrow text-[11px] font-bold uppercase text-[var(--atria-accent)]">
                 Acerca de Atria
               </p>
               <h2 className="mt-4 max-w-[780px] font-serif text-5xl font-medium leading-[0.94] sm:text-6xl lg:text-7xl">
@@ -36,19 +36,19 @@ export function AtriaIntroSection() {
                 </p>
               </div>
               <dl className="mt-7 grid grid-cols-2 gap-x-6 gap-y-5 border-t border-black/12 pt-5 text-sm sm:grid-cols-3">
-                <div>
+                <div className="atria-stat-item">
                   <dt className="text-[10px] font-bold uppercase text-[var(--atria-muted)]">
                     Atención
                   </dt>
                   <dd className="mt-1 font-semibold text-[var(--atria-ink)]">En línea</dd>
                 </div>
-                <div>
+                <div className="atria-stat-item">
                   <dt className="text-[10px] font-bold uppercase text-[var(--atria-muted)]">
                     Comunicación
                   </dt>
                   <dd className="mt-1 font-semibold text-[var(--atria-ink)]">Directa</dd>
                 </div>
-                <div className="col-span-2 sm:col-span-1">
+                <div className="atria-stat-item col-span-2 sm:col-span-1">
                   <dt className="text-[10px] font-bold uppercase text-[var(--atria-muted)]">
                     Mercado inicial
                   </dt>

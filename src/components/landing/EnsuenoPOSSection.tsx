@@ -32,7 +32,7 @@ export function EnsuenoPOSSection() {
       >
         <div className="mx-auto grid max-w-[1320px] gap-10 lg:grid-cols-[.78fr_1.22fr] lg:items-center">
           <div>
-            <p className="text-[11px] font-bold uppercase text-[var(--atria-accent)]">
+            <p className="atria-eyebrow text-[11px] font-bold uppercase text-[var(--atria-accent)]">
               LocalPOS · Producto independiente
             </p>
             <h2 className="mt-4 font-serif text-5xl font-medium leading-[0.94] sm:text-6xl">
@@ -47,7 +47,7 @@ export function EnsuenoPOSSection() {
               {capabilities.map(({ icon: Icon, label }) => (
                 <div
                   key={label}
-                  className="flex min-h-16 items-center gap-3 border-b border-r border-black/10 bg-white px-4 text-xs font-bold"
+                  className="atria-capability-chip flex min-h-16 items-center gap-3 border-b border-r border-black/10 bg-white px-4 text-xs font-bold"
                 >
                   <Icon size={17} className="shrink-0 text-[var(--atria-accent)]" aria-hidden />
                   {label}

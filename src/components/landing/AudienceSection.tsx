@@ -48,7 +48,7 @@ export function AudienceSection() {
         <div className="mx-auto max-w-[1320px]">
           <div className="grid gap-6 border-b border-black/12 pb-9 lg:grid-cols-[1fr_.7fr] lg:items-end">
             <div>
-              <p className="text-[11px] font-bold uppercase text-[var(--atria-accent)]">
+              <p className="atria-eyebrow text-[11px] font-bold uppercase text-[var(--atria-accent)]">
                 Para quién trabajamos
               </p>
               <h2 className="mt-4 max-w-3xl font-serif text-5xl font-medium leading-[0.94] sm:text-6xl">
@@ -66,10 +66,12 @@ export function AudienceSection() {
             {profiles.map(({ icon: Icon, name, need }) => (
               <article
                 key={name}
-                className="min-h-48 border-b border-black/12 py-7 sm:border-r sm:px-7 sm:first:pl-0 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(3n)]:border-r-0 lg:[&:nth-child(3n+1)]:pl-0"
+                className="atria-profile-article min-h-48 border-b border-black/12 py-7 sm:border-r sm:px-7 sm:first:pl-0 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(3n)]:border-r-0 lg:[&:nth-child(3n+1)]:pl-0"
               >
-                <Icon size={21} className="text-[var(--atria-accent)]" aria-hidden />
-                <h3 className="mt-8 font-serif text-3xl font-medium">{name}</h3>
+                <span className="atria-icon-wrapper">
+                  <Icon size={20} className="text-[var(--atria-accent)]" aria-hidden />
+                </span>
+                <h3 className="mt-6 font-serif text-3xl font-medium">{name}</h3>
                 <p className="mt-2 text-sm leading-6 text-[var(--atria-ink-soft)]">{need}</p>
               </article>
             ))}

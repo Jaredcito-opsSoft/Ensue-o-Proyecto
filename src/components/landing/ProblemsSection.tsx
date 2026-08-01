@@ -17,7 +17,7 @@ export function ProblemsSection() {
         <div className="mx-auto max-w-[1320px]">
           <div className="grid gap-6 lg:grid-cols-[.85fr_1.15fr] lg:items-end">
             <div>
-              <p className="text-[11px] font-bold uppercase text-[var(--atria-accent)]">
+              <p className="atria-eyebrow text-[11px] font-bold uppercase text-[var(--atria-accent)]">
                 Problemas concretos
               </p>
               <h2 className="mt-4 max-w-3xl font-serif text-5xl font-medium leading-[0.94] sm:text-6xl">
@@ -35,9 +35,9 @@ export function ProblemsSection() {
               <a
                 key={problem}
                 href={href}
-                className="group grid min-h-20 items-center gap-3 border-b border-black/12 py-4 sm:grid-cols-[64px_1fr_1fr_auto] sm:gap-6"
+                className="atria-problem-row group grid min-h-20 items-center gap-3 border-b border-black/12 py-4 sm:grid-cols-[64px_1fr_1fr_auto] sm:gap-6"
               >
-                <span className="hidden text-xs font-bold text-[var(--atria-muted)] sm:block">
+                <span className="atria-problem-number hidden text-xs font-bold text-[var(--atria-muted)] sm:block">
                   0{index + 1}
                 </span>
                 <span className="text-sm text-[var(--atria-ink-soft)] sm:text-base">
@@ -46,7 +46,7 @@ export function ProblemsSection() {
                 <span className="font-serif text-2xl font-medium leading-tight sm:text-3xl">
                   {solution}
                 </span>
-                <span className="grid h-10 w-10 place-items-center rounded-full border border-black/14 transition-colors group-hover:border-[var(--atria-accent)] group-hover:bg-[var(--atria-accent)] group-hover:text-white">
+                <span className="atria-problem-arrow grid h-10 w-10 place-items-center rounded-full border border-black/14 transition-colors group-hover:border-[var(--atria-accent)] group-hover:bg-[var(--atria-accent)] group-hover:text-white">
                   <ArrowRight size={16} aria-hidden />
                 </span>
               </a>

@@ -30,7 +30,7 @@ export function EnsuenoEventosSection() {
       >
         <div className="mx-auto grid max-w-[1320px] overflow-hidden rounded-lg border border-white/12 lg:grid-cols-[.9fr_1.1fr]">
           <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-12">
-            <p className="text-[11px] font-bold uppercase text-[var(--atria-gold)]">
+            <p className="atria-eyebrow text-[11px] font-bold uppercase text-[var(--atria-gold)]">
               Ensueño Momentos · Una línea de Atria
             </p>
             <h2 className="mt-5 font-serif text-5xl font-medium leading-[0.92] sm:text-6xl lg:text-7xl">
@@ -47,7 +47,7 @@ export function EnsuenoEventosSection() {
               {features.map(({ icon: Icon, label }) => (
                 <div
                   key={label}
-                  className="flex min-h-16 items-center gap-2 border-b border-r border-white/12 px-3 text-[11px] font-semibold"
+                  className="atria-feature-chip flex min-h-16 items-center gap-2 border-b border-r border-white/12 px-3 text-[11px] font-semibold"
                 >
                   <Icon size={15} className="shrink-0 text-[var(--atria-gold)]" aria-hidden />
                   {label}
@@ -57,7 +57,7 @@ export function EnsuenoEventosSection() {
 
             <a
               href="#contacto"
-              className="atria-float-action group mt-8 inline-flex min-h-12 w-fit items-center gap-3 border border-white/25 px-5 text-sm font-bold hover:bg-white hover:text-[var(--atria-dark)]"
+              className="atria-float-action group mt-8 inline-flex min-h-12 w-fit items-center gap-3 rounded-full border border-white/25 px-5 text-sm font-bold hover:bg-white hover:text-[var(--atria-dark)]"
             >
               Diseñar mi momento
               <ArrowUpRight

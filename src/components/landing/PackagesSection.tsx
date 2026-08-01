@@ -64,7 +64,7 @@ export function PackagesSection() {
         <div className="mx-auto max-w-[1320px]">
           <div className="grid gap-7 lg:grid-cols-[.9fr_1.1fr] lg:items-end">
             <div>
-              <p className="text-[11px] font-bold uppercase text-[var(--atria-accent)]">
+              <p className="atria-eyebrow text-[11px] font-bold uppercase text-[var(--atria-accent)]">
                 Planes de Atria Web
               </p>
               <h2 className="mt-4 font-serif text-5xl font-medium leading-[0.94] sm:text-6xl">
@@ -81,8 +81,8 @@ export function PackagesSection() {
             {packages.map((pack, index) => (
               <article
                 key={pack.name}
-                className={`grid gap-7 border-b border-black/10 p-6 last:border-b-0 sm:p-8 lg:grid-cols-[.8fr_.75fr_1.25fr_auto] lg:items-center ${
-                  index === 1 ? "bg-[var(--atria-surface-warm)]" : ""
+                className={`atria-package-card grid gap-7 border-b border-black/10 p-6 last:border-b-0 sm:p-8 lg:grid-cols-[.8fr_.75fr_1.25fr_auto] lg:items-center ${
+                  index === 1 ? "atria-package-featured bg-[var(--atria-surface-warm)]" : ""
                 }`}
               >
                 <div>

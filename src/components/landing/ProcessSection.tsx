@@ -34,7 +34,7 @@ export function ProcessSection() {
         <div className="mx-auto max-w-[1320px]">
           <div className="grid gap-7 lg:grid-cols-[.9fr_1.1fr] lg:items-end">
             <div>
-              <p className="text-[11px] font-bold uppercase text-[var(--atria-accent)]">
+              <p className="atria-eyebrow text-[11px] font-bold uppercase text-[var(--atria-accent)]">
                 Cómo trabajamos
               </p>
               <h2 className="mt-4 font-serif text-5xl font-medium leading-[0.94] sm:text-6xl">
@@ -50,11 +50,11 @@ export function ProcessSection() {
 
           <ol className="mt-12 grid border-l border-t border-black/12 sm:grid-cols-2 lg:grid-cols-3">
             {steps.map((step, index) => (
-              <li key={step.title} className="min-h-56 border-b border-r border-black/12 p-6 sm:p-8">
-                <span className="text-xs font-bold text-[var(--atria-accent)]">
+              <li key={step.title} className="atria-process-step min-h-56 border-b border-r border-black/12 p-6 sm:p-8">
+                <span className="atria-step-number">
                   0{index + 1}
                 </span>
-                <h3 className="mt-10 font-serif text-3xl font-medium">{step.title}</h3>
+                <h3 className="atria-step-title mt-4 font-serif text-3xl font-medium">{step.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-[var(--atria-ink-soft)]">
                   {step.text}
                 </p>

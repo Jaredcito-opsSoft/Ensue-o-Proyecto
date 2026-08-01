@@ -35,7 +35,7 @@ export function FinalCTASection() {
               ].map(([title, description]) => (
                 <div
                   key={title}
-                  className="border-b border-white/20 py-4 last:border-b-0 sm:border-b-0 sm:border-r sm:px-5 sm:first:pl-0 sm:last:border-r-0 sm:last:pr-0"
+                  className="atria-mini-stat border-b border-white/20 py-4 last:border-b-0 sm:border-b-0 sm:border-r sm:px-5 sm:first:pl-0 sm:last:border-r-0 sm:last:pr-0"
                 >
                   <p className="text-xs font-bold text-white">{title}</p>
                   <p className="mt-1 text-xs leading-5 text-white/70">{description}</p>

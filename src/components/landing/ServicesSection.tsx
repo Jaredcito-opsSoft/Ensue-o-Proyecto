@@ -32,7 +32,7 @@ export function ServicesSection() {
           <div className="grid overflow-hidden rounded-lg border border-black/10 bg-white lg:grid-cols-[.92fr_1.08fr]">
             <div className="flex flex-col p-7 sm:p-10 lg:p-12">
               <div className="flex items-center justify-between gap-4">
-                <p className="text-[11px] font-bold uppercase text-[var(--atria-accent)]">
+                <p className="atria-eyebrow text-[11px] font-bold uppercase text-[var(--atria-accent)]">
                   Atria Web
                 </p>
                 <span className="inline-flex items-center gap-2 rounded-full bg-[var(--atria-accent-soft)] px-3 py-2 text-[10px] font-bold uppercase text-[var(--atria-accent-hover)]">
@@ -53,7 +53,7 @@ export function ServicesSection() {
                 {deliverables.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-2 text-sm leading-6 text-[var(--atria-ink-soft)]"
+                    className="atria-deliverable-item flex items-start gap-2 text-sm leading-6 text-[var(--atria-ink-soft)]"
                   >
                     <Check
                       size={15}
