@@ -4,7 +4,7 @@ import { createWhatsAppLink } from "@/lib/whatsapp";
 import { AtriaLogo } from "@/components/ui/AtriaLogo";
 
 const localPOSUrl = "https://localpos-marketing.vercel.app/";
-const celLabUrl = "https://cellab-tuxtla.vercel.app/";
+const celLabUrl = "https://localpos-cellab.vercel.app/";
 
 export function FinalCTASection() {
   const href = createWhatsAppLink(
@@ -23,9 +23,25 @@ export function FinalCTASection() {
               correcta.
             </h2>
             <p className="mt-6 max-w-3xl text-base leading-7 text-white/82">
-              Atria puede ayudarte a construir una presencia profesional, crear una
-              experiencia para un momento especial o mejorar la operación de tu negocio.
+              Cuéntanos qué necesita tu negocio. Podemos coordinar el proyecto en línea,
+              desde la primera conversación hasta la publicación, con atención inicial a
+              negocios y proyectos de Tuxtla Gutiérrez.
             </p>
+            <div className="mt-8 grid max-w-3xl border-y border-white/24 sm:grid-cols-3">
+              {[
+                ["Respuesta directa", "Una conversación con quien diseña el proyecto."],
+                ["Proceso en línea", "Revisión y avances sin traslados innecesarios."],
+                ["Alcance claro", "Primero definimos qué conviene construir."],
+              ].map(([title, description]) => (
+                <div
+                  key={title}
+                  className="border-b border-white/20 py-4 last:border-b-0 sm:border-b-0 sm:border-r sm:px-5 sm:first:pl-0 sm:last:border-r-0 sm:last:pr-0"
+                >
+                  <p className="text-xs font-bold text-white">{title}</p>
+                  <p className="mt-1 text-xs leading-5 text-white/70">{description}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="grid gap-3">
@@ -109,7 +125,7 @@ export function FinalCTASection() {
 
           <div className="mx-auto flex max-w-[1380px] flex-col gap-2 py-5 text-[10px] uppercase sm:flex-row sm:justify-between">
             <p>© {new Date().getFullYear()} Atria</p>
-            <p>Tuxtla Gutiérrez, Chiapas, México</p>
+            <p>Atención digital y remota · Tuxtla Gutiérrez y otras localidades</p>
           </div>
         </footer>
       </div>

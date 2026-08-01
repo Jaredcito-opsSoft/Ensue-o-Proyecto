@@ -5,13 +5,18 @@
 Atria es la marca madre y el estudio digital. Su descriptor es `Estudio digital` y su
 idea central es: `Diseño y tecnología para negocios con algo que contar.`
 
+Atria trabaja mediante un modelo de atención digital o remoto. Actualmente no cuenta
+con una oficina o establecimiento abierto al público. Tuxtla Gutiérrez y Chiapas
+describen su mercado inicial, no una dirección física.
+
 ## Líneas
 
 ### Atria Web
 
 Sitios web para negocios con presencia online incluida según el alcance. Puede reunir
-Google Business Profile, Maps, WhatsApp Business, dominio, horarios, ubicación, redes
-enlazadas, SEO local básico y consistencia visual entre canales.
+dominio, WhatsApp, canales de contacto, datos consistentes, SEO técnico y SEO local
+básico. Google Business Profile o Maps solo se evalúan cuando el negocio cliente tiene
+información real, cumple las políticas aplicables y el alcance lo requiere.
 
 ### Ensueño Momentos
 
@@ -30,7 +35,7 @@ https://localpos-marketing.vercel.app/
 Caso real desarrollado dentro de Atria y ejemplo de una presencia especializada para
 telefonía, accesorios y reparación:
 
-https://cellab-tuxtla.vercel.app/
+https://localpos-cellab.vercel.app/
 
 ## Nombres descartados
 

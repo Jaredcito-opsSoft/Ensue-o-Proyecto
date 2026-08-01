@@ -4,7 +4,7 @@ import { SectionReveal } from "@/components/motion/SectionReveal";
 const problems = [
   ["No tienes un sitio propio.", "Atria Web", "#atria-web"],
   ["Tus datos están dispersos.", "Presencia online incluida", "#atria-web"],
-  ["No saben cómo encontrarte.", "Google, Maps, horarios y contacto", "#atria-web"],
+  ["No saben cómo encontrarte.", "Búsqueda, datos y contacto", "#atria-web"],
   ["Tu evento necesita un espacio central.", "Ensueño Momentos", "#momentos"],
   ["Administras ventas manualmente.", "LocalPOS", "#localpos"],
   ["Necesitas una función particular.", "Proyecto personalizado", "#contacto"],

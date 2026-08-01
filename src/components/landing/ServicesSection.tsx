@@ -13,9 +13,9 @@ const deliverables = [
   "Diseño personalizado o sistema configurable",
   "Experiencia móvil",
   "Servicios, catálogo y galería",
-  "WhatsApp, ubicación y horarios",
-  "Google Business y Google Maps",
-  "Dominio, hosting y SEO local básico",
+  "WhatsApp y canales de contacto",
+  "Datos consistentes para búsqueda",
+  "Dominio, hosting y SEO técnico básico",
   "Mantenimiento según el plan",
 ];
 

@@ -1,32 +1,43 @@
 import type { Metadata } from "next";
 import { CinematicLanding } from "@/components/landing/CinematicLanding";
+import { AtriaStructuredData } from "@/components/seo/AtriaStructuredData";
+import { absoluteUrl, atriaSite } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Atria — Estudio Digital para Negocios",
-  description:
-    "Diseño web, experiencias interactivas y desarrollo a medida para marcas que buscan una presencia digital de alto impacto.",
+  title: { absolute: atriaSite.homeTitle },
+  description: atriaSite.description,
+  alternates: {
+    canonical: absoluteUrl("/"),
+  },
   openGraph: {
-    title: "Atria — Estudio Digital para Negocios",
-    description:
-      "Diseño web, experiencias interactivas y desarrollo a medida para marcas que buscan una presencia digital de alto impacto.",
+    title: atriaSite.homeTitle,
+    description: atriaSite.description,
+    url: absoluteUrl("/"),
+    siteName: atriaSite.name,
+    locale: atriaSite.locale,
+    type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image",
         width: 1200,
         height: 630,
-        alt: "Atria — Estudio Digital para Negocios",
+        alt: "Atria, diseño web para negocios en Tuxtla Gutiérrez",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Atria — Estudio Digital para Negocios",
-    description:
-      "Diseño web, experiencias interactivas y desarrollo a medida para marcas que buscan una presencia digital de alto impacto.",
-    images: ["/og-image.png"],
+    title: atriaSite.homeTitle,
+    description: atriaSite.description,
+    images: ["/og-image"],
   },
 };
 
 export default function HomePage() {
-  return <CinematicLanding />;
+  return (
+    <>
+      <AtriaStructuredData />
+      <CinematicLanding />
+    </>
+  );
 }

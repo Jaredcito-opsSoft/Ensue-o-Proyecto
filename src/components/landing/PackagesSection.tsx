@@ -12,7 +12,7 @@ const packages = [
     items: [
       "Landing profesional",
       "Presencia online inicial incluida",
-      "Google Business básico",
+      "Datos consistentes para búsqueda",
       "WhatsApp y canales de contacto",
       "Dominio el primer año y hosting",
       "Mantenimiento",

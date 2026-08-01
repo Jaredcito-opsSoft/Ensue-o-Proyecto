@@ -86,7 +86,7 @@ export const demoBusinesses: Business[] = [
     phone: "961 345 6789",
     address: "Tuxtla Gutiérrez, Chiapas",
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Tuxtla%20Gutierrez%20Chiapas",
-    websiteUrl: "https://cellab-tuxtla.vercel.app/",
+    websiteUrl: "https://localpos-cellab.vercel.app/",
     coverImageUrl: "/images/cellux/hero-phones.png",
     primaryColor: "#17213A",
     accentColor: "#25B7A5",

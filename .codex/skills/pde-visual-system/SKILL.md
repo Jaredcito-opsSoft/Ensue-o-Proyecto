@@ -19,12 +19,22 @@ Do not use this skill for backend, database, auth, CRUD, POS, inventory, billing
 
 - Atria is the parent brand and digital studio.
 - Atria Web creates custom business websites with online presence included according to scope.
-- Google Business, Maps, WhatsApp, domain, location, hours, and contact channels are Atria Web capabilities, not a separate product.
+- Domain, WhatsApp, consistent business data, SEO, and contact channels are Atria Web capabilities, not a separate product. Google Business Profile or Maps are evaluated only for clients with real, policy-compliant business information and are never automatic requirements.
 - Ensueño Momentos is the emotional line for weddings, couples, birthdays, and celebrations.
 - LocalPOS is an independent operational product created by Atria.
 - CelLab Tuxtla is an operating project and case study, not an Atria service.
 - Do not use Ensueño Web, Ensueño Eventos, or Ensueño POS.
 - Social media management and generic automation are not core launch offers.
+
+## Atria Operating Context (July 31, 2026)
+
+- Atria is a digital-first studio and does not currently have an office or establishment open to the public.
+- Tuxtla Gutiérrez and Chiapas describe the initial market served, never a physical address.
+- Use language such as `atención digital`, `coordinamos proyectos en línea`, and `trabajamos con negocios de Tuxtla Gutiérrez y otras localidades`.
+- Never invent an address, opening hours, map, coordinates, office photography, reviews, or in-person availability for Atria.
+- Do not emit `LocalBusiness` or `ProfessionalService` structured data for Atria.
+- Google Business Profile is not required for launch, Search Console, crawling, indexing, or SEO.
+- Evaluate a Google Business Profile only after explicit owner confirmation that Atria has a real staffed location or regularly serves customers at their locations and can comply with service-area policies.
 
 ## Product Aesthetic
 

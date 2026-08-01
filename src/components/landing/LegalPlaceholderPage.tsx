@@ -7,12 +7,14 @@ type LegalPlaceholderPageProps = {
   eyebrow: string;
   title: string;
   description: string;
+  pendingItems: string[];
 };
 
 export function LegalPlaceholderPage({
   eyebrow,
   title,
   description,
+  pendingItems,
 }: LegalPlaceholderPageProps) {
   const whatsappHref = createWhatsAppLink(
     appConfig.whatsappSalesNumber,
@@ -49,9 +51,23 @@ export function LegalPlaceholderPage({
           </div>
           <div className="border-t border-black/12 pt-6">
             <p className="text-base leading-7 text-[var(--atria-ink-soft)]">{description}</p>
-            <p className="mt-5 text-sm leading-6 text-[var(--atria-ink-soft)]">
-              Esta página se completará con la información legal definitiva de Atria.
-            </p>
+            <div className="mt-6 border-t border-black/12 pt-5">
+              <p className="text-xs font-bold uppercase text-[var(--atria-accent)]">
+                Documento en preparación
+              </p>
+              <p className="mt-3 text-sm leading-6 text-[var(--atria-ink-soft)]">
+                Antes de considerarlo definitivo se incorporarán únicamente los datos
+                legales reales y verificables de la persona responsable del sitio.
+              </p>
+              <ul className="mt-4 grid gap-2 text-sm leading-6 text-[var(--atria-ink-soft)]">
+                {pendingItems.map((item) => (
+                  <li key={item} className="flex gap-2">
+                    <span aria-hidden>·</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
             <a
               href={whatsappHref}
               className="mt-8 inline-flex min-h-12 items-center gap-3 rounded-full bg-[var(--atria-ink)] px-5 text-sm font-bold text-white transition-[background-color,transform] hover:bg-[var(--atria-accent)] active:scale-[.97]"
@@ -64,7 +80,7 @@ export function LegalPlaceholderPage({
 
         <footer className="flex flex-col gap-2 border-t border-black/10 px-5 py-5 text-xs text-[var(--atria-ink-soft)] sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <span>+52 961 285 8828</span>
-          <span>Tuxtla Gutiérrez, Chiapas, México</span>
+          <span>Atención digital y remota</span>
         </footer>
       </div>
     </main>

@@ -56,8 +56,9 @@ export function AudienceSection() {
               </h2>
             </div>
             <p className="max-w-lg text-base leading-7 text-[var(--atria-ink-soft)] lg:justify-self-end">
-              Comenzamos cerca: emprendedores y negocios pequeños o medianos de Tuxtla
-              Gutiérrez que necesitan una solución útil, comprensible y bien diseñada.
+              Nuestro enfoque inicial son emprendedores y negocios pequeños o medianos
+              de Tuxtla Gutiérrez. Atendemos cada proyecto de forma remota y también
+              podemos trabajar con otras localidades.
             </p>
           </div>
 

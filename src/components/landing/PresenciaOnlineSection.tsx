@@ -2,7 +2,7 @@ import { MapPin, MessageSquare, Share2 } from "lucide-react";
 import { SectionReveal } from "@/components/motion/SectionReveal";
 
 const channels = [
-  { icon: MapPin, title: "Google Negocios", text: "Información correcta, reseñas y una ubicación lista para encontrarte." },
+  { icon: MapPin, title: "Búsqueda local", text: "Información consistente para que cada negocio pueda ser entendido y encontrado." },
   { icon: MessageSquare, title: "WhatsApp Business", text: "Contacto inmediato, respuestas ordenadas y seguimiento sin fricción." },
   { icon: Share2, title: "Redes sociales", text: "Una presencia coherente que lleva cada publicación hacia una acción clara." },
 ];

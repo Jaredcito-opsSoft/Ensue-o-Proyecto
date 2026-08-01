@@ -21,8 +21,12 @@ de la oferta principal de lanzamiento.
 
 Produccion:
 
+- Atria: https://atria-designstudio.vercel.app/
 - LocalPOS: https://localpos-marketing.vercel.app/
-- CelLab Tuxtla: https://cellab-tuxtla.vercel.app/
+- CelLab Tuxtla: https://localpos-cellab.vercel.app/
+
+Atria opera como estudio digital con atención remota. No cuenta actualmente con un
+establecimiento abierto al público y su SEO no depende de Google Business Profile.
 
 ## Stack
 
@@ -62,8 +66,10 @@ Abre `http://localhost:3000`.
 Copia `.env.example` a `.env.local`.
 
 ```bash
+NEXT_PUBLIC_SITE_URL=https://atria-designstudio.vercel.app
 NEXT_PUBLIC_APP_URL=http://localhost:3000
-NEXT_PUBLIC_SALES_WHATSAPP=529611234567
+NEXT_PUBLIC_SALES_WHATSAPP=529612858828
+GOOGLE_SITE_VERIFICATION=
 DATABASE_URL=postgres://user:password@localhost:5432/presencia_digital_express
 AUTH_SECRET=change-this-secret
 ADMIN_EMAIL=admin@presenciadigital.local
@@ -122,3 +128,4 @@ que explica la relacion entre las soluciones.
 - [Validacion comercial](docs/validacion-comercial.md)
 - [Criterios de calidad](docs/criterios-calidad.md)
 - [Arquitectura de marca Atria](docs/atria-arquitectura-marca.md)
+- [SEO de Atria](docs/seo-atria.md)

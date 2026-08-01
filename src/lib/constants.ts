@@ -1,8 +1,8 @@
 export const appConfig = {
-  name: "Presencia Digital Express",
-  shortName: "PDE",
+  name: "Atria",
+  shortName: "Atria",
   description:
-    "Mini paginas profesionales con catalogo, WhatsApp, ubicacion y QR para negocios locales.",
+    "Estudio digital para sitios web, experiencias para eventos y soluciones personalizadas.",
   baseUrl: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
   whatsappSalesNumber: process.env.NEXT_PUBLIC_SALES_WHATSAPP || "529612858828",
 };

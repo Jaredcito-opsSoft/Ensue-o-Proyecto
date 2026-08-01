@@ -54,9 +54,9 @@ export const SCROLL_STAGES: ScrollStage[] = [
     eyebrow: "Presencia online incluida",
     title: "Tu sitio se conecta con los canales correctos.",
     description:
-      "Google Business, Maps, WhatsApp, dominio y datos de contacto trabajan alrededor de una misma presencia.",
+      "Dominio, búsqueda, WhatsApp y datos de contacto trabajan alrededor de una misma presencia.",
     align: "left",
-    details: ["Ubicación", "Horarios", "WhatsApp", "SEO local"],
+    details: ["Datos claros", "Búsqueda", "WhatsApp", "SEO local"],
   },
   {
     id: "momentos",

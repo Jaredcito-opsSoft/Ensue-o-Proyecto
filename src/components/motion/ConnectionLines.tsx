@@ -3,8 +3,8 @@ import { Globe2, MapPin, MessageCircle } from "lucide-react";
 const channels = [
   {
     icon: MapPin,
-    title: "Google Business",
-    copy: "Información correcta, ubicación y confianza local.",
+    title: "Datos consistentes",
+    copy: "Información clara para búsqueda y confianza digital.",
     className: "left-[3vw] top-[18%] lg:left-[18vw] lg:top-[15%]",
   },
   {

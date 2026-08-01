@@ -35,21 +35,44 @@ export function AtriaIntroSection() {
                   informan, generan confianza y facilitan el siguiente paso.
                 </p>
               </div>
+              <dl className="mt-7 grid grid-cols-2 gap-x-6 gap-y-5 border-t border-black/12 pt-5 text-sm sm:grid-cols-3">
+                <div>
+                  <dt className="text-[10px] font-bold uppercase text-[var(--atria-muted)]">
+                    Atención
+                  </dt>
+                  <dd className="mt-1 font-semibold text-[var(--atria-ink)]">En línea</dd>
+                </div>
+                <div>
+                  <dt className="text-[10px] font-bold uppercase text-[var(--atria-muted)]">
+                    Comunicación
+                  </dt>
+                  <dd className="mt-1 font-semibold text-[var(--atria-ink)]">Directa</dd>
+                </div>
+                <div className="col-span-2 sm:col-span-1">
+                  <dt className="text-[10px] font-bold uppercase text-[var(--atria-muted)]">
+                    Mercado inicial
+                  </dt>
+                  <dd className="mt-1 font-semibold text-[var(--atria-ink)]">Tuxtla y Chiapas</dd>
+                </div>
+              </dl>
             </div>
           </div>
 
           <div className="mt-12 grid border-y border-black/12 sm:grid-cols-3">
             {[
-              ["Diseño con intención", "Cada proyecto parte del negocio, su público y la acción que necesita facilitar."],
-              ["Tecnología útil", "Elegimos herramientas que resuelven una necesidad real y pueden mantenerse en el tiempo."],
-              ["Acompañamiento cercano", "Trabajamos desde Tuxtla Gutiérrez con comunicación directa durante cada etapa."],
-            ].map(([title, description]) => (
+              ["01", "Diseño con intención", "Cada proyecto parte del negocio, su público y la acción que necesita facilitar."],
+              ["02", "Tecnología útil", "Elegimos herramientas que resuelven una necesidad real y pueden mantenerse en el tiempo."],
+              ["03", "Acompañamiento cercano", "Coordinamos proyectos en línea con negocios de Tuxtla Gutiérrez y otras localidades."],
+            ].map(([number, title, description]) => (
               <article
                 key={title}
                 className="border-b border-black/12 py-6 last:border-b-0 sm:border-b-0 sm:border-r sm:px-6 sm:first:pl-0 sm:last:border-r-0 sm:last:pr-0"
               >
-                <h3 className="font-serif text-2xl font-medium">{title}</h3>
-                <p className="mt-2 text-sm leading-6 text-[var(--atria-ink-soft)]">
+                <div className="flex items-baseline justify-between gap-4">
+                  <h3 className="font-serif text-2xl font-medium">{title}</h3>
+                  <span className="text-[10px] font-bold text-[var(--atria-accent)]">{number}</span>
+                </div>
+                <p className="mt-3 max-w-sm text-sm leading-6 text-[var(--atria-ink-soft)]">
                   {description}
                 </p>
               </article>

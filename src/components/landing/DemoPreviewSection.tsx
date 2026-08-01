@@ -20,7 +20,7 @@ const projects = [
     description:
       "Sitio y solución digital para un negocio de telefonía, accesorios y reparación de celulares, conectado con LocalPOS cuando la operación lo requiere.",
     image: "/images/cellux/hero-phones.png",
-    href: "https://cellab-tuxtla.vercel.app/",
+    href: "https://localpos-cellab.vercel.app/",
     cta: "Ver CelLab en producción",
     external: true,
   },

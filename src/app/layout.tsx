@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
+import { atriaSite, isProductionDeployment, siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -18,13 +19,12 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://atria-designstudio.vercel.app"),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Atria — Estudio Digital | Diseño, Código & Presencia Web",
-    template: "%s | Atria — Estudio Digital",
+    default: atriaSite.defaultTitle,
+    template: "%s | Atria",
   },
-  description:
-    "Estudio digital especializado en presencia online, sitios web a medida, experiencias digitales para eventos y soluciones tecnológicas para negocios.",
+  description: atriaSite.description,
   keywords: [
     "Atria",
     "Estudio Digital",
@@ -44,29 +44,42 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "Atria — Estudio Digital para Negocios",
-    description:
-      "Diseño web, experiencias interactivas y soluciones digitales creadas a medida para tu marca.",
-    url: "https://atria-designstudio.vercel.app",
-    siteName: "Atria — Estudio Digital",
+    title: atriaSite.defaultTitle,
+    description: atriaSite.description,
+    url: siteUrl,
+    siteName: atriaSite.name,
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image",
         width: 1200,
         height: 630,
-        alt: "Atria — Estudio Digital para Negocios",
+        alt: "Atria, estudio digital para negocios",
       },
     ],
-    locale: "es_MX",
+    locale: atriaSite.locale,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Atria — Estudio Digital para Negocios",
-    description:
-      "Diseño web, experiencias interactivas y soluciones digitales creadas a medida para tu marca.",
-    images: ["/og-image.png"],
+    title: atriaSite.defaultTitle,
+    description: atriaSite.description,
+    images: ["/og-image"],
   },
+  robots: isProductionDeployment
+    ? {
+        index: true,
+        follow: true,
+        googleBot: { index: true, follow: true },
+      }
+    : {
+        index: false,
+        follow: false,
+        noarchive: true,
+        googleBot: { index: false, follow: false, noarchive: true },
+      },
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
 };
 
 export default function RootLayout({
