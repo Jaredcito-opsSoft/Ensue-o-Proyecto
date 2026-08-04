@@ -9,7 +9,7 @@ const paths = [
     y: [0.74, 0.71, 0.77, 0.73, 0.79],
     rotation: [-8, 9, -5, 7, 2],
     scale: [0.72, 0.88, 0.76, 0.92, 0.78],
-    duration: 18,
+    duration: 12,
     delay: 0,
     opacity: 0.24,
   },
@@ -17,24 +17,24 @@ const paths = [
     y: [0.12, 0.09, 0.13, 0.1, 0.14],
     rotation: [7, -6, 11, -4, 5],
     scale: [0.58, 0.68, 0.62, 0.73, 0.6],
-    duration: 21,
-    delay: 4.5,
+    duration: 14,
+    delay: 2.5,
     opacity: 0.18,
   },
   {
     y: [0.77, 0.73, 0.79, 0.74, 0.8],
     rotation: [-4, 8, -9, 5, 0],
     scale: [0.46, 0.56, 0.5, 0.6, 0.48],
-    duration: 24,
-    delay: 9,
+    duration: 16,
+    delay: 5,
     opacity: 0.16,
   },
   {
     y: [0.09, 0.13, 0.1, 0.14, 0.11],
     rotation: [10, -8, 6, -10, 4],
     scale: [0.38, 0.5, 0.42, 0.54, 0.4],
-    duration: 27,
-    delay: 13,
+    duration: 18,
+    delay: 7.5,
     opacity: 0.13,
   },
 ];
@@ -68,6 +68,13 @@ export function HeroButterflies() {
           if (!visible) return;
 
           const path = paths[index];
+          const flutter = gsap.to(icons[index], {
+            scaleX: 0.3,
+            duration: 0.2 + index * 0.025,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut",
+          });
           const travel = gsap.to(wrapper, {
             keyframes: [
               {
@@ -105,16 +112,9 @@ export function HeroButterflies() {
             ],
             duration: path.duration,
             delay: path.delay,
-            repeat: -1,
-            repeatDelay: 1.5 + index,
+            repeat: 0,
             ease: "none",
-          });
-          const flutter = gsap.to(icons[index], {
-            scaleX: 0.3,
-            duration: 0.2 + index * 0.025,
-            repeat: -1,
-            yoyo: true,
-            ease: "sine.inOut",
+            onComplete: () => flutter.kill(),
           });
 
           runningAnimations.add(travel);

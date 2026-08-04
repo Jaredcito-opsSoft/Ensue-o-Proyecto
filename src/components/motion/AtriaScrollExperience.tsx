@@ -136,6 +136,7 @@ export function AtriaScrollExperience() {
             scrub,
             pin: true,
             anticipatePin: 1,
+            invalidateOnRefresh: true,
             onUpdate: (self) => {
               let nextIndex = 0;
               for (let index = STAGE_BREAKPOINTS.length - 1; index >= 0; index -= 1) {
@@ -209,8 +210,8 @@ export function AtriaScrollExperience() {
         (context) => {
           const { desktop, tablet, reduceMotion } = context.conditions ?? {};
           if (reduceMotion) return;
-          if (desktop) return createTimeline("+=450%", 0.78, 1.5);
-          if (tablet) return createTimeline("+=360%", 0.62, 0.8);
+          if (desktop) return createTimeline("+=320%", 0.64, 1.1);
+          if (tablet) return createTimeline("+=235%", 0.52, 0.65);
         }
       );
 
@@ -224,17 +225,17 @@ export function AtriaScrollExperience() {
 
   return (
     <>
-      <section className="bg-[var(--atria-page)] px-4 pb-12 pt-16 sm:px-8 sm:pb-16 sm:pt-20 lg:px-12">
-        <div className="mx-auto max-w-[1100px] border-t border-black/12 pt-10 text-center">
+      <section className="bg-[var(--atria-page)] px-4 pb-10 pt-12 sm:px-8 sm:pb-12 sm:pt-16 lg:px-12">
+        <div className="mx-auto max-w-[1100px] border-t border-black/12 pt-8 text-center">
           <p className="text-[11px] font-bold uppercase text-[var(--atria-accent)]">
-            Una historia en seis momentos
+            Bitácora visual · seis momentos
           </p>
           <h2 className="mx-auto mt-4 max-w-4xl font-serif text-5xl font-medium leading-[0.94] sm:text-6xl lg:text-7xl">
-            De una necesidad concreta a una solución que puede crecer.
+            Del primer sitio a un sistema que puede crecer.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-[var(--atria-ink-soft)]">
-            Cada etapa responde a un momento distinto. Puedes comenzar con una sola y
-            avanzar cuando tu proyecto lo necesite.
+            No necesitas comenzar con todo. La pieza correcta puede preparar el camino
+            para la siguiente sin perder una misma dirección.
           </p>
         </div>
       </section>

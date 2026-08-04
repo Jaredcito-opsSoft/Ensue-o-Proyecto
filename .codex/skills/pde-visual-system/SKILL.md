@@ -15,6 +15,25 @@ Use this skill when designing, reviewing, or implementing the public experience 
 
 Do not use this skill for backend, database, auth, CRUD, POS, inventory, billing, or internal admin workflows except for light visual consistency checks.
 
+## Project Source of Truth (August 3, 2026)
+
+Before changing Atria's public architecture, commercial copy, plans, demos, motion, or brand relationships, read:
+
+1. `docs/fuentes/Documento_Maestro_Atria_Arquitectura_Comercial_Demos_Diseno.docx` — preserved original.
+2. `docs/Documento_Maestro_Atria_Arquitectura_Comercial_Demos_Diseno.md` — searchable Markdown transcription.
+3. `docs/arquitectura-landing-atria.md` — current implementation map.
+4. `docs/auditoria-landing-atria.md` and `docs/implementacion-redesign-atria.md` — audit and implementation evidence.
+
+Original DOCX SHA-256: `941B5027C215260DA46C31BFF332620AECF7CA4899BC68D41574F78D5D4CDFE1`.
+
+Decision precedence inside the master document:
+
+- `DECIDIDO`: binding project direction until the owner changes it.
+- `RECOMENDADO`: preserve unless a later decision replaces it.
+- `PENDIENTE`: never invent or publish as final.
+
+Current commercial priority is Atria Web first, LocalPOS pilot second, Ensueño Momentos third, and custom projects only when capacity and scope allow. CelLab is proof, not a fifth service.
+
 ## Brand Architecture (July 29, 2026)
 
 - Atria is the parent brand and digital studio.
@@ -141,7 +160,7 @@ Approved patterns:
 - Crossfades with restrained translation, scale, blur, and environmental light.
 - Short section reveals below the narrative.
 - Mobile natural-flow storytelling with no pin or scrub.
-- A free-scroll Atria project carousel with native touch/trackpad movement, keyboard arrows, explicit previous/next controls, visible progress, and user-approved autoplay at a calm 5-6 second cadence. Autoplay pauses on hover/focus, exposes a play/pause control, stops while the document is hidden, and remains disabled under `prefers-reduced-motion`.
+- An asymmetric editorial project showcase using real captures and explicit labels. Do not restore autoplay; use free scroll only when a future layout genuinely requires it and the user approves it.
 - Primary actions may lift up to 3px on hover and compress to `0.97` on press. Do not loop or pulse.
 - Carousel controls keep a familiar arrow visible at rest; small dot motion may support hover/focus but must never obscure the control's direction.
 - The mobile navigation panel can use a short scale/translate entrance and 30ms staggered link reveals, while reduced motion shows all items immediately.
@@ -159,17 +178,16 @@ Avoid:
 
 Landing:
 
-1. Floating white navigation over a light, full-viewport editorial hero.
-2. Concise explanation of Atria.
-3. Editorial problem-to-solution list.
-4. Atria Web with online presence included.
-5. Audience profiles.
-6. Six-stage GSAP narrative: Atria, web, presence, Ensueño Momentos, LocalPOS, growth.
-7. Real production projects only.
-8. Dedicated Ensueño Momentos and LocalPOS sections.
-9. Six-step process.
-10. Atria Web launch plans presented as editorial rows.
-11. Terracotta closing CTA and dark footer.
+1. Header and editorial hero.
+2. Solution selector.
+3. Real case, demos, and product proof.
+4. What Atria is.
+5. Atria Web and its demos.
+6. Online presence included and client outcomes.
+7. Six-stage GSAP narrative: Atria, web, presence, Ensueño Momentos, LocalPOS, growth.
+8. Ensueño Momentos and LocalPOS pilot.
+9. Audience, process, times, and preliminary plans.
+10. FAQ, studio, contextual contact, footer, and legal links.
 
 Current landing direction (July 29, 2026):
 
@@ -177,14 +195,14 @@ Current landing direction (July 29, 2026):
 - Use the art-directed AVIF files under `public/media/atria-scroll/desktop`,
   `tablet`, and `mobile` as successive states of one experience. Keep the sources and
   attribution in `public/media/atria-scroll/source` and `SOURCES.md`.
-- Desktop uses one pinned ScrollTrigger timeline ending near `+=450%`; tablet uses a shorter pinned timeline; mobile and reduced-motion use normal document flow.
+- Desktop uses one pinned ScrollTrigger timeline ending near `+=400%`; tablet uses a shorter pinned timeline; mobile and reduced-motion use normal document flow.
 - Preload only the first scene. Warm the second scene as the sequence approaches and then load the remainder.
 - Keep all explanatory content in semantic HTML. Information visible inside an image must not be the only source of meaning.
 - Use the approved Atria Web Esencial, Atria Web Crecimiento, and Atria Profesional names with a clear scope disclaimer.
 - Scope the light parent identity to `.atria-landing`; do not recolor demos, panel, backend, or LocalPOS.
 - The Atria header uses restrained neutral liquid glass: compact, readable, measured for anchor offsets, and more opaque when the mobile menu is open.
 - Do not refresh the six-stage ScrollTrigger as progressively loaded frames decode. Keep the first scene deterministic before scroll and let later images load without recalculating the pinned timeline.
-- The Atria project grid presents CelLab Tuxtla and LocalPOS as production work, plus Beauty LA and Coleta as clearly labeled design demos. Do not include Cellux in the parent portfolio grid.
+- The Atria project showcase presents CelLab Tuxtla as a real case, LocalPOS as an independent pilot product, and Beauty LA and Coleta as clearly labeled design demos. Do not include Cellux in the parent portfolio.
 - Ensueño Momentos should use human event photography where the gathering is immediately legible. Prefer celebrations with people, tables, light, and interaction over invitation flat lays.
 
 Mini business page:

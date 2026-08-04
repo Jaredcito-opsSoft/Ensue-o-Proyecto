@@ -22,6 +22,7 @@ const structuredData = {
       url: siteUrl,
       description: atriaSite.description,
       telephone: atriaSite.phoneE164,
+      email: atriaSite.email,
       areaServed: [
         { "@type": "City", name: "Tuxtla Gutiérrez" },
         { "@type": "AdministrativeArea", name: "Chiapas" },

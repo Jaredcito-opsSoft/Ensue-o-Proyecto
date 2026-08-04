@@ -7,12 +7,12 @@ import { createWhatsAppLink } from "@/lib/whatsapp";
 import { AtriaLogo } from "@/components/ui/AtriaLogo";
 
 const navLinks = [
-  { label: "Servicios", href: "#servicios" },
+  { label: "Estudio", href: "#soluciones" },
   { label: "Proyectos", href: "#proyectos" },
+  { label: "Atria Web", href: "#atria-web" },
   { label: "Ensueño", href: "#momentos" },
   { label: "LocalPOS", href: "#localpos" },
   { label: "Proceso", href: "#proceso" },
-  { label: "Nosotros", href: "#nosotros" },
 ];
 
 export function Header() {
@@ -36,7 +36,8 @@ export function Header() {
     if (!header) return;
 
     const updateOffset = () => {
-      document.documentElement.style.setProperty("--atria-nav-offset", "0px");
+      const height = Math.ceil(header.getBoundingClientRect().height);
+      document.documentElement.style.setProperty("--atria-nav-offset", `${height + 12}px`);
     };
     const observer = new ResizeObserver(updateOffset);
 
@@ -51,17 +52,22 @@ export function Header() {
     const alignHashTarget = () => {
       const target = document.querySelector<HTMLElement>(window.location.hash);
       if (!target) return;
-      const offset =
-        Number.parseFloat(
-          getComputedStyle(document.documentElement).getPropertyValue("--atria-nav-offset")
-        ) || 0;
-      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      if (window.location.hash === "#inicio") {
+        window.scrollTo({ top: 0, behavior: "auto" });
+        return;
+      }
+      const headerHeight = headerRef.current
+        ? Math.ceil(headerRef.current.getBoundingClientRect().height)
+        : 60;
+      const contentHeading =
+        target.querySelector<HTMLElement>("p, h1, h2, h3, .atria-eyebrow, [id$='-title']") || target;
+      const top = contentHeading.getBoundingClientRect().top + window.scrollY - (headerHeight + 20);
       window.scrollTo({ top: Math.max(0, top), behavior: "auto" });
     };
 
-    const timer = window.setTimeout(alignHashTarget, 120);
+    const timers = [120, 850].map((delay) => window.setTimeout(alignHashTarget, delay));
     document.fonts.ready.then(alignHashTarget);
-    return () => window.clearTimeout(timer);
+    return () => timers.forEach((timer) => window.clearTimeout(timer));
   }, []);
 
   useEffect(() => {
@@ -81,14 +87,22 @@ export function Header() {
 
     event.preventDefault();
     setMobileOpen(false);
-    const offset =
-      Number.parseFloat(
-        getComputedStyle(document.documentElement).getPropertyValue("--atria-nav-offset")
-      ) || 0;
-    const top = target.getBoundingClientRect().top + window.scrollY - offset;
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     window.history.pushState(null, "", href);
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (href === "#inicio") {
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+      return;
+    }
+
+    const headerHeight = headerRef.current
+      ? Math.ceil(headerRef.current.getBoundingClientRect().height)
+      : 60;
+    const contentHeading =
+      target.querySelector<HTMLElement>("p, h1, h2, h3, .atria-eyebrow, [id$='-title']") || target;
+    const top = contentHeading.getBoundingClientRect().top + window.scrollY - (headerHeight + 20);
+
     window.scrollTo({
       top: Math.max(0, top),
       behavior: reduceMotion ? "auto" : "smooth",
@@ -114,7 +128,7 @@ export function Header() {
           <AtriaLogo showSlogan={!scrolled} sloganText="Estudio Digital" />
         </a>
 
-        <nav className="mx-auto hidden items-center gap-5 xl:flex" aria-label="Navegación principal">
+        <nav className="mx-auto hidden items-center gap-6 lg:flex" aria-label="Navegación principal">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -139,7 +153,7 @@ export function Header() {
 
         <button
           type="button"
-          className="ml-auto grid h-11 w-11 place-items-center rounded-full text-[var(--atria-ink)] transition-colors hover:bg-black/5 xl:hidden"
+          className="ml-auto grid h-11 w-11 place-items-center rounded-full text-[var(--atria-ink)] transition-colors hover:bg-black/5 lg:hidden"
           aria-label={mobileOpen ? "Cerrar navegación" : "Abrir navegación"}
           aria-expanded={mobileOpen}
           aria-controls="mobile-navigation"
@@ -151,7 +165,7 @@ export function Header() {
         {mobileOpen && (
           <div
             id="mobile-navigation"
-            className="atria-liquid-menu absolute left-0 right-0 top-[calc(100%+8px)] rounded-[20px] p-3 xl:hidden"
+            className="atria-liquid-menu absolute left-0 right-0 top-[calc(100%+8px)] rounded-[20px] p-3 lg:hidden"
           >
             <nav className="grid" aria-label="Navegación móvil">
               {navLinks.map((link) => (

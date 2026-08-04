@@ -32,7 +32,8 @@ export function AtriaIntroSection() {
                 />
                 <p className="text-sm font-semibold leading-6 text-[var(--atria-ink)]">
                   No construimos únicamente páginas bonitas. Diseñamos soluciones que
-                  informan, generan confianza y facilitan el siguiente paso.
+                  ayudan a informar, generar confianza, facilitar el contacto y preparar
+                  al negocio para crecer.
                 </p>
               </div>
               <dl className="mt-7 grid grid-cols-2 gap-x-6 gap-y-5 border-t border-black/12 pt-5 text-sm sm:grid-cols-3">
@@ -50,9 +51,9 @@ export function AtriaIntroSection() {
                 </div>
                 <div className="atria-stat-item col-span-2 sm:col-span-1">
                   <dt className="text-[10px] font-bold uppercase text-[var(--atria-muted)]">
-                    Mercado inicial
+                    Cobertura
                   </dt>
-                  <dd className="mt-1 font-semibold text-[var(--atria-ink)]">Tuxtla y Chiapas</dd>
+                  <dd className="mt-1 font-semibold text-[var(--atria-ink)]">Remota</dd>
                 </div>
               </dl>
             </div>
@@ -62,7 +63,7 @@ export function AtriaIntroSection() {
             {[
               ["01", "Diseño con intención", "Cada proyecto parte del negocio, su público y la acción que necesita facilitar."],
               ["02", "Tecnología útil", "Elegimos herramientas que resuelven una necesidad real y pueden mantenerse en el tiempo."],
-              ["03", "Acompañamiento cercano", "Coordinamos proyectos en línea con negocios de Tuxtla Gutiérrez y otras localidades."],
+              ["03", "Acompañamiento cercano", "Trabajamos de forma remota con especial interés en acercar tecnología útil a los negocios de Chiapas."],
             ].map(([number, title, description]) => (
               <article
                 key={title}

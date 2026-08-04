@@ -4,18 +4,12 @@ import Image from "next/image";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { AtriaProductPreview } from "@/components/landing/AtriaProductPreview";
 import { HeroButterflies } from "@/components/motion/HeroButterflies";
-import { appConfig } from "@/lib/constants";
-import { createWhatsAppLink } from "@/lib/whatsapp";
 
 export function HeroSection() {
   const rootRef = useRef<HTMLElement>(null);
-  const whatsappHref = createWhatsAppLink(
-    appConfig.whatsappSalesNumber,
-    "Hola, quiero comenzar un proyecto con Atria."
-  );
 
   useGSAP(
     () => {
@@ -50,9 +44,9 @@ export function HeroSection() {
       id="inicio"
       className="bg-[var(--atria-page)] p-3 pb-0 sm:p-4 sm:pb-0"
     >
-      <div className="relative flex min-h-[calc(100svh-44px)] w-full flex-col overflow-hidden rounded-[18px] bg-[#d9d9d7] sm:min-h-[calc(100svh-52px)] sm:rounded-[26px]">
+      <div className="relative flex min-h-[760px] w-full flex-col overflow-hidden rounded-[18px] bg-[#d9d9d7] sm:min-h-[820px] sm:rounded-[26px] lg:min-h-[min(920px,calc(100svh-32px))]">
         <Image
-          src="/images/landing/atria-hero.png"
+          src="/images/landing/atria-hero.avif"
           alt=""
           fill
           priority
@@ -62,18 +56,18 @@ export function HeroSection() {
         <div className="pointer-events-none absolute inset-0 bg-white/20" aria-hidden />
         <HeroButterflies />
 
-        <div className="relative z-10 flex flex-1 flex-col items-center px-4 pb-5 pt-[92px] text-center sm:px-8 sm:pb-6 sm:pt-[112px] lg:pt-[118px]">
+        <div className="relative z-10 flex flex-1 flex-col items-center px-4 pb-4 pt-[88px] text-center sm:px-8 sm:pb-5 sm:pt-[108px] lg:pt-[112px]">
           <div
             data-hero-reveal
             className="inline-flex min-h-8 items-center gap-2 rounded-full border border-black/10 bg-white/92 px-4 text-[10px] font-bold uppercase text-[#55565a] shadow-sm sm:text-xs"
           >
             <span className="atria-dot-live h-2 w-2 rounded-full bg-[var(--atria-accent)]" />
-            Atria · Estudio digital
+            Atria se muestra trabajando
           </div>
 
           <h1
             data-hero-reveal
-            className="mt-4 max-w-[1040px] font-sans text-[clamp(2.35rem,6.2vw,5.4rem)] font-semibold leading-[0.95] text-[var(--atria-ink)] sm:mt-5"
+            className="mt-4 max-w-[1040px] font-sans text-[clamp(2.25rem,5.7vw,5.15rem)] font-semibold leading-[0.95] text-[var(--atria-ink)] sm:mt-5"
           >
             Creamos el lugar digital
             <span className="block font-serif font-medium italic text-[var(--atria-accent)]">
@@ -85,8 +79,8 @@ export function HeroSection() {
             data-hero-reveal
             className="mt-4 max-w-[680px] text-sm leading-6 text-[#54555a] sm:mt-5 sm:text-base sm:leading-7"
           >
-            Diseñamos sitios web para negocios, experiencias para momentos especiales
-            y herramientas sencillas para trabajar mejor.
+            Sitios para negocios, experiencias para momentos especiales y productos
+            digitales construidos con una dirección clara.
           </p>
 
           <div
@@ -94,10 +88,10 @@ export function HeroSection() {
             className="mt-5 flex w-full max-w-[430px] flex-col items-stretch gap-2.5 sm:mt-6 sm:w-auto sm:max-w-none sm:flex-row sm:items-center sm:gap-3"
           >
             <a
-              href="#servicios"
+              href="#soluciones"
               className="atria-float-action group inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-[var(--atria-ink)] pl-6 pr-2 text-sm font-bold text-white hover:bg-[#2b2c2f]"
             >
-              Explorar soluciones
+              Explorar el estudio
               <span className="grid h-8 w-8 place-items-center rounded-full bg-white/12">
                 <ArrowRight
                   size={16}
@@ -106,15 +100,14 @@ export function HeroSection() {
               </span>
             </a>
             <a
-              href={whatsappHref}
+              href="#proyectos"
               className="atria-float-action inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-black/16 bg-white/78 px-6 text-sm font-bold text-[var(--atria-ink)] hover:bg-white"
             >
-              <MessageCircle size={17} />
-              Comenzar un proyecto
+              Ver proyectos reales
             </a>
           </div>
 
-          <div data-hero-preview className="mt-auto w-full pt-7 sm:pt-9">
+          <div data-hero-preview className="mt-auto w-full pt-6 sm:pt-8">
             <AtriaProductPreview />
           </div>
         </div>

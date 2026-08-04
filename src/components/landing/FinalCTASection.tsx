@@ -1,134 +1,67 @@
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ExternalLink, Mail, MessageCircle } from "lucide-react";
+import { AtriaLogo } from "@/components/ui/AtriaLogo";
 import { appConfig } from "@/lib/constants";
 import { createWhatsAppLink } from "@/lib/whatsapp";
-import { AtriaLogo } from "@/components/ui/AtriaLogo";
 
 const localPOSUrl = "https://localpos-marketing.vercel.app/";
 const celLabUrl = "https://localpos-cellab.vercel.app/";
+const email = "atriacontacto.mx@gmail.com";
 
 export function FinalCTASection() {
-  const href = createWhatsAppLink(
+  const whatsappHref = createWhatsAppLink(
     appConfig.whatsappSalesNumber,
-    "Hola, quiero comenzar un proyecto con Atria."
+    "Hola, conocí Atria desde su página. Quiero contarles sobre un proyecto."
   );
 
   return (
-    <section id="contacto" className="bg-[var(--atria-page)] p-3 sm:p-4">
-      <div className="overflow-hidden rounded-[18px] bg-[var(--atria-accent)] sm:rounded-[26px]">
-        <div className="mx-auto grid max-w-[1380px] gap-10 px-6 py-16 text-white sm:px-10 sm:py-20 lg:grid-cols-[1fr_.34fr] lg:items-end lg:px-14 lg:py-24">
+    <footer id="pie" className="bg-[#111214] px-4 text-white sm:px-8 lg:px-12">
+      <div className="mx-auto max-w-[1320px]">
+        <div className="grid gap-10 border-b border-white/14 py-12 sm:grid-cols-2 lg:grid-cols-[1.25fr_.75fr_.75fr_.9fr] lg:py-16">
           <div>
-            <p className="text-[11px] font-bold uppercase text-white/75">El siguiente paso</p>
-            <h2 className="mt-4 max-w-5xl font-serif text-5xl font-medium leading-[0.92] sm:text-7xl lg:text-[5.2rem]">
-              Tu negocio no necesita hacerlo todo hoy. Necesita comenzar con la solución
-              correcta.
-            </h2>
-            <p className="mt-6 max-w-3xl text-base leading-7 text-white/82">
-              Cuéntanos qué necesita tu negocio. Podemos coordinar el proyecto en línea,
-              desde la primera conversación hasta la publicación, con atención inicial a
-              negocios y proyectos de Tuxtla Gutiérrez.
+            <AtriaLogo light showSlogan sloganText="Estudio digital" />
+            <p className="mt-6 max-w-sm font-serif text-3xl font-medium leading-[1.02] text-white">
+              Diseño y tecnología para negocios con algo que contar.
             </p>
-            <div className="mt-8 grid max-w-3xl border-y border-white/24 sm:grid-cols-3">
-              {[
-                ["Respuesta directa", "Una conversación con quien diseña el proyecto."],
-                ["Proceso en línea", "Revisión y avances sin traslados innecesarios."],
-                ["Alcance claro", "Primero definimos qué conviene construir."],
-              ].map(([title, description]) => (
-                <div
-                  key={title}
-                  className="atria-mini-stat border-b border-white/20 py-4 last:border-b-0 sm:border-b-0 sm:border-r sm:px-5 sm:first:pl-0 sm:last:border-r-0 sm:last:pr-0"
-                >
-                  <p className="text-xs font-bold text-white">{title}</p>
-                  <p className="mt-1 text-xs leading-5 text-white/70">{description}</p>
-                </div>
-              ))}
+            <div className="mt-7 flex flex-col gap-3 text-sm text-white/65">
+              <a href={whatsappHref} className="inline-flex items-center gap-2 hover:text-white"><MessageCircle size={15} aria-hidden />+52 961 285 8828</a>
+              <a href={`mailto:${email}`} className="inline-flex items-center gap-2 break-all hover:text-white"><Mail size={15} aria-hidden />{email}</a>
             </div>
           </div>
 
-          <div className="grid gap-3">
-            <a
-              href={href}
-              className="atria-float-action group inline-flex min-h-14 items-center justify-between gap-8 rounded-full bg-[var(--atria-ink)] px-6 text-sm font-bold text-white hover:bg-white hover:text-[var(--atria-ink)]"
-            >
-              Comenzar un proyecto
-              <ArrowUpRight
-                size={18}
-                className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
-                aria-hidden
-              />
-            </a>
-            <a
-              href="#proyectos"
-              className="atria-float-action group inline-flex min-h-14 items-center justify-between gap-8 rounded-full border border-white/50 px-6 text-sm font-bold text-white hover:bg-white hover:text-[var(--atria-ink)]"
-            >
-              Explorar trabajos
-              <ArrowRight
-                size={18}
-                className="transition-transform group-hover:translate-x-1"
-                aria-hidden
-              />
-            </a>
+          <div>
+            <p className="text-[10px] font-bold uppercase text-white/42">Soluciones</p>
+            <nav className="mt-5 grid gap-3 text-sm text-white/68" aria-label="Soluciones de Atria">
+              <a className="hover:text-white" href="#atria-web">Atria Web</a>
+              <a className="hover:text-white" href="#momentos">Ensueño Momentos</a>
+              <a className="inline-flex items-center gap-2 hover:text-white" href={localPOSUrl} target="_blank" rel="noopener noreferrer">LocalPOS <ExternalLink size={12} aria-hidden /></a>
+            </nav>
+          </div>
+
+          <div>
+            <p className="text-[10px] font-bold uppercase text-white/42">Atria</p>
+            <nav className="mt-5 grid gap-3 text-sm text-white/68" aria-label="Información de Atria">
+              <a className="hover:text-white" href="#proyectos">Proyectos</a>
+              <a className="hover:text-white" href="#proceso">Proceso</a>
+              <a className="hover:text-white" href="#estudio">El estudio</a>
+              <a className="hover:text-white" href="#contacto">Contacto</a>
+            </nav>
+          </div>
+
+          <div>
+            <p className="text-[10px] font-bold uppercase text-white/42">Información</p>
+            <nav className="mt-5 grid gap-3 text-sm text-white/68" aria-label="Información legal y proyectos externos">
+              <a className="hover:text-white" href="/privacidad">Aviso de privacidad</a>
+              <a className="hover:text-white" href="/terminos">Términos y condiciones</a>
+              <a className="inline-flex items-center gap-2 hover:text-white" href={celLabUrl} target="_blank" rel="noopener noreferrer">CelLab Tuxtla <ExternalLink size={12} aria-hidden /></a>
+            </nav>
           </div>
         </div>
 
-        <footer className="bg-[var(--atria-dark)] px-6 text-sm text-[#bdb6b0] sm:px-10 lg:px-14">
-          <div className="mx-auto grid max-w-[1380px] gap-10 border-b border-white/12 py-12 sm:grid-cols-2 lg:grid-cols-[1.15fr_.7fr_.7fr_.7fr]">
-            <div>
-              <a
-                href="#inicio"
-                className="group inline-flex items-center text-white"
-                aria-label="Atria — Estudio Digital, ir al inicio"
-              >
-                <AtriaLogo light sloganText="Estudio Digital" />
-              </a>
-              <p className="mt-4 max-w-sm leading-6">
-                Diseño y tecnología para negocios con algo que contar.
-              </p>
-              <a
-                href={href}
-                className="mt-4 inline-flex min-h-11 items-center text-sm font-semibold text-white transition-colors hover:text-[var(--atria-gold)]"
-              >
-                +52 961 285 8828
-              </a>
-            </div>
-
-            <div>
-              <p className="font-bold text-white">Soluciones</p>
-              <nav className="mt-4 grid gap-2">
-                <a href="#atria-web">Atria Web</a>
-                <a href="#momentos">Ensueño Momentos</a>
-                <a href={localPOSUrl} target="_blank" rel="noopener noreferrer">
-                  LocalPOS
-                </a>
-              </nav>
-            </div>
-
-            <div>
-              <p className="font-bold text-white">Atria</p>
-              <nav className="mt-4 grid gap-2">
-                <a href="#proyectos">Proyectos</a>
-                <a href={celLabUrl} target="_blank" rel="noopener noreferrer">
-                  CelLab Tuxtla
-                </a>
-                <a href="#nosotros">Nosotros</a>
-                <a href={href}>Contacto</a>
-              </nav>
-            </div>
-
-            <div>
-              <p className="font-bold text-white">Información</p>
-              <nav className="mt-4 grid gap-2">
-                <a href="/privacidad">Aviso de privacidad</a>
-                <a href="/terminos">Términos y condiciones</a>
-              </nav>
-            </div>
-          </div>
-
-          <div className="mx-auto flex max-w-[1380px] flex-col gap-2 py-5 text-[10px] uppercase sm:flex-row sm:justify-between">
-            <p>© {new Date().getFullYear()} Atria</p>
-            <p>Atención digital y remota · Tuxtla Gutiérrez y otras localidades</p>
-          </div>
-        </footer>
+        <div className="flex flex-col gap-2 py-5 text-[10px] uppercase text-white/42 sm:flex-row sm:justify-between">
+          <p>© {new Date().getFullYear()} Atria</p>
+          <p>Estudio remoto · Chiapas, México</p>
+        </div>
       </div>
-    </section>
+    </footer>
   );
 }

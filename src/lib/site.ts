@@ -19,12 +19,13 @@ export const isProductionDeployment = process.env.VERCEL_ENV === "production";
 export const atriaSite = {
   name: "Atria",
   alternateName: "Atria Estudio Digital",
-  defaultTitle: "Atria — Estudio digital para negocios",
-  homeTitle: "Atria | Diseño web para negocios en Tuxtla Gutiérrez",
+  defaultTitle: "Atria | Diseño web y soluciones digitales para negocios",
+  homeTitle: "Atria | Diseño web y soluciones digitales para negocios",
   description:
-    "Creamos sitios web, presencia online, experiencias digitales para eventos y herramientas para pequeños negocios en Tuxtla Gutiérrez, Chiapas.",
+    "Creamos sitios web, presencia online, experiencias digitales para eventos y herramientas para pequeños negocios. Trabajamos de forma remota desde Chiapas.",
   phone: "+52 961 285 8828",
   phoneE164: "+529612858828",
+  email: "atriacontacto.mx@gmail.com",
   locale: "es_MX",
   language: "es-MX",
 } as const;

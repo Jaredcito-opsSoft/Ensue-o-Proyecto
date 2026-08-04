@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: "/og-image",
         width: 1200,
         height: 630,
-        alt: "Atria, diseño web para negocios en Tuxtla Gutiérrez",
+        alt: "Atria, diseño web y soluciones digitales para negocios",
       },
     ],
   },

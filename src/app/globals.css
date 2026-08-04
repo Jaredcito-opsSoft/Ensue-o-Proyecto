@@ -136,7 +136,7 @@ img {
 
 .atria-landing section[id],
 .atria-landing footer[id] {
-  scroll-margin-top: var(--atria-nav-offset, 0px);
+  scroll-margin-top: calc(var(--atria-nav-offset, 60px) + 20px);
 }
 
 .atria-liquid-nav,
@@ -378,6 +378,43 @@ img {
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes atria-route-image {
+  from { opacity: 0.55; transform: scale(1.018); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.atria-workbench-track,
+.atria-process-board {
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  touch-action: pan-x pan-y;
+}
+
+.atria-workbench-track > *,
+.atria-process-board > * {
+  scroll-snap-align: start;
+}
+
+.atria-process-board {
+  scrollbar-color: var(--atria-accent) rgba(17, 18, 20, 0.08);
+  scrollbar-width: thin;
+}
+
+.atria-process-board::-webkit-scrollbar {
+  height: 8px;
+}
+
+.atria-process-board::-webkit-scrollbar-track {
+  background: rgba(17, 18, 20, 0.08);
+}
+
+.atria-process-board::-webkit-scrollbar-thumb {
+  border: 2px solid var(--atria-page);
+  border-radius: 999px;
+  background: var(--atria-accent);
+}
+
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
   .atria-liquid-nav,
   .atria-liquid-menu {
@@ -495,7 +532,7 @@ article:hover .atria-icon-wrapper {
   transition: transform 280ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-artile:hover .atria-icon-wrapper svg {
+article:hover .atria-icon-wrapper svg {
   transform: scale(1.1);
 }
 
@@ -779,6 +816,12 @@ artile:hover .atria-icon-wrapper svg {
   }
   .atria-dot-live {
     animation: none !important;
+  }
+  [class*="atria-route-image"],
+  .atria-workbench-track,
+  .atria-process-board {
+    animation: none !important;
+    scroll-behavior: auto;
   }
 }
 

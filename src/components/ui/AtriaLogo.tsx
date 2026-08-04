@@ -17,38 +17,12 @@ export function AtriaIconMark({
       className={className}
       aria-hidden="true"
     >
-      <defs>
-        <linearGradient
-          id="atria-grad-primary"
-          x1="4"
-          y1="36"
-          x2="36"
-          y2="4"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#e84d82" />
-          <stop offset="0.5" stopColor="#2347c9" />
-          <stop offset="1" stopColor="#ff7bab" />
-        </linearGradient>
-        <linearGradient
-          id="atria-grad-glow"
-          x1="20"
-          y1="4"
-          x2="20"
-          y2="36"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stopColor="#e84d82" stopOpacity="0.95" />
-          <stop offset="1" stopColor="#2347c9" stopOpacity="0.9" />
-        </linearGradient>
-      </defs>
-
       {/* Halo precision circle */}
       <circle
         cx="20"
         cy="20"
         r="18.5"
-        stroke="url(#atria-grad-primary)"
+        stroke={light ? "#e7b978" : "#ef5a2f"}
         strokeWidth="1.5"
         strokeOpacity="0.4"
         fill={light ? "rgba(255,255,255,0.06)" : "rgba(17,18,20,0.03)"}
@@ -57,7 +31,7 @@ export function AtriaIconMark({
       {/* Architectural Monogram 'A' */}
       <path
         d="M20 6.5L31.5 31.5H25.4L20 18.5L14.6 31.5H8.5L20 6.5Z"
-        fill="url(#atria-grad-glow)"
+        fill={light ? "#e7b978" : "#ef5a2f"}
       />
 
       {/* Core vertex triangle cutout */}
@@ -66,8 +40,8 @@ export function AtriaIconMark({
         fill={light ? "#08090b" : "#ffffff"}
       />
 
-      {/* Atria Coral focal dot */}
-      <circle cx="20" cy="21.5" r="2.2" fill="#e84d82" />
+      {/* Atria focal dot */}
+      <circle cx="20" cy="21.5" r="2.2" fill={light ? "#ffffff" : "#111214"} />
     </svg>
   );
 }

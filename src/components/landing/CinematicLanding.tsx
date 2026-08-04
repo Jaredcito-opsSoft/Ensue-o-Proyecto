@@ -1,15 +1,20 @@
 import { Header } from "@/components/landing/Header";
 import { HeroSection } from "@/components/landing/HeroSection";
+import { SolutionRouter } from "@/components/landing/SolutionRouter";
+import { WorkShowcase } from "@/components/landing/WorkShowcase";
 import { AtriaIntroSection } from "@/components/landing/AtriaIntroSection";
-import { ProblemsSection } from "@/components/landing/ProblemsSection";
 import { ServicesSection } from "@/components/landing/ServicesSection";
+import { DemoLabSection } from "@/components/landing/DemoLabSection";
+import { OnlinePresenceSection } from "@/components/landing/OnlinePresenceSection";
 import { AudienceSection } from "@/components/landing/AudienceSection";
-import { DemoPreviewSection } from "@/components/landing/DemoPreviewSection";
 import { EnsuenoEventosSection } from "@/components/landing/EnsuenoEventosSection";
 import { EnsuenoPOSSection } from "@/components/landing/EnsuenoPOSSection";
 import { PackagesSection } from "@/components/landing/PackagesSection";
 import { ProcessSection } from "@/components/landing/ProcessSection";
 import { FinalCTASection } from "@/components/landing/FinalCTASection";
+import { FaqSection } from "@/components/landing/FAQSection";
+import { StudioSection } from "@/components/landing/StudioSection";
+import { ContactSection } from "@/components/landing/ContactSection";
 import { AtriaScrollExperience } from "@/components/motion/AtriaScrollExperience";
 
 export function CinematicLanding() {
@@ -18,16 +23,21 @@ export function CinematicLanding() {
       <Header />
       <main>
         <HeroSection />
+        <SolutionRouter />
+        <WorkShowcase />
         <AtriaIntroSection />
-        <ProblemsSection />
         <ServicesSection />
-        <AudienceSection />
+        <DemoLabSection />
+        <OnlinePresenceSection />
         <AtriaScrollExperience />
-        <DemoPreviewSection />
         <EnsuenoEventosSection />
         <EnsuenoPOSSection />
+        <AudienceSection />
         <ProcessSection />
         <PackagesSection />
+        <FaqSection />
+        <StudioSection />
+        <ContactSection />
         <FinalCTASection />
       </main>
     </div>
