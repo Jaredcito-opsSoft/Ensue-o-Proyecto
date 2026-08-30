@@ -27,9 +27,9 @@ const imageSet = (name: string) => ({
 export const SCROLL_STAGES: ScrollStage[] = [
   {
     id: "atria",
-    label: "Atria",
+    label: "Alebrije",
     images: imageSet("stage-01-planning"),
-    eyebrow: "Atria · Estudio digital",
+    eyebrow: "Alebrije Tech · Estudio digital",
     title: "Una idea toma forma.",
     description:
       "Partimos de las necesidades reales del negocio y definimos la solución adecuada antes de diseñar.",
@@ -38,9 +38,9 @@ export const SCROLL_STAGES: ScrollStage[] = [
   },
   {
     id: "web",
-    label: "Atria Web",
+    label: "Alebrije Web",
     images: imageSet("stage-02-web"),
-    eyebrow: "Atria Web",
+    eyebrow: "Alebrije Web",
     title: "La idea se convierte en una presencia profesional.",
     description:
       "Un sitio propio organiza la información, comunica el valor del negocio y facilita el contacto.",
@@ -92,9 +92,9 @@ export const SCROLL_STAGES: ScrollStage[] = [
     eyebrow: "Una relación que puede crecer contigo",
     title: "Comienza con una solución y avanza cuando la necesites.",
     description:
-      "Atria acompaña distintas etapas sin obligarte a contratar todo desde el inicio.",
+      "Alebrije Tech acompaña distintas etapas sin obligarte a contratar todo desde el inicio.",
     align: "right",
-    details: ["Atria Web", "Ensueño Momentos", "LocalPOS", "Proyectos a medida"],
+    details: ["Alebrije Web", "Ensueño Momentos", "LocalPOS", "Proyectos a medida"],
     cta: {
       text: "Comenzar un proyecto",
       href: "#contacto",

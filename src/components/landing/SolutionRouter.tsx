@@ -41,7 +41,7 @@ export function SolutionRouter() {
             </h2>
           </div>
           <p className="max-w-2xl text-base leading-7 text-[var(--atria-ink-soft)] lg:justify-self-end">
-            Atria reúne servicios, productos y líneas propias. Este índice organiza el estudio por intención, no por una lista rígida de paquetes.
+            Alebrije Tech reúne servicios, productos y líneas propias. Este índice organiza el estudio por intención, no por una lista rígida de paquetes.
           </p>
         </div>
 

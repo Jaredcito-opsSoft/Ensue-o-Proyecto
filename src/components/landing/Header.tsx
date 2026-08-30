@@ -9,7 +9,7 @@ import { AtriaLogo } from "@/components/ui/AtriaLogo";
 const navLinks = [
   { label: "Estudio", href: "#soluciones" },
   { label: "Proyectos", href: "#proyectos" },
-  { label: "Atria Web", href: "#atria-web" },
+  { label: "Alebrije Web", href: "#atria-web" },
   { label: "Ensueño", href: "#momentos" },
   { label: "LocalPOS", href: "#localpos" },
   { label: "Proceso", href: "#proceso" },
@@ -21,7 +21,7 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const whatsappHref = createWhatsAppLink(
     appConfig.whatsappSalesNumber,
-    "Hola, quiero comenzar un proyecto con Atria."
+    "Hola, quiero comenzar un proyecto con Alebrije Tech."
   );
 
   useEffect(() => {
@@ -123,7 +123,7 @@ export function Header() {
           href="#inicio"
           onClick={(event) => handleAnchorNavigation(event, "#inicio")}
           className="group inline-flex min-h-11 shrink-0 items-center rounded-full px-2 text-[var(--atria-ink)]"
-          aria-label="Atria — Estudio Digital, ir al inicio"
+          aria-label="Alebrije Tech — Estudio Digital, ir al inicio"
         >
           <AtriaLogo showSlogan={!scrolled} sloganText="Estudio Digital" />
         </a>

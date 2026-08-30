@@ -6,7 +6,7 @@ export function StudioSection() {
       <div className="mx-auto max-w-[1320px] border-y border-black/12 py-10 sm:py-14">
         <div className="grid gap-10 lg:grid-cols-[1.05fr_.95fr] lg:items-end">
           <div>
-            <p className="atria-eyebrow text-[11px] font-bold uppercase text-[var(--atria-accent)]">El estudio detrás de Atria</p>
+            <p className="atria-eyebrow text-[11px] font-bold uppercase text-[var(--atria-accent)]">El estudio detrás de Alebrije Tech</p>
             <h2 id="studio-title" className="mt-4 max-w-4xl font-serif text-5xl font-medium leading-[0.94] sm:text-6xl lg:text-7xl">
               Un equipo pequeño, atención directa y tecnología actual.
             </h2>
@@ -14,7 +14,7 @@ export function StudioSection() {
           <div>
             <ArrowDownRight size={28} className="text-[var(--atria-accent)]" aria-hidden />
             <p className="mt-5 text-base leading-7 text-[var(--atria-ink-soft)]">
-              Atria es un estudio digital independiente impulsado por un equipo pequeño de estudiantes de desarrollo de software de la Universidad Autónoma de Chiapas.
+              Alebrije Tech es un estudio digital independiente impulsado por un equipo pequeño de estudiantes de desarrollo de software de la Universidad Autónoma de Chiapas.
             </p>
             <p className="mt-4 text-base leading-7 text-[var(--atria-ink-soft)]">
               Aplicamos diseño, programación e inteligencia artificial en proyectos reales y accesibles para negocios que necesitan avanzar sin asumir la estructura de una agencia tradicional.

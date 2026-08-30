@@ -31,7 +31,7 @@ export function RedesignHeader() {
   return (
     <header className={`fixed inset-x-0 top-0 z-[100] border-b transition-[background-color,border-color] duration-300 ${scrolled || open ? "border-white/14 bg-[#07164b]/94 backdrop-blur-xl" : "border-transparent bg-transparent"}`}>
       <div className="mx-auto flex min-h-[74px] max-w-[1400px] items-center justify-between px-5 sm:px-8 lg:px-12">
-        <a href="#inicio" className="group inline-flex items-center text-white" aria-label="Atria — Estudio Digital, ir al inicio">
+        <a href="#inicio" className="group inline-flex items-center text-white" aria-label="Alebrije Tech — Estudio Digital, ir al inicio">
           <AtriaLogo light showSlogan={!scrolled} sloganText="Estudio Digital" />
         </a>
 

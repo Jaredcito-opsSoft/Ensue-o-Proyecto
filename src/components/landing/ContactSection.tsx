@@ -6,7 +6,7 @@ import { CONTACT_CONTEXTS, type ContactContext } from "@/data/atria-content";
 import { appConfig } from "@/lib/constants";
 import { createWhatsAppLink } from "@/lib/whatsapp";
 
-const contactEmail = "atriacontacto.mx@gmail.com";
+const contactEmail = "alebrijecontacto.mx@gmail.com";
 
 export function ContactSection() {
   const [context, setContext] = useState<ContactContext>("atria-web");
@@ -33,7 +33,7 @@ export function ContactSection() {
   }, [goal, name, project, selected.prompt, timing]);
 
   const whatsappHref = createWhatsAppLink(appConfig.whatsappSalesNumber, preparedMessage);
-  const emailHref = `mailto:${contactEmail}?subject=${encodeURIComponent(`Brief ${selected.label} · Atria`)}&body=${encodeURIComponent(preparedMessage)}`;
+  const emailHref = `mailto:${contactEmail}?subject=${encodeURIComponent(`Brief ${selected.label} · Alebrije Tech`)}&body=${encodeURIComponent(preparedMessage)}`;
 
   return (
     <section id="contacto" className="scroll-mt-24 bg-[var(--atria-accent)] px-4 py-18 text-white sm:px-8 sm:py-24 lg:px-12" aria-labelledby="contact-title">

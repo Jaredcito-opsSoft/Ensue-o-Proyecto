@@ -244,7 +244,7 @@ export function AtriaScrollExperience() {
         ref={sectionRef}
         id="scroll-experience"
         className="relative scroll-mt-24 bg-[var(--atria-dark)]"
-        aria-label="Cómo acompañan las soluciones de Atria a un proyecto"
+        aria-label="Cómo acompañan las soluciones de Alebrije Tech a un proyecto"
       >
         <div className="ens-scroll-motion relative h-screen min-h-[620px] overflow-hidden">
           {SCROLL_STAGES.map((stage, index) => (
@@ -265,7 +265,7 @@ export function AtriaScrollExperience() {
           />
 
           <div className="pointer-events-none absolute inset-x-6 top-24 z-40 flex items-center justify-between border-b border-white/20 pb-4 text-[10px] font-bold uppercase text-white/80 lg:inset-x-10">
-            <span>Atria · Estudio digital</span>
+            <span>Alebrije Tech · Estudio digital</span>
             <span>01 — 06</span>
           </div>
 

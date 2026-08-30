@@ -12,7 +12,7 @@ export function AtriaIntroSection() {
           <div className="grid gap-10 lg:grid-cols-[1.15fr_.85fr] lg:items-end">
             <div>
               <p className="atria-eyebrow text-[11px] font-bold uppercase text-[var(--atria-accent)]">
-                Acerca de Atria
+                Acerca de Alebrije Tech
               </p>
               <h2 className="mt-4 max-w-[780px] font-serif text-5xl font-medium leading-[0.94] sm:text-6xl lg:text-7xl">
                 Lo digital funciona mejor cuando tiene una dirección.
@@ -20,7 +20,7 @@ export function AtriaIntroSection() {
             </div>
             <div className="max-w-xl lg:justify-self-end">
               <p className="text-base leading-7 text-[var(--atria-ink-soft)]">
-                Atria combina diseño y tecnología para que un negocio pueda verse
+                Alebrije Tech combina diseño y tecnología para que un negocio pueda verse
                 profesional, ser encontrado, recibir contactos y utilizar herramientas
                 adecuadas para su operación.
               </p>

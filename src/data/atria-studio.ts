@@ -20,11 +20,11 @@ export type StudioRoute = {
 export const STUDIO_ROUTES: StudioRoute[] = [
   {
     id: "atria-web",
-    label: "Atria Web",
+    label: "Alebrije Web",
     title: "Necesito una página para mi negocio.",
     description: "Sitios web y presencia online organizados alrededor de una necesidad real.",
     note: "Servicio principal",
-    cta: "Explorar Atria Web",
+    cta: "Explorar Alebrije Web",
     href: "#atria-web",
     image: "/media/atria-scroll/desktop/stage-02-web.avif",
     imageAlt: "Proceso de construcción de una presencia web profesional",
@@ -45,7 +45,7 @@ export const STUDIO_ROUTES: StudioRoute[] = [
     label: "Ensueño Momentos",
     title: "Estoy preparando un momento especial.",
     description: "Experiencias digitales para compartir la información y memoria de una celebración.",
-    note: "Una línea de Atria",
+    note: "Una línea de Alebrije Tech",
     cta: "Conocer Ensueño",
     href: "#momentos",
     image: "/images/landing/ensueno-momentos-event.jpg",

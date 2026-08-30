@@ -68,7 +68,7 @@ export function WorkShowcase() {
           </div>
         </div>
 
-        <p className="mt-5 max-w-3xl text-xs leading-5 text-[var(--atria-muted)]">Las demostraciones son conceptos navegables creados por Atria. No representan clientes ni resultados comerciales.</p>
+        <p className="mt-5 max-w-3xl text-xs leading-5 text-[var(--atria-muted)]">Las demostraciones son conceptos navegables creados por Alebrije Tech. No representan clientes ni resultados comerciales.</p>
       </div>
     </section>
   );

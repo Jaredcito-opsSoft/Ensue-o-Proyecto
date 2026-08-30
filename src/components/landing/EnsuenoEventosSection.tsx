@@ -34,7 +34,7 @@ const moments = [
 const eventTypes = ["Parejas", "Bodas", "Cumpleaños", "XV años", "Graduaciones", "Celebraciones especiales"];
 
 export function EnsuenoEventosSection() {
-  const whatsappHref = createWhatsAppLink(appConfig.whatsappSalesNumber, "Hola, conocí Ensueño Momentos desde Atria. Estoy preparando un evento y quiero crear una experiencia digital.");
+  const whatsappHref = createWhatsAppLink(appConfig.whatsappSalesNumber, "Hola, conocí Ensueño Momentos desde Alebrije Tech. Estoy preparando un evento y quiero crear una experiencia digital.");
 
   return (
     <SectionReveal>
@@ -42,7 +42,7 @@ export function EnsuenoEventosSection() {
         <div className="mx-auto max-w-[1320px]">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_.95fr] lg:items-end">
             <div>
-              <p className="text-[11px] font-bold uppercase text-[var(--atria-gold)]">Ensueño Momentos · Una línea de Atria</p>
+              <p className="text-[11px] font-bold uppercase text-[var(--atria-gold)]">Ensueño Momentos · Una línea de Alebrije Tech</p>
               <h2 className="mt-4 max-w-4xl font-serif text-5xl font-medium leading-[.92] sm:text-6xl lg:text-7xl">Un lugar digital antes, durante y después de celebrar.</h2>
             </div>
             <div className="max-w-xl lg:justify-self-end">

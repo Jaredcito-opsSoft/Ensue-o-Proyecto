@@ -1,31 +1,31 @@
-# Atria
+# Alebrije Tech
 
-Atria es el estudio digital y la marca madre del proyecto. El repositorio conserva el
-MVP funcional para crear paginas profesionales para negocios locales, con catalogo o
-servicios, WhatsApp, ubicacion, horarios, imagenes y QR.
+Alebrije Tech es el estudio digital y la marca madre del proyecto. El repositorio conserva el
+MVP funcional para crear páginas profesionales para negocios locales, con catálogo o
+servicios, WhatsApp, ubicación, horarios, imágenes y QR.
 
 ## Arquitectura de marca
 
-- `Atria`: marca madre y estudio digital.
-- `Atria Web`: sitios personalizados con presencia online incluida.
+- `Alebrije Tech`: marca madre y estudio digital.
+- `Alebrije Web`: sitios personalizados con presencia online incluida.
 - `Ensueño Momentos`: experiencias digitales para celebraciones.
-- `LocalPOS`: producto independiente para ventas y operacion.
-- `CelLab Tuxtla`: caso real desarrollado dentro de Atria.
+- `LocalPOS`: producto independiente para ventas y operación.
+- `CelLab Tuxtla`: caso real desarrollado dentro de Alebrije Tech.
 
 No se utilizan los nombres `Ensueño Web`, `Ensueño Eventos` ni `Ensueño POS`.
-`Presencia Esencial` tampoco se presenta como una linea independiente: Google
-Business, Maps, WhatsApp, dominio y datos consistentes se integran a Atria Web segun
+`Presencia Esencial` tampoco se presenta como una línea independiente: Google
+Business, Maps, WhatsApp, dominio y datos consistentes se integran a Alebrije Web según
 el alcance.
-El manejo mensual de redes sociales y las automatizaciones genericas no forman parte
+El manejo mensual de redes sociales y las automatizaciones genéricas no forman parte
 de la oferta principal de lanzamiento.
 
-Produccion:
+Producción:
 
-- Atria: https://atria-designstudio.vercel.app/
+- Alebrije Tech: https://alebrijetech.vercel.app/
 - LocalPOS: https://localpos-marketing.vercel.app/
 - CelLab Tuxtla: https://localpos-cellab.vercel.app/
 
-Atria opera como estudio digital con atención remota. No cuenta actualmente con un
+Alebrije Tech opera como estudio digital con atención remota. No cuenta actualmente con un
 establecimiento abierto al público y su SEO no depende de Google Business Profile.
 
 ## Stack
@@ -36,11 +36,11 @@ establecimiento abierto al público y su SEO no depende de Google Business Profi
 - GSAP + `@gsap/react`
 - PostgreSQL + Drizzle ORM
 - Zod
-- Auth basica para panel interno
+- Auth básica para panel interno
 
 ## Rutas principales
 
-- `/` landing publica
+- `/` landing pública
 - `/demo/estetica`
 - `/demo/comida`
 - `/demo/taller`
@@ -66,7 +66,7 @@ Abre `http://localhost:3000`.
 Copia `.env.example` a `.env.local`.
 
 ```bash
-NEXT_PUBLIC_SITE_URL=https://atria-designstudio.vercel.app
+NEXT_PUBLIC_SITE_URL=https://alebrijetech.vercel.app
 NEXT_PUBLIC_APP_URL=http://localhost:3000
 NEXT_PUBLIC_SALES_WHATSAPP=529612858828
 GOOGLE_SITE_VERIFICATION=
@@ -76,56 +76,10 @@ ADMIN_EMAIL=admin@presenciadigital.local
 ADMIN_PASSWORD_HASH=
 ```
 
-Para desarrollo local, si `ADMIN_PASSWORD_HASH` esta vacio, el login acepta:
-
-- Email: `admin@presenciadigital.local`
-- Password: `admin12345`
-
-Para produccion, genera un hash:
-
-```bash
-node -e "const bcrypt=require('bcryptjs'); console.log(bcrypt.hashSync('tu-password', 12))"
-```
-
-## Base de datos
-
-Generar migraciones:
-
-```bash
-npm run db:generate
-```
-
-Aplicar migraciones:
-
-```bash
-npm run db:migrate
-```
-
-La app usa datos demo si no existe `DATABASE_URL`, para que landing, demos, panel y QR puedan revisarse desde el primer arranque.
-
-## Demos incluidos
-
-- `Bella Imagen Tuxtla`
-- `Sazon Coleta`
-- `Cellux`
-
-Cada demo tiene servicios/productos, horarios, imagenes, WhatsApp, ubicacion y QR.
-
 ## Regla visual
 
-La landing publica de Atria es luminosa, editorial y humana. Utiliza gris claro, blanco,
-crema, grafito y terracota; reserva el negro calido, cobre y dorado para el
-scrollytelling fotografico y Ensueño Momentos. No se usan gradientes decorativos. La
-direccion visual se apoya en fondos solidos, fotografia, bordes sutiles y movimiento
-que explica la relacion entre las soluciones.
-
-## Documentacion de producto
-
-- [Plan ejecutable](docs/plan-ejecutable.md)
-- [Backlog del MVP](docs/backlog-mvp.md)
-- [Arquitectura inicial](docs/arquitectura-inicial.md)
-- [Modelo de datos](docs/modelo-datos.md)
-- [Validacion comercial](docs/validacion-comercial.md)
-- [Criterios de calidad](docs/criterios-calidad.md)
-- [Arquitectura de marca Atria](docs/atria-arquitectura-marca.md)
-- [SEO de Atria](docs/seo-atria.md)
+La landing pública de Alebrije Tech es luminosa, editorial y humana. Utiliza gris claro, blanco,
+crema, grafito y terracota; reserva el negro cálido, cobre y dorado para el
+scrollytelling fotográfico y Ensueño Momentos. No se usan gradientes decorativos. La
+dirección visual se apoya en fondos sólidos, fotografía, bordes sutiles y movimiento
+que explica la relación entre las soluciones.

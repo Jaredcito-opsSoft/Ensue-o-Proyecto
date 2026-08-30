@@ -39,7 +39,7 @@ export function LegalPlaceholderPage({
       {/* Header Bar */}
       <header className="sticky top-0 z-50 border-b border-black/10 bg-white/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-[1320px] items-center justify-between px-4 py-4 sm:px-8">
-          <Link href="/" aria-label="Volver al inicio de Atria">
+          <Link href="/" aria-label="Volver al inicio de Alebrije Tech">
             <AtriaLogo sloganText="Estudio Digital" />
           </Link>
           <Link
@@ -68,7 +68,7 @@ export function LegalPlaceholderPage({
           <div className="mt-6 flex items-center gap-4 text-xs text-[var(--atria-muted)]">
             <span>Última actualización: {lastUpdated}</span>
             <span>·</span>
-            <span>Atria Studio Digital · Tuxtla Gutiérrez, Chiapas</span>
+            <span>Alebrije Tech · Tuxtla Gutiérrez, Chiapas</span>
           </div>
         </div>
       </section>
@@ -121,10 +121,10 @@ export function LegalPlaceholderPage({
               <Lock size={20} className="mt-0.5 shrink-0 text-[var(--atria-accent)]" />
               <div>
                 <h3 className="text-xs font-bold uppercase tracking-wider text-[var(--atria-accent-hover)]">
-                  Compromiso de Transparencia Atria
+                  Compromiso de Transparencia Alebrije Tech
                 </h3>
                 <p className="mt-2 text-xs leading-6 text-[var(--atria-ink)]">
-                  En Atria construimos relaciones basadas en la claridad. Este documento
+                  En Alebrije Tech construimos relaciones basadas en la claridad. Este documento
                   establece las reglas de operación, protección de datos y garantías de
                   servicio para proteger los intereses de tu negocio.
                 </p>
@@ -161,7 +161,7 @@ export function LegalPlaceholderPage({
               href={whatsappHref}
               className="atria-float-action mt-6 inline-flex items-center gap-3 rounded-full bg-[var(--atria-accent)] px-8 py-3 text-xs font-bold uppercase text-white shadow-md hover:bg-[var(--atria-accent-hover)]"
             >
-              <MessageCircle size={16} /> Hablar con un diseñador de Atria
+              <MessageCircle size={16} /> Hablar con un diseñador de Alebrije Tech
             </a>
           </div>
         </article>
@@ -169,7 +169,7 @@ export function LegalPlaceholderPage({
 
       {/* Page Footer */}
       <footer className="border-t border-black/10 bg-white px-4 py-8 text-center text-xs text-[var(--atria-muted)]">
-        <p>© {new Date().getFullYear()} Atria Studio Digital · Tuxtla Gutiérrez, Chiapas, México.</p>
+        <p>© {new Date().getFullYear()} Alebrije Tech · Tuxtla Gutiérrez, Chiapas, México.</p>
       </footer>
     </main>
   );

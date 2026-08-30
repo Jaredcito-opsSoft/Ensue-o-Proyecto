@@ -11,7 +11,7 @@ const capabilities = [
 ] as const;
 
 export function EnsuenoPOSSection() {
-  const pilotHref = createWhatsAppLink(appConfig.whatsappSalesNumber, "Hola, conocí LocalPOS desde Atria. Me interesa participar en el piloto para mi negocio.");
+  const pilotHref = createWhatsAppLink(appConfig.whatsappSalesNumber, "Hola, conocí LocalPOS desde Alebrije Tech. Me interesa participar en el piloto para mi negocio.");
 
   return (
     <SectionReveal>

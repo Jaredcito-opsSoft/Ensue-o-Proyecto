@@ -5,12 +5,12 @@ import { createWhatsAppLink } from "@/lib/whatsapp";
 
 const localPOSUrl = "https://localpos-marketing.vercel.app/";
 const celLabUrl = "https://localpos-cellab.vercel.app/";
-const email = "atriacontacto.mx@gmail.com";
+const email = "alebrijecontacto.mx@gmail.com";
 
 export function FinalCTASection() {
   const whatsappHref = createWhatsAppLink(
     appConfig.whatsappSalesNumber,
-    "Hola, conocí Atria desde su página. Quiero contarles sobre un proyecto."
+    "Hola, conocí Alebrije Tech desde su página. Quiero contarles sobre un proyecto."
   );
 
   return (
@@ -30,16 +30,16 @@ export function FinalCTASection() {
 
           <div>
             <p className="text-[10px] font-bold uppercase text-white/42">Soluciones</p>
-            <nav className="mt-5 grid gap-3 text-sm text-white/68" aria-label="Soluciones de Atria">
-              <a className="hover:text-white" href="#atria-web">Atria Web</a>
+            <nav className="mt-5 grid gap-3 text-sm text-white/68" aria-label="Soluciones de Alebrije Tech">
+              <a className="hover:text-white" href="#atria-web">Alebrije Web</a>
               <a className="hover:text-white" href="#momentos">Ensueño Momentos</a>
               <a className="inline-flex items-center gap-2 hover:text-white" href={localPOSUrl} target="_blank" rel="noopener noreferrer">LocalPOS <ExternalLink size={12} aria-hidden /></a>
             </nav>
           </div>
 
           <div>
-            <p className="text-[10px] font-bold uppercase text-white/42">Atria</p>
-            <nav className="mt-5 grid gap-3 text-sm text-white/68" aria-label="Información de Atria">
+            <p className="text-[10px] font-bold uppercase text-white/42">Alebrije Tech</p>
+            <nav className="mt-5 grid gap-3 text-sm text-white/68" aria-label="Información de Alebrije Tech">
               <a className="hover:text-white" href="#proyectos">Proyectos</a>
               <a className="hover:text-white" href="#proceso">Proceso</a>
               <a className="hover:text-white" href="#estudio">El estudio</a>
@@ -58,7 +58,7 @@ export function FinalCTASection() {
         </div>
 
         <div className="flex flex-col gap-2 py-5 text-[10px] uppercase text-white/42 sm:flex-row sm:justify-between">
-          <p>© {new Date().getFullYear()} Atria</p>
+          <p>© {new Date().getFullYear()} Alebrije Tech</p>
           <p>Estudio remoto · Chiapas, México</p>
         </div>
       </div>

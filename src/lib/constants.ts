@@ -1,6 +1,6 @@
 export const appConfig = {
-  name: "Atria",
-  shortName: "Atria",
+  name: "Alebrije Tech",
+  shortName: "Alebrije",
   description:
     "Estudio digital para sitios web, experiencias para eventos y soluciones personalizadas.",
   baseUrl: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",

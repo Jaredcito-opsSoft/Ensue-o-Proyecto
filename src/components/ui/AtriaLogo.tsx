@@ -40,7 +40,7 @@ export function AtriaIconMark({
         fill={light ? "#08090b" : "#ffffff"}
       />
 
-      {/* Atria focal dot */}
+      {/* Alebrije focal dot */}
       <circle cx="20" cy="21.5" r="2.2" fill={light ? "#ffffff" : "#111214"} />
     </svg>
   );
@@ -50,7 +50,7 @@ export function AtriaLogo({
   variant = "full",
   light = false,
   showSlogan = true,
-  sloganText = "Estudio Digital",
+  sloganText = "Tech",
   className = "",
 }: {
   variant?: "full" | "compact" | "icon";
@@ -75,7 +75,7 @@ export function AtriaLogo({
             light ? "text-white" : "text-[var(--atria-ink)]"
           }`}
         >
-          Atria
+          Alebrije
         </span>
         {showSlogan && (
           <span

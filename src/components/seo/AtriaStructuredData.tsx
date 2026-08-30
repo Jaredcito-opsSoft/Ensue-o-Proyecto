@@ -31,7 +31,7 @@ const structuredData = {
     },
     ...[
       "Diseño y desarrollo de sitios web",
-      "Presencia online incluida en Atria Web",
+      "Presencia online incluida en Alebrije Web",
       "Experiencias digitales mediante Ensueño Momentos",
       "Desarrollo de soluciones digitales personalizadas",
     ].map((name, index) => ({

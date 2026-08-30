@@ -32,12 +32,12 @@ export function ServicesSection() {
         <div id="atria-web" className="mx-auto max-w-[1320px] scroll-mt-24">
           <div className="grid gap-10 lg:grid-cols-[.92fr_1.08fr] lg:items-end">
             <div>
-              <p className="atria-eyebrow text-[11px] font-bold uppercase text-[var(--atria-accent)]">Atria Web · Servicio principal</p>
+              <p className="atria-eyebrow text-[11px] font-bold uppercase text-[var(--atria-accent)]">Alebrije Web · Servicio principal</p>
               <h2 className="mt-4 max-w-3xl font-serif text-5xl font-medium leading-[0.94] sm:text-6xl lg:text-7xl">Un sitio no empieza en la pantalla.</h2>
             </div>
             <div className="max-w-xl lg:justify-self-end">
               <p className="text-base leading-7 text-[var(--atria-ink-soft)]">Trabajamos en seis capas. Cada una convierte información dispersa en una presencia útil, reconocible y lista para publicarse.</p>
-              <a href="#contacto" className="group mt-7 inline-flex min-h-12 items-center gap-4 border-b border-black/18 pb-2 text-sm font-bold hover:border-[var(--atria-accent)]">Hablar sobre Atria Web <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" aria-hidden /></a>
+              <a href="#contacto" className="group mt-7 inline-flex min-h-12 items-center gap-4 border-b border-black/18 pb-2 text-sm font-bold hover:border-[var(--atria-accent)]">Hablar sobre Alebrije Web <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" aria-hidden /></a>
             </div>
           </div>
 

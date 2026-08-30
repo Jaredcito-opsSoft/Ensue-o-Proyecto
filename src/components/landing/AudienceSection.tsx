@@ -17,7 +17,7 @@ export function AudienceSection() {
         <div className="mx-auto max-w-[1320px]">
           <div className="grid gap-8 lg:grid-cols-[.86fr_1.14fr]">
             <div>
-              <p className="atria-eyebrow text-[11px] font-bold uppercase text-[var(--atria-accent)]">Para quién es Atria</p>
+              <p className="atria-eyebrow text-[11px] font-bold uppercase text-[var(--atria-accent)]">Para quién es Alebrije Tech</p>
               <h2 id="audience-title" className="mt-4 font-serif text-5xl font-medium leading-[0.94] sm:text-6xl">
                 Tecnología útil para negocios que quieren avanzar con claridad.
               </h2>

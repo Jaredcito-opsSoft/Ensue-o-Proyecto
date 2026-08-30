@@ -79,7 +79,7 @@ export const ATRIA_WORK: AtriaWork[] = [
     status: "Piloto para 3–5 negocios",
     niche: "Operación de negocios",
     description:
-      "Producto independiente desarrollado por Atria para organizar ventas, productos, clientes e inventario.",
+      "Producto independiente desarrollado por Alebrije Tech para organizar ventas, productos, clientes e inventario.",
     explores: "Una interfaz operativa precisa, distinta del lenguaje editorial de los sitios web.",
     capabilities: ["Ventas", "Productos", "Inventario", "Reportes"],
     image: "/media/atria-scroll/desktop/stage-05-localpos.avif",
